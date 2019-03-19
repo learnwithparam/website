@@ -25,16 +25,18 @@ const HeroColumn = styled.div(props => ({
   alignSelf: `center`,
 }));
 
-const Hero = ({ title, description, image }) => (
+const Hero = ({ title, descriptions, image }) => (
   <HeroContainer>
     <Container>
       <HeroGrid>
         <HeroColumn padding={`2rem`}>
           <img src={image} alt={title} />
         </HeroColumn>
-        <HeroColumn column={0.6}>
+        <HeroColumn column={0.8} padding={`2rem`}>
           <h1>{title}</h1>
-          <p>{description}</p>
+          {descriptions.map((description, index) => (
+            <p key={index}>{description}</p>
+          ))}
         </HeroColumn>
       </HeroGrid>
     </Container>
@@ -43,7 +45,7 @@ const Hero = ({ title, description, image }) => (
 
 Hero.propTypes = {
   title: PropTypes.string,
-  description: PropTypes.string,
+  descriptions: PropTypes.array,
   image: PropTypes.any,
 };
 

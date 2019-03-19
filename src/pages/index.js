@@ -10,8 +10,11 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
     <Hero
-      title={`Learning is an endless process`}
-      description={`Hi, I'm Param. I help people to learn web and mobile technologies through workshops, webinars and courses.`}
+      title={`Hi, I'm Param 👋`}
+      descriptions={[
+        `I help people to learn web and mobile technologies through workshops, webinars, and courses.`,
+        `One of the best way to learn is to build and break things. I love to teach practical real world applications through my content.`,
+      ]}
       image={heroImage}
     />
   </Layout>
