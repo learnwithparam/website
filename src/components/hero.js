@@ -1,0 +1,50 @@
+import React from 'react';
+import PropTypes from 'prop-types';
+import styled from '@emotion/styled';
+
+const HeroContainer = styled.section`
+  background: #fcf8f3;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+`;
+
+const Container = styled.div`
+  max-width: 90%;
+  margin: 0 auto;
+`;
+
+const HeroGrid = styled.div`
+  display: flex;
+`;
+
+const HeroColumn = styled.div(props => ({
+  flex: props.column ? props.column : 1,
+  padding: props.padding ? props.padding : 0,
+  alignSelf: `center`,
+}));
+
+const Hero = ({ title, description, image }) => (
+  <HeroContainer>
+    <Container>
+      <HeroGrid>
+        <HeroColumn padding={`2rem`}>
+          <img src={image} alt={title} />
+        </HeroColumn>
+        <HeroColumn column={0.6}>
+          <h1>{title}</h1>
+          <p>{description}</p>
+        </HeroColumn>
+      </HeroGrid>
+    </Container>
+  </HeroContainer>
+);
+
+Hero.propTypes = {
+  title: PropTypes.string,
+  description: PropTypes.string,
+  image: PropTypes.any,
+};
+
+export default Hero;
