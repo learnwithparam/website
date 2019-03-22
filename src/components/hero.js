@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from '@emotion/styled';
+import { Container } from './commonStyles';
 
 const HeroContainer = styled.section`
   background: #fcf8f3;
@@ -8,11 +9,6 @@ const HeroContainer = styled.section`
   flex-direction: column;
   height: 100vh;
   justify-content: center;
-`;
-
-const Container = styled.div`
-  max-width: 90%;
-  margin: 0 auto;
 `;
 
 const HeroGrid = styled.div`

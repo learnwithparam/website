@@ -8,12 +8,20 @@ import heroImage from './../images/programming.svg';
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
+    <SEO
+      title="Home"
+      keywords={[
+        `teaching code`,
+        ` learn javascript ecosystem`,
+        `react`,
+        `redux`,
+      ]}
+    />
     <Hero
       title={`Hi, I'm Param 👋`}
       descriptions={[
-        `I help people to learn web and mobile technologies through workshops, webinars, and courses.`,
-        `One of the best way to learn is to build and break things. I love to teach practical real world applications through my content.`,
+        `I help people to learn web and mobile technologies through workshops, webinars and courses.`,
+        `I prefer to learn by doing things. I love to teach the same way by building practical and real world examples.`,
       ]}
       image={heroImage}
     />
