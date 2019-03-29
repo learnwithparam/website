@@ -14,23 +14,23 @@ const HeroGrid = styled.div`
   display: flex;
 `;
 
-const HeroColumn = styled.div(props => ({
-  flex: props.column ? props.column : 1,
-  padding: props.padding ? props.padding : 0,
-  alignSelf: `center`,
-}));
+const HeroColumn = styled.div`
+  flex: 1;
+  padding: 4rem 0;
+  align-self: center;
+`;
 
 const Hero = ({ title, descriptions, image }) => (
   <HeroContainer>
     <Container>
       <HeroGrid>
-        <HeroColumn column={1} padding={`1rem`}>
+        <HeroColumn column={1} padding={`4rem 1rem`}>
           <h1>{title}</h1>
           {descriptions.map((description, index) => (
             <p key={index}>{description}</p>
           ))}
         </HeroColumn>
-        <HeroColumn padding={`1rem`}>
+        <HeroColumn padding={`2rem 1rem`}>
           <img src={image} alt={title} />
         </HeroColumn>
       </HeroGrid>
