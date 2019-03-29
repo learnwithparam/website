@@ -7,7 +7,6 @@ const HeroContainer = styled.section`
   background: #fcf8f3;
   display: flex;
   flex-direction: column;
-  height: 100vh;
   justify-content: center;
 `;
 
@@ -25,14 +24,14 @@ const Hero = ({ title, descriptions, image }) => (
   <HeroContainer>
     <Container>
       <HeroGrid>
-        <HeroColumn padding={`2rem`}>
-          <img src={image} alt={title} />
-        </HeroColumn>
-        <HeroColumn column={0.8} padding={`2rem`}>
+        <HeroColumn column={1} padding={`1rem`}>
           <h1>{title}</h1>
           {descriptions.map((description, index) => (
             <p key={index}>{description}</p>
           ))}
+        </HeroColumn>
+        <HeroColumn padding={`1rem`}>
+          <img src={image} alt={title} />
         </HeroColumn>
       </HeroGrid>
     </Container>

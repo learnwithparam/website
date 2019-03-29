@@ -12,16 +12,17 @@ const IndexPage = () => (
       title="Home"
       keywords={[
         `teaching code`,
-        ` learn javascript ecosystem`,
-        `react`,
-        `redux`,
+        `learn javaScript ecosystem`,
+        `learn react`,
+        `redux and mobx`,
+        `learn with param`,
+        `graphql`,
       ]}
     />
     <Hero
       title={`Hi, I'm Param 👋`}
       descriptions={[
         `I help people to learn web and mobile technologies through workshops, webinars and courses.`,
-        `I prefer to learn by doing things. I love to teach the same way by building practical and real world examples.`,
       ]}
       image={heroImage}
     />
