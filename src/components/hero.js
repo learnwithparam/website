@@ -24,13 +24,13 @@ const Hero = ({ title, descriptions, image }) => (
   <HeroContainer>
     <Container>
       <HeroGrid>
-        <HeroColumn column={1} padding={`4rem 1rem`}>
+        <HeroColumn>
           <h1>{title}</h1>
           {descriptions.map((description, index) => (
             <p key={index}>{description}</p>
           ))}
         </HeroColumn>
-        <HeroColumn padding={`2rem 1rem`}>
+        <HeroColumn>
           <img src={image} alt={title} />
         </HeroColumn>
       </HeroGrid>
