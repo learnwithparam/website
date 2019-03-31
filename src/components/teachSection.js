@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from '@emotion/styled';
-import { Container, TextCenter } from './commonStyles';
+import { Container } from './commonStyles';
 
 const TeachContainer = styled.section`
   background: #f2f6fc;
@@ -9,16 +9,17 @@ const TeachContainer = styled.section`
 `;
 
 const TeachContent = styled.div`
-  h1,
-  p {
+  > h1,
+  > p {
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
+    text-align: center;
   }
-  h1 {
+  > h1 {
     margin-top: 0;
   }
-  p {
+  > p {
     margin-bottom: 2rem;
   }
 `;
@@ -32,12 +33,16 @@ const TeachUnStyledList = styled.ul`
 `;
 
 const TeachList = styled.li`
-  width: calc(50% - 1rem);
   padding: 2rem;
   margin: 0.5rem;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px;
-  background: #ffffff;
-  border-radius: 2px;
+  border-radius: 4px;
+  transition: all 0.3s linear;
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: rgba(54, 91, 155, 0.1) 0px 18px 35px,
+      rgba(0, 0, 0, 0.07) 0px 8px 15px;
+    transform: translateY(-2px);
+  }
 `;
 
 const TeachSection = ({ title, description, contents }) => {
@@ -45,14 +50,12 @@ const TeachSection = ({ title, description, contents }) => {
     <TeachContainer>
       <Container>
         <TeachContent>
-          <TextCenter>
-            <h1>{title}</h1>
-            <p>{description}</p>
-          </TextCenter>
+          <h1>{title}</h1>
+          <p>{description}</p>
           <TeachUnStyledList>
             {contents.map((content, index) => (
               <TeachList key={index}>
-                <h3>{content.title}</h3>
+                <h2>{content.title}</h2>
                 <p>{content.description}</p>
               </TeachList>
             ))}

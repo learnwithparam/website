@@ -33,7 +33,7 @@ const IndexPage = () => (
       description={`In the large JavaScript Ocean, I am exploring few of the Islands. On my way, I love to guide through those islands for beginners and professionals`}
       contents={[
         {
-          title: `HTML, CSS and Beyond`,
+          title: `HTML, CSS and Everything`,
           description: `User interface is an art. HTML5 and CSS3 are the tools to create UI for web. Most web developers start their learning journey with HTML and CSS.`,
         },
         {
@@ -45,7 +45,7 @@ const IndexPage = () => (
           description: `Ease of development and maintainability is the key for software development. React has been the game changer in development experience. More and more developers are learning react based web and mobile stack to boost up their career opportunities.`,
         },
         {
-          title: `GraphQL Ecosystem`,
+          title: `GraphQL and its Networks`,
           description: `GraphQL become buzzword in tech for recent times along with React. I foresee graphql is here to stay for long with strong communities and companies backing it. A nice to have knowledge will become must have skill on every job description in near future.`,
         },
         {
