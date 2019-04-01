@@ -11,7 +11,7 @@ const TeachContainer = styled.section`
 const TeachContent = styled.div`
   > h1,
   > p {
-    max-width: 600px;
+    max-width: 640px;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
