@@ -37,6 +37,7 @@ const TeachList = styled.li`
   margin: 0.5rem;
   border-radius: 4px;
   transition: all 0.3s linear;
+  display: flex;
   &:hover {
     background-color: rgba(255, 255, 255, 0.9);
     box-shadow: rgba(54, 91, 155, 0.1) 0px 18px 35px,
@@ -44,6 +45,24 @@ const TeachList = styled.li`
     transform: translateY(-2px);
   }
 `;
+
+const TeachColumn = styled.div`
+  flex: 1;
+  align-self: center;
+`;
+
+const TeachColumnImage = styled(TeachColumn)`
+  padding: 2rem;
+  max-width: 450px;
+`;
+
+const TeachImageFragment = ({ image, title }) => {
+  return (
+    <TeachColumnImage>
+      <img src={image} alt={title} />
+    </TeachColumnImage>
+  );
+};
 
 const TeachSection = ({ title, description, contents }) => {
   return (
@@ -55,8 +74,16 @@ const TeachSection = ({ title, description, contents }) => {
           <TeachUnStyledList>
             {contents.map((content, index) => (
               <TeachList key={index}>
-                <h2>{content.title}</h2>
-                <p>{content.description}</p>
+                {content.image && index % 2 !== 0 && (
+                  <TeachImageFragment {...content} />
+                )}
+                <TeachColumn>
+                  <h2>{content.title}</h2>
+                  <p>{content.description}</p>
+                </TeachColumn>
+                {content.image && index % 2 === 0 && (
+                  <TeachImageFragment {...content} />
+                )}
               </TeachList>
             ))}
           </TeachUnStyledList>
