@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from '@emotion/styled';
 import { Container } from './commonStyles';
+import Header from './header';
 
 const HeroContainer = styled.section`
   background: #fcf8f3;
@@ -16,13 +17,14 @@ const HeroGrid = styled.div`
 
 const HeroColumn = styled.div`
   flex: 1;
-  padding: 4rem 0;
+  padding: 2rem 0 4rem;
   align-self: center;
 `;
 
 const Hero = ({ title, descriptions, image }) => (
   <HeroContainer>
     <Container>
+      <Header />
       <HeroGrid>
         <HeroColumn>
           <h1>{title}</h1>

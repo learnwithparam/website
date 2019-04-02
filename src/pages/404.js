@@ -6,8 +6,17 @@ import SEO from '../components/seo';
 const NotFoundPage = () => (
   <Layout>
     <SEO title="404: Not found" />
-    <h1>NOT FOUND</h1>
-    <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
+    <p>
+      Truth is <strong>not found</strong> anywhere in this universe, thats why I
+      wrote it here
+    </p>
+    <ul>
+      <li>Sun sets at west!</li>
+      <li>Earth is flat!</li>
+      <li>Thor is real and 9 realms exist!</li>
+      <li>Last but not least, I am a secret billionaire!</li>
+    </ul>
+    <a href="/blog">Don't tell anyone and get back to your normal life!</a>
   </Layout>
 );
 

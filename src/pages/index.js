@@ -5,14 +5,14 @@ import SEO from '../components/seo';
 import Hero from '../components/hero';
 import TeachSection from '../components/teachSection';
 
-import heroImage from './../images/programming.svg';
-import htmlCSSImage from '../images/html-css.svg';
-import cssInJSImage from '../images/css-in-js.svg';
-import gatsbyImage from '../images/gatsby.svg';
-import graphQLImage from '../images/graphql.svg';
-import javascriptImage from '../images/javascript.svg';
-import flutterImage from '../images/flutter.svg';
-import reactImage from '../images/react.svg';
+import heroImage from './../../images/programming.svg';
+import htmlCSSImage from '../../images/html-css.svg';
+import cssInJSImage from '../../images/css-in-js.svg';
+import gatsbyImage from '../../images/gatsby.svg';
+import graphQLImage from '../../images/graphql.svg';
+import javascriptImage from '../../images/javascript.svg';
+import flutterImage from '../../images/flutter.svg';
+import reactImage from '../../images/react.svg';
 
 const IndexPage = () => (
   <Layout>
