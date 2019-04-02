@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from '@emotion/styled';
 import { Container } from './commonStyles';
-import Header from './header';
+import TransparentHeader from './transparentHeader';
 
 const HeroContainer = styled.section`
   background: #fcf8f3;
@@ -24,7 +24,7 @@ const HeroColumn = styled.div`
 const Hero = ({ title, descriptions, image }) => (
   <HeroContainer>
     <Container>
-      <Header />
+      <TransparentHeader />
       <HeroGrid>
         <HeroColumn>
           <h1>{title}</h1>

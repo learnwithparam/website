@@ -1,8 +1,15 @@
 import React from 'react';
 import { Link, graphql } from 'gatsby';
+import styled from '@emotion/styled';
 
+import { Container } from '../components/commonStyles';
+import Header from '../components/header';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
+
+const BlogContainer = styled.div`
+  padding: 4rem 0;
+`;
 
 const GITHUB_USERNAME = 'learnwithparam';
 const GITHUB_REPO_NAME = 'website';
@@ -18,32 +25,37 @@ class BlogPostTemplate extends React.Component {
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <SEO title={post.frontmatter.title} description={post.excerpt} />
-        <h1>{post.frontmatter.title}</h1>
-        <small>{post.frontmatter.date}</small>
-        <div dangerouslySetInnerHTML={{ __html: post.html }} />
+        <Header />
+        <BlogContainer>
+          <Container>
+            <h1>{post.frontmatter.title}</h1>
+            <small>{post.frontmatter.date}</small>
+            <div dangerouslySetInnerHTML={{ __html: post.html }} />
 
-        <a href={editUrl} target="_blank" rel="noopener noreferrer">
-          Edit on GitHub
-        </a>
+            <a href={editUrl} target="_blank" rel="noopener noreferrer">
+              Edit on GitHub
+            </a>
 
-        <hr />
+            <hr />
 
-        <ul>
-          <li>
-            {previous && (
-              <Link to={previous.fields.slug} rel="prev">
-                ← {previous.frontmatter.title}
-              </Link>
-            )}
-          </li>
-          <li>
-            {next && (
-              <Link to={next.fields.slug} rel="next">
-                {next.frontmatter.title} →
-              </Link>
-            )}
-          </li>
-        </ul>
+            <ul>
+              {previous && (
+                <li>
+                  <Link to={previous.fields.slug} rel="prev">
+                    ← {previous.frontmatter.title}
+                  </Link>
+                </li>
+              )}
+              {next && (
+                <li>
+                  <Link to={next.fields.slug} rel="next">
+                    {next.frontmatter.title} →
+                  </Link>
+                </li>
+              )}
+            </ul>
+          </Container>
+        </BlogContainer>
       </Layout>
     );
   }
