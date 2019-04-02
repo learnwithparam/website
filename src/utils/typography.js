@@ -9,7 +9,7 @@ const typography = new Typography({
   bodyColor: '#241c15',
   includeNormalize: false,
   blockMarginBottom: `1rem`,
-  overrideStyles: ({ scale, rhythm }) => ({
+  overrideStyles: () => ({
     html: {
       '-webkit-font-smoothing': 'antialiased',
       '-moz-osx-font-smoothing': 'grayscale',
