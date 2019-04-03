@@ -4,7 +4,7 @@ import styled from '@emotion/styled';
 import { Link } from 'gatsby';
 
 import BlogPost from '../components/blogPost';
-import { Container } from '../components/commonStyles';
+import { Container, TextCenter } from '../components/commonStyles';
 
 const BlogWrapper = styled.div`
   padding: 2rem 0;
@@ -46,7 +46,9 @@ const BlogContainer = ({ posts, sectionTitle }) => {
         })}
         {sectionTitle ? (
           <h3>
-            <Link to="/blog">View all articles</Link>
+            <TextCenter>
+              <Link to="/blog">View all articles</Link>
+            </TextCenter>
           </h3>
         ) : null}
       </Container>

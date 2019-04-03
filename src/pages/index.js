@@ -37,7 +37,7 @@ class IndexPage extends React.Component {
         <Hero image={heroImage} />
         <BlogContainer posts={posts} sectionTitle={`Blog`} />
         <TeachSection
-          title={`What I teach`}
+          title={`What I teach and Learn`}
           description={`In the large JavaScript Ocean, I am exploring few of the Islands. On my way, I love to guide through those islands for beginners and professionals`}
           contents={[
             {

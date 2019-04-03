@@ -10,6 +10,7 @@ import PropTypes from 'prop-types';
 import { StaticQuery, graphql } from 'gatsby';
 
 import GlobalStyles from './globalStyles';
+import Footer from './footer';
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -26,6 +27,7 @@ const Layout = ({ children }) => (
       <>
         <GlobalStyles />
         {children}
+        <Footer />
       </>
     )}
   />
