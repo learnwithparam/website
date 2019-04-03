@@ -4,7 +4,7 @@ import { Container } from './commonStyles';
 import TransparentHeader from './transparentHeader';
 
 const HeaderContainer = styled.section`
-  background-color: #fcf8f3;
+  background-color: #f2f6fc;
   display: flex;
   flex-direction: column;
   justify-content: center;
