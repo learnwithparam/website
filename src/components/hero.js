@@ -16,24 +16,33 @@ const HeroGrid = styled.div`
 `;
 
 const HeroColumn = styled.div`
-  flex: 1;
-  padding: 2rem 0 4rem;
+  padding: 2rem 0 4rem 2rem;
   align-self: center;
 `;
 
-const Hero = ({ title, descriptions, image }) => (
+const HeroColumnImage = styled(HeroColumn)`
+  max-width: 450px;
+  padding-left: 0;
+`;
+
+const Hero = ({ image }) => (
   <HeroContainer>
     <Container>
       <TransparentHeader />
       <HeroGrid>
+        <HeroColumnImage>
+          <img src={image} alt="Param at Desk" />
+        </HeroColumnImage>
         <HeroColumn>
-          <h1>{title}</h1>
-          {descriptions.map((description, index) => (
-            <p key={index}>{description}</p>
-          ))}
-        </HeroColumn>
-        <HeroColumn>
-          <img src={image} alt={title} />
+          <h3>{`Hi, I'm Param 👋`}</h3>
+          <p>
+            I help people to learn web and mobile technologies through
+            workshops, webinars and courses.
+          </p>
+          <p>
+            I prefer teaching through practical examples and encourage everyone
+            to learn by doing.
+          </p>
         </HeroColumn>
       </HeroGrid>
     </Container>
@@ -41,8 +50,6 @@ const Hero = ({ title, descriptions, image }) => (
 );
 
 Hero.propTypes = {
-  title: PropTypes.string,
-  descriptions: PropTypes.array,
   image: PropTypes.any,
 };
 

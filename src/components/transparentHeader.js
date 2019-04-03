@@ -10,30 +10,35 @@ const HeaderGrid = styled.div`
 
 const HeaderColumn = styled.div`
   display: flex;
-  h4 {
+  h3 {
     margin: 0;
-    text-transform: uppercase;
+    a {
+      color: inherit;
+      &:hover {
+        text-decoration: none;
+      }
+    }
   }
 `;
 
 const HeaderColumnRight = styled(HeaderColumn)`
   margin-left: auto;
-  a {
+  > a {
+    margin-left: 1rem;
     font-size: 0.9rem;
-    text-decoration: none;
-    &:hover {
-      text-decoration: underline;
-    }
   }
 `;
 
 const TransparentHeader = () => (
   <HeaderGrid>
     <HeaderColumn>
-      <h4>Learn with Param</h4>
+      <h3>
+        <Link to="/">Learn with {`{ Param }`}</Link>
+      </h3>
     </HeaderColumn>
     <HeaderColumnRight>
       <Link to="/blog">Blog</Link>
+      <Link to="/about">About</Link>
     </HeaderColumnRight>
   </HeaderGrid>
 );

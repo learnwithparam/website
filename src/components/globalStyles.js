@@ -10,10 +10,11 @@ const GlobalStyles = () => (
       ${sanitizeCSS}
       ${prismCSS}
       a {
+        transition: all 0.3s ease-in;
         color: var(--textLink);
-        text-decoration: underline;
+        text-decoration: none;
         &:hover {
-          text-decoration: none;
+          text-decoration: underline;
         }
       }
     `}

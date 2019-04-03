@@ -8,6 +8,8 @@ const TeachContainer = styled.section`
   padding: 5rem 0;
 `;
 
+const TeachWrapper = styled(Container)``;
+
 const TeachContent = styled.div`
   > h1,
   > p {
@@ -53,7 +55,7 @@ const TeachColumn = styled.div`
 
 const TeachColumnImage = styled(TeachColumn)`
   padding: 2rem;
-  max-width: 450px;
+  max-width: 300px;
 `;
 
 const TeachImageFragment = ({ image, title }) => {
@@ -67,7 +69,7 @@ const TeachImageFragment = ({ image, title }) => {
 const TeachSection = ({ title, description, contents }) => {
   return (
     <TeachContainer>
-      <Container>
+      <TeachWrapper>
         <TeachContent>
           <h1>{title}</h1>
           <p>{description}</p>
@@ -88,7 +90,7 @@ const TeachSection = ({ title, description, contents }) => {
             ))}
           </TeachUnStyledList>
         </TeachContent>
-      </Container>
+      </TeachWrapper>
     </TeachContainer>
   );
 };
