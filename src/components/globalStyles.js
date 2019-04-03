@@ -17,6 +17,13 @@ const GlobalStyles = () => (
           text-decoration: underline;
         }
       }
+      blockquote {
+        border-left: 5px solid rgb(87, 62, 222);
+        margin-left: 0;
+        margin-top: 1rem;
+        padding-left: 1rem;
+        font-style: italic;
+      }
     `}
   />
 );
