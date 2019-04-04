@@ -1,6 +1,6 @@
 ---
 title: Gradient text style using CSS
-date: '2019-01-12T09:24:16.132Z'
+date: '2019-04-03T09:24:16.132Z'
 published: true
 tags: ['CSS Nuggets']
 ---

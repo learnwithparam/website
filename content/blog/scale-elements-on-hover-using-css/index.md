@@ -1,6 +1,6 @@
 ---
 title: Scale elements on hover using CSS
-date: '2019-01-19T10:36:08.652Z'
+date: '2019-04-02T10:36:08.652Z'
 published: true
 tags: ['CSS Nuggets']
 ---

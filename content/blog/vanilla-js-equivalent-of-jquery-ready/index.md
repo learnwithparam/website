@@ -1,6 +1,6 @@
 ---
 title: Vanilla JS equivalent for jQuery Ready
-date: '2019-01-26T18:44:46.156Z'
+date: '2019-04-01T18:44:46.156Z'
 published: true
 tags: ["You don't need jQuery"]
 ---

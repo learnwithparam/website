@@ -1,6 +1,6 @@
 ---
 title: Center align content vertically and horizontally in CSS
-date: '2019-01-05T08:12:03.284Z'
+date: '2019-04-04T08:12:03.284Z'
 published: true
 tags: ['CSS Nuggets']
 ---
