@@ -40,7 +40,7 @@ const TeachUnStyledList = styled.ul`
 const TeachList = styled.li`
   padding: 2rem;
   margin: 0.5rem;
-  border-radius: 4px;
+  border-radius: 6px;
   transition: all 0.2s linear;
   display: flex;
   &:hover {
@@ -49,16 +49,18 @@ const TeachList = styled.li`
       rgba(0, 0, 0, 0.07) 0px 8px 15px;
     transform: translateY(-2px);
   }
-  @media (max-width: 575.98px) {
-    flex-direction: column;
-    padding: 1rem;
-    margin: 0 0 1rem 0;
+  @media (max-width: 991.98px) {
     background-color: rgba(255, 255, 255, 0.9);
     box-shadow: rgba(54, 91, 155, 0.1) 0px 18px 35px,
       rgba(0, 0, 0, 0.07) 0px 8px 15px;
     &:hover {
       transform: none;
     }
+  }
+  @media (max-width: 575.98px) {
+    flex-direction: column;
+    padding: 1.2rem 1rem;
+    margin: 0 0 1rem 0;
   }
 `;
 
@@ -70,6 +72,9 @@ const TeachColumn = styled.div`
 const TeachColumnImage = styled(TeachColumn)`
   padding: 2rem;
   max-width: 300px;
+  @media (max-width: 991.98px) {
+    max-width: 240px;
+  }
 `;
 
 const TeachImageFragment = ({ image, title }) => {

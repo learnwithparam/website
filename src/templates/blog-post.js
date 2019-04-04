@@ -9,12 +9,12 @@ import SEO from '../components/seo';
 
 const BlogContainer = styled.div`
   background: #fafafa;
-  padding: 3rem 0;
+  padding: 2rem 0;
   .blog-content {
     margin: 2rem 0;
   }
   @media (max-width: 575.98px) {
-    padding: 2rem 0;
+    padding: 1rem 0;
   }
 `;
 

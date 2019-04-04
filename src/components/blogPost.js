@@ -5,7 +5,7 @@ import styled from '@emotion/styled';
 
 const BlogPostContainer = styled.section`
   padding: 2rem 4rem;
-  border-radius: 5px;
+  border-radius: 6px;
   transition: all 0.3s linear;
   background-color: rgba(255, 255, 255, 0.9);
   box-shadow: rgba(54, 91, 155, 0.1) 0px 18px 35px,
@@ -16,7 +16,11 @@ const BlogPostContainer = styled.section`
     padding: 1rem;
   }
   h3 {
+    margin-top: 0;
     margin-bottom: 0.75rem;
+    @media (max-width: 575.98px) {
+      font-size: 1.2rem;
+    }
   }
   small {
     margin: 0;
@@ -34,7 +38,7 @@ const BlogPost = ({ title, slug, date, excerpt }) => {
         <small>{date}</small>
       </p>
       <p>{excerpt}</p>
-      <Link to={slug}>Read →</Link>
+      <Link to={slug}>Continue reading →</Link>
     </BlogPostContainer>
   );
 };

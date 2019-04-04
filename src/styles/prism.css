@@ -65,10 +65,10 @@ pre[class*='language-'] ::selection {
 
 /* Inline code */
 :not(pre) > code[class*='language-'] {
-  border-radius: 0.3em;
+  border-radius: 0.3rem;
   background: var(--inlineCode-bg);
   color: var(--inlineCode-text);
-  padding: 0.15em 0.2em 0.05em;
+  padding: 0.15rem 0.2rem 0.05rem;
   white-space: normal;
 }
 
@@ -157,7 +157,7 @@ pre[data-line] {
 }
 @media (max-width: 575.98px) {
   .gatsby-highlight {
-    margin: 2rem -2rem;
+    margin: 2rem -1rem;
   }
 }
 

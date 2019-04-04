@@ -6,18 +6,35 @@ const HeaderGrid = styled.div`
   display: flex;
   width: 100%;
   padding: 2rem 0;
+  @media (max-width: 575.98px) {
+    padding: 1rem 0;
+  }
 `;
 
 const HeaderColumn = styled.div`
   display: flex;
-  h3 {
-    margin: 0;
-    line-height: inherit;
-  }
   a {
     &:hover {
       text-decoration: none;
     }
+  }
+`;
+
+const LogoText = styled.h3`
+  margin: 0;
+  line-height: inherit;
+`;
+
+const LinkDesktop = styled(Link)`
+  @media (max-width: 575.98px) {
+    display: none;
+  }
+`;
+
+const LinkMobile = styled(Link)`
+  display: none;
+  @media (max-width: 575.98px) {
+    display: inline;
   }
 `;
 
@@ -30,7 +47,7 @@ const MenuItem = styled(Link)`
   margin-left: 0.25rem;
   font-size: 0.9rem;
   padding: 0.4rem 0.75rem;
-  border-radius: 0.25rem;
+  border-radius: 6px;
   &:hover {
     background-color: rgb(255, 167, 196, 0.15);
   }
@@ -42,9 +59,10 @@ const MenuItem = styled(Link)`
 const TransparentHeader = () => (
   <HeaderGrid>
     <HeaderColumn>
-      <h3>
-        <Link to="/">Learn with Param</Link>
-      </h3>
+      <LogoText>
+        <LinkDesktop to="/">Learn with Param</LinkDesktop>
+        <LinkMobile to="/">{`{ P }`}</LinkMobile>
+      </LogoText>
     </HeaderColumn>
     <HeaderColumnRight>
       <MenuItem to="/blog" activeClassName="active">

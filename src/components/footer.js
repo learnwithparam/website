@@ -7,6 +7,9 @@ const FooterContainer = styled(TextCenter)`
   p {
     margin: 0;
   }
+  @media (max-width: 575.98px) {
+    padding: 1rem;
+  }
 `;
 
 const Footer = () => (
