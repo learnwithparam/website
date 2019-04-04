@@ -3,6 +3,7 @@ import React from 'react';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import Hero from '../components/hero';
+import Header from '../components/header';
 
 import heroImage from './../../images/programming.svg';
 
@@ -19,6 +20,7 @@ const IndexPage = () => (
         `graphql`,
       ]}
     />
+    <Header />
     <Hero image={heroImage} />
   </Layout>
 );

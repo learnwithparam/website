@@ -8,9 +8,13 @@ import Layout from '../components/layout';
 import SEO from '../components/seo';
 
 const BlogContainer = styled.div`
-  padding: 4rem 0;
+  background: #fafafa;
+  padding: 3rem 0;
   .blog-content {
     margin: 2rem 0;
+  }
+  @media (max-width: 575.98px) {
+    padding: 2rem 0;
   }
 `;
 
@@ -19,22 +23,33 @@ const PreviousNextContainer = styled.ul`
   margin-left: 0;
   margin-top: 2rem;
   display: flex;
+  @media (max-width: 575.98px) {
+    flex-direction: column;
+  }
   li {
-    border-radius: 5px;
+    border-radius: 6px;
     transition: all 0.3s linear;
     background-color: rgba(255, 255, 255, 0.9);
     box-shadow: rgba(54, 91, 155, 0.1) 0px 18px 35px,
       rgba(0, 0, 0, 0.07) 0px 8px 15px;
-    width: calc(50%);
+    width: 50%;
     padding: 1rem;
     margin-bottom: 0;
-    &:first-child {
-      text-align: left;
-      margin-right: 10px;
-    }
     &:last-child {
       text-align: right;
       margin-left: 10px;
+    }
+    &:first-child {
+      text-align: left;
+      margin-right: 10px;
+      margin-left: 0;
+    }
+    @media (max-width: 575.98px) {
+      width: 100%;
+      &:first-child,
+      &:last-child {
+        margin: 0 0 1rem 0;
+      }
     }
   }
 `;

@@ -2,7 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from '@emotion/styled';
 import { Container } from './commonStyles';
-import TransparentHeader from './transparentHeader';
 
 const HeroContainer = styled.section`
   background: #fcf8f3;
@@ -13,22 +12,27 @@ const HeroContainer = styled.section`
 
 const HeroGrid = styled.div`
   display: flex;
+  @media (max-width: 575.98px) {
+    flex-direction: column;
+  }
 `;
 
 const HeroColumn = styled.div`
-  padding: 2rem 0 4rem 2rem;
+  flex: 1;
+  padding: 4rem 0 4rem 2rem;
   align-self: center;
+  @media (max-width: 575.98px) {
+    padding: 1rem 0 0;
+  }
 `;
 
 const HeroColumnImage = styled(HeroColumn)`
-  max-width: 450px;
   padding-left: 0;
 `;
 
 const Hero = ({ image }) => (
   <HeroContainer>
     <Container>
-      <TransparentHeader />
       <HeroGrid>
         <HeroColumnImage>
           <img src={image} alt="Param at Desk" />

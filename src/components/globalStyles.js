@@ -9,6 +9,9 @@ const GlobalStyles = () => (
     styles={css`
       ${sanitizeCSS}
       ${prismCSS}
+      body {
+        background-color: var(--bg);
+      }
       a {
         transition: all 0.3s ease-in;
         color: var(--textLink);

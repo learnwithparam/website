@@ -12,20 +12,30 @@ const HeaderColumn = styled.div`
   display: flex;
   h3 {
     margin: 0;
-    a {
-      color: inherit;
-      &:hover {
-        text-decoration: none;
-      }
+    line-height: inherit;
+  }
+  a {
+    &:hover {
+      text-decoration: none;
     }
   }
 `;
 
 const HeaderColumnRight = styled(HeaderColumn)`
   margin-left: auto;
-  > a {
-    margin-left: 1rem;
-    font-size: 0.9rem;
+`;
+
+const MenuItem = styled(Link)`
+  color: inherit;
+  margin-left: 0.25rem;
+  font-size: 0.9rem;
+  padding: 0.4rem 0.75rem;
+  border-radius: 0.25rem;
+  &:hover {
+    background-color: rgb(255, 167, 196, 0.15);
+  }
+  &.active {
+    background-color: rgb(255, 167, 196, 0.3);
   }
 `;
 
@@ -33,12 +43,16 @@ const TransparentHeader = () => (
   <HeaderGrid>
     <HeaderColumn>
       <h3>
-        <Link to="/">Learn with {`{ Param }`}</Link>
+        <Link to="/">Learn with Param</Link>
       </h3>
     </HeaderColumn>
     <HeaderColumnRight>
-      <Link to="/blog">Blog</Link>
-      <Link to="/about">About</Link>
+      <MenuItem to="/blog" activeClassName="active">
+        Blog
+      </MenuItem>
+      <MenuItem to="/about" activeClassName="active">
+        About
+      </MenuItem>
     </HeaderColumnRight>
   </HeaderGrid>
 );

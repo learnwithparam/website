@@ -12,6 +12,9 @@ const BlogPostContainer = styled.section`
     rgba(0, 0, 0, 0.07) 0px 8px 15px;
   transform: translateY(-2px);
   margin-bottom: 1rem;
+  @media (max-width: 575.98px) {
+    padding: 1rem;
+  }
   h3 {
     margin-bottom: 0.75rem;
   }
@@ -30,9 +33,8 @@ const BlogPost = ({ title, slug, date, excerpt }) => {
       <p>
         <small>{date}</small>
       </p>
-      <p>
-        {excerpt} <Link to={slug}>Read →</Link>
-      </p>
+      <p>{excerpt}</p>
+      <Link to={slug}>Read →</Link>
     </BlogPostContainer>
   );
 };

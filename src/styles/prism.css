@@ -1,6 +1,6 @@
 :root {
   --pink: rgb(255, 167, 196);
-  --bg: #ffffff;
+  --bg: #fff;
   --header: var(--pink);
   --textNormal: #222;
   --textTitle: #222;
@@ -149,13 +149,16 @@ pre[data-line] {
 }
 
 .gatsby-highlight {
-  margin-bottom: 1.75rem;
-  margin-left: -1.3125rem;
-  margin-right: -1.3125rem;
+  margin: 2rem 0;
   border-radius: 10px;
   background: #011627;
   -webkit-overflow-scrolling: touch;
   overflow: auto;
+}
+@media (max-width: 575.98px) {
+  .gatsby-highlight {
+    margin: 2rem -2rem;
+  }
 }
 
 .gatsby-highlight pre[class*='language-'] {

@@ -11,7 +11,9 @@ const FooterContainer = styled(TextCenter)`
 
 const Footer = () => (
   <FooterContainer>
-    <p>© Learn with Param. Made in Tallinn, Estonia{` ❤️`}</p>
+    <p>
+      © Learn with Param. Made in <strong>Tallinn, Estonia</strong> {` ❤️`}
+    </p>
   </FooterContainer>
 );
 

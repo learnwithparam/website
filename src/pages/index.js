@@ -6,6 +6,7 @@ import SEO from '../components/seo';
 import Hero from '../components/hero';
 import TeachSection from '../components/teachSection';
 import BlogContainer from '../components/blogContainer';
+import Header from '../components/header';
 
 import heroImage from './../../images/programming.svg';
 import htmlCSSImage from '../../images/html-css.svg';
@@ -34,6 +35,7 @@ class IndexPage extends React.Component {
             `graphql`,
           ]}
         />
+        <Header />
         <Hero image={heroImage} />
         <BlogContainer posts={posts} sectionTitle={`Blog`} />
         <TeachSection

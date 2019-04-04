@@ -11,6 +11,9 @@ const BlogWrapper = styled.div`
   h2 {
     margin-bottom: 2rem;
     display: flex;
+    @media (max-width: 575.98px) {
+      margin-top: 1rem;
+    }
     a {
       margin-left: auto;
       font-size: 1rem;

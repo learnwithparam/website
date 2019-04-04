@@ -1,10 +1,15 @@
 import React from 'react';
+import styled from '@emotion/styled';
 import { graphql } from 'gatsby';
 
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import Header from '../components/header';
 import BlogContainer from '../components/blogContainer';
+
+const StyledBlogContainer = styled.div`
+  background-color: #fafafa;
+`;
 
 class BlogIndex extends React.Component {
   render() {
@@ -31,7 +36,9 @@ class BlogIndex extends React.Component {
           ]}
         />
         <Header />
-        <BlogContainer posts={posts} />
+        <StyledBlogContainer>
+          <BlogContainer posts={posts} />
+        </StyledBlogContainer>
       </Layout>
     );
   }
