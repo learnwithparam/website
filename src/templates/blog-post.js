@@ -78,28 +78,32 @@ class BlogPostTemplate extends React.Component {
               dangerouslySetInnerHTML={{ __html: post.html }}
             />
 
-            <a href={editUrl} target="_blank" rel="noopener noreferrer">
-              Edit on GitHub
-            </a>
+            {!post.frontmatter.page && (
+              <>
+                <a href={editUrl} target="_blank" rel="noopener noreferrer">
+                  Edit on GitHub
+                </a>
 
-            <PreviousNextContainer>
-              {previous && (
-                <li>
-                  <h5>Previous Article</h5>
-                  <Link to={previous.fields.slug} rel="prev">
-                    ← {previous.frontmatter.title}
-                  </Link>
-                </li>
-              )}
-              {next && (
-                <li>
-                  <h5>Next Article</h5>
-                  <Link to={next.fields.slug} rel="next">
-                    {next.frontmatter.title} →
-                  </Link>
-                </li>
-              )}
-            </PreviousNextContainer>
+                <PreviousNextContainer>
+                  {previous && (
+                    <li>
+                      <h5>Previous Article</h5>
+                      <Link to={previous.fields.slug} rel="prev">
+                        ← {previous.frontmatter.title}
+                      </Link>
+                    </li>
+                  )}
+                  {next && (
+                    <li>
+                      <h5>Next Article</h5>
+                      <Link to={next.fields.slug} rel="next">
+                        {next.frontmatter.title} →
+                      </Link>
+                    </li>
+                  )}
+                </PreviousNextContainer>
+              </>
+            )}
           </Container>
         </BlogContainer>
       </Layout>
@@ -128,6 +132,7 @@ export const pageQuery = graphql`
         title
         date(formatString: "MMMM DD, YYYY")
         tags
+        page
       }
     }
   }
