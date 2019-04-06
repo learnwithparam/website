@@ -13,7 +13,7 @@ const GlobalStyles = () => (
         background-color: var(--bg);
       }
       a {
-        transition: all 0.3s ease-in;
+        transition: all 0.2s ease-in;
         color: var(--textLink);
         text-decoration: none;
         &:hover {

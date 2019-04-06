@@ -12,7 +12,7 @@ Currently I'm working full time as full stack developer in [jobbatical](https://
 
 > Skills matter more than your passport
 
-### Teaching and Beyond
+## Teaching and Beyond
 
 In 2019, I started teaching to local group in Tamilnadu through webinars. I have started passion for teaching code in tamil language. I am in progress to develop this site ([tamilcode.org](https://tamilcode.org)) to create more workshops, webinars and courses for cutting edge technologies in Tamil.
 

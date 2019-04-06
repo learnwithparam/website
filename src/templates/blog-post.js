@@ -28,7 +28,7 @@ const PreviousNextContainer = styled.ul`
   }
   li {
     border-radius: 6px;
-    transition: all 0.3s linear;
+    transition: all 0.2s ease-in;
     background-color: rgba(255, 255, 255, 0.9);
     box-shadow: rgba(54, 91, 155, 0.1) 0px 18px 35px,
       rgba(0, 0, 0, 0.07) 0px 8px 15px;
