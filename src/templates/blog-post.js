@@ -60,13 +60,12 @@ const GITHUB_REPO_NAME = 'website';
 class BlogPostTemplate extends React.Component {
   render() {
     const post = this.props.data.markdownRemark;
-    const siteTitle = this.props.data.site.siteMetadata.title;
     const { previous, next } = this.props.pageContext;
     const slug = post.fields.slug;
     const editUrl = `https://github.com/${GITHUB_USERNAME}/${GITHUB_REPO_NAME}/edit/master/content${slug}index.md`;
 
     return (
-      <Layout location={this.props.location} title={siteTitle}>
+      <Layout>
         <SEO title={post.frontmatter.title} description={post.excerpt} />
         <Header />
         <BlogContainer>
