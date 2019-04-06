@@ -8,7 +8,7 @@ I'm a software engineer and teacher. I was born in 1989 and grew up in Tirunelve
 
 I have been a software engineer since 2011. I worked on different domains mostly B2B sports analytics, B2C sports web and mobile products, education platforms, HR and Recruitment automation industry.
 
-Currently I'm working full time as full stack developer in [Jobbatical](https://jobbatical.com/?ref=learnwithparam). I am a strong believer of
+Currently I'm working full time as full stack developer in [jobbatical](https://jobbatical.com/?ref=learnwithparam). I am a strong believer of
 
 > Skills matter more than your passport
 
@@ -16,8 +16,8 @@ Currently I'm working full time as full stack developer in [Jobbatical](https://
 
 In 2019, I started teaching to local group in Tamilnadu through webinars. I have started passion for teaching code in tamil language. I am in progress to develop this site ([tamilcode.org](https://tamilcode.org)) to create more workshops, webinars and courses for cutting edge technologies in Tamil.
 
-[Learn with Param](https://learnwithparam.com) is another initiative, I am currently working on to teach coding through practical examples.
+[Learn with Param](/) is another initiative, I am currently working on to teach coding through practical examples.
 
-> P.S. Here are a few pages on this site that aren't included in the normal site navigation, but might interest you:
+> P.S. Here are a few pages on this site that aren't included in the normal site navigation, but might interest you
 >
 > - [Tech I learn and teach](/tech)
