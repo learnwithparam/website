@@ -13,7 +13,7 @@ const BlogPostContainer = styled.section`
   transform: translateY(-2px);
   margin-bottom: 1rem;
   @media (max-width: 575.98px) {
-    padding: 1rem;
+    padding: 1.5rem 1rem;
   }
   h3 {
     margin-top: 0;
