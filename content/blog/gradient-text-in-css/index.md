@@ -1,13 +1,14 @@
 ---
 title: Gradient text style using CSS
-date: '2019-04-03T09:24:16.132Z'
+date: '2019-04-03'
+modifiedDate: '2019-04-06'
 published: true
 tags: ['CSS Nuggets']
 ---
 
-Gradient backgrounds started the trend, nowadays companies have more gradient colors for many elements after gradient become widely supported on modern browsers.
+Gradient backgrounds started the trend, nowadays websites have more gradient colors for many elements after gradient become widely supported on modern browsers.
 
-One such aspect is styling text with gradient color. Let see it in action
+One such aspect is, styling text with gradient color. Let see it in action
 
 ```scss
 .gradient-text {
@@ -20,13 +21,11 @@ One such aspect is styling text with gradient color. Let see it in action
 }
 ```
 
-#### Browser compatibility
+### Browser compatibility
 
-- This is only supported in webkit based browsers, for other browsers, color property can be the fallback option to render color related to the gradient color.
-- `-webkit-text-fill-color` is a non standard CSS, so have fallback color property to support every browser without causing accessibility issues on non supported browsers
-
-#### Check out this solution in codepen
+- This is only supported in webkit based browsers. For other browsers, color property can be the fallback option to render color related to the gradient color.
+- `-webkit-text-fill-color` is a non standard CSS, so have fallback color property to support every browser without causing accessibility issues on non supported browsers.
 
 https://codepen.io/Param-Harrison/pen/pGgGxp
 
-Apart from IE, all major browser support this solution. Hope you learn a trick to show a text with gradient color 😋
+Apart from IE, all major browser support this solution. Hope you learn a trick to show a text with gradient color on your site 😋

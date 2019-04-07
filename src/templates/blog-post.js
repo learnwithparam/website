@@ -13,6 +13,9 @@ const BlogContainer = styled.div`
   .blog-content {
     margin: 2rem 0;
   }
+  .inline-space {
+    margin-left: 1rem;
+  }
   @media (max-width: 575.98px) {
     padding: 1rem 0;
   }
@@ -64,6 +67,12 @@ class BlogPostTemplate extends React.Component {
     const slug = post.fields.slug;
     const editUrl = `https://github.com/${GITHUB_USERNAME}/${GITHUB_REPO_NAME}/edit/master/content${slug}index.md`;
 
+    const editLink = (
+      <a href={editUrl} target="_blank" rel="noopener noreferrer">
+        Edit this post on Github
+      </a>
+    );
+
     return (
       <Layout>
         <SEO title={post.frontmatter.title} description={post.excerpt} />
@@ -71,7 +80,11 @@ class BlogPostTemplate extends React.Component {
         <BlogContainer>
           <Container>
             <h1>{post.frontmatter.title}</h1>
-            <small>{post.frontmatter.date}</small>
+            <small>
+              <strong>Updated on: </strong>
+              {post.frontmatter.modifiedDate || post.frontmatter.date}
+            </small>
+            <small className="inline-space">{editLink}</small>
 
             <div
               className="blog-content"
@@ -80,9 +93,7 @@ class BlogPostTemplate extends React.Component {
 
             {!post.frontmatter.page && (
               <>
-                <a href={editUrl} target="_blank" rel="noopener noreferrer">
-                  Edit on GitHub
-                </a>
+                {editLink}
 
                 <PreviousNextContainer>
                   {previous && (
@@ -131,6 +142,7 @@ export const pageQuery = graphql`
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")
+        modifiedDate(formatString: "MMMM DD, YYYY")
         tags
         page
       }

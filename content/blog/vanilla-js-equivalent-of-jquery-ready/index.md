@@ -1,13 +1,14 @@
 ---
 title: Vanilla JS equivalent for jQuery Ready
-date: '2019-04-01T18:44:46.156Z'
+date: '2019-04-01'
+modifiedDate: '2019-04-05'
 published: true
 tags: ["You don't need jQuery"]
 ---
 
 > jQuery has solved the problems of neutralizing side effects in JS rendering across different browsers for last decade. Now web browsers and rendering engines are much more smarter and increasingly support standard javascript API.
 
-Document ready function is the starting point for browser javascript for more than decades. With growing trends in modern web development and much better browser support for vanilla JS API's, We can replace reduce jQuery dependency on our sites.
+Document ready function is widely used feature from jQuery. With growing trends in modern web development and much better browser support for vanilla JS API's, We can replace or reduce jQuery dependency easily.
 
 ```javascript
 // Longer version in jQuery
