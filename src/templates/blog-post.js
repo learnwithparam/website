@@ -6,6 +6,7 @@ import { Container } from '../components/commonStyles';
 import Header from '../components/header';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
+import Share from '../components/share';
 
 const BlogContainer = styled.div`
   background: #fafafa;
@@ -57,11 +58,22 @@ const PreviousNextContainer = styled.ul`
   }
 `;
 
+const EditLink = styled.div``;
+
 const GITHUB_USERNAME = 'learnwithparam';
 const GITHUB_REPO_NAME = 'website';
 
 class BlogPostTemplate extends React.Component {
   render() {
+    const {
+      site: {
+        siteMetadata: {
+          siteUrl,
+          social: { twitter },
+          hashTags,
+        },
+      },
+    } = this.props.data;
     const post = this.props.data.markdownRemark;
     const { previous, next } = this.props.pageContext;
     const slug = post.fields.slug;
@@ -73,6 +85,8 @@ class BlogPostTemplate extends React.Component {
       </a>
     );
 
+    const shareUrl = siteUrl + slug;
+
     return (
       <Layout>
         <SEO title={post.frontmatter.title} description={post.excerpt} />
@@ -80,11 +94,15 @@ class BlogPostTemplate extends React.Component {
         <BlogContainer>
           <Container>
             <h1>{post.frontmatter.title}</h1>
-            <small>
-              <strong>Updated on: </strong>
-              {post.frontmatter.modifiedDate || post.frontmatter.date}
-            </small>
-            <small className="inline-space">{editLink}</small>
+            {!post.frontmatter.page && (
+              <>
+                <small>
+                  <strong>Updated on: </strong>
+                  {post.frontmatter.modifiedDate || post.frontmatter.date}
+                </small>
+                <small className="inline-space">{editLink}</small>
+              </>
+            )}
 
             <div
               className="blog-content"
@@ -93,8 +111,16 @@ class BlogPostTemplate extends React.Component {
 
             {!post.frontmatter.page && (
               <>
-                {editLink}
-
+                <Share
+                  title={post.frontmatter.title}
+                  description={post.excerpt}
+                  url={shareUrl}
+                  author={twitter}
+                  hashTags={hashTags}
+                >
+                  <strong>Share article: </strong>
+                </Share>
+                <EditLink>{editLink}</EditLink>
                 <PreviousNextContainer>
                   {previous && (
                     <li>
@@ -130,6 +156,11 @@ export const pageQuery = graphql`
       siteMetadata {
         title
         author
+        siteUrl
+        social {
+          twitter
+        }
+        hashTags
       }
     }
     markdownRemark(fields: { slug: { eq: $slug } }) {

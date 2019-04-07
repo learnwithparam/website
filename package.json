@@ -34,6 +34,7 @@
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
     "react-helmet": "^5.2.0",
+    "react-share": "^2.4.0",
     "react-typography": "^0.16.19",
     "sanitize.css": "^8.0.0",
     "typography": "^0.16.19"
