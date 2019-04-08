@@ -2,8 +2,8 @@ import Typography from 'typography';
 
 const typography = new Typography({
   baseFontSize: '18px',
-  baseLineHeight: 1.5,
-  headerLineHeight: 1.2,
+  baseLineHeight: 1.6,
+  headerLineHeight: 1.25,
   headerFontFamily: ['Bitter', 'serif'],
   bodyFontFamily: ['Rubik', 'sans-serif'],
   bodyColor: '#241c15',
@@ -15,7 +15,7 @@ const typography = new Typography({
       '-moz-osx-font-smoothing': 'grayscale',
     },
     body: {
-      'line-height': 1.5,
+      'line-height': 1.6,
     },
   }),
 });

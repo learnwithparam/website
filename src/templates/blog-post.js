@@ -58,6 +58,19 @@ const PreviousNextContainer = styled.ul`
   }
 `;
 
+const BlogContent = styled.div`
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  ul {
+    margin-bottom: 2rem;
+  }
+`;
+
 const EditLink = styled.div``;
 
 const GITHUB_USERNAME = 'learnwithparam';
@@ -104,7 +117,7 @@ class BlogPostTemplate extends React.Component {
               </>
             )}
 
-            <div
+            <BlogContent
               className="blog-content"
               dangerouslySetInnerHTML={{ __html: post.html }}
             />
