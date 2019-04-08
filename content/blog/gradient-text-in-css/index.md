@@ -3,7 +3,8 @@ title: Gradient text style using CSS
 date: '2019-04-03'
 modifiedDate: '2019-04-06'
 published: true
-tags: ['CSS Nuggets']
+series: 'CSS Nuggets'
+tags: ['CSS']
 ---
 
 Gradient backgrounds started the trend, nowadays websites have more gradient colors for many elements after gradient become widely supported on modern browsers.

@@ -7,7 +7,7 @@ module.exports = {
     social: {
       twitter: `learnwithparam`,
     },
-    hashTags: ['reactjs', 'graphql', 'javascript'],
+    hashTags: ['learnByCoding', '301DaysOfCode', '100DaysOfCode', 'CodeNewbie'],
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

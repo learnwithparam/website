@@ -3,7 +3,8 @@ title: Center align content vertically and horizontally in CSS
 date: '2019-04-04'
 modifiedDate: '2019-04-07'
 published: true
-tags: ['CSS Nuggets']
+series: 'CSS Nuggets'
+tags: ['CSS']
 ---
 
 Center aligning content vertically and horizontally are usual requirement in any website. There are several ways to achieve it using CSS.
