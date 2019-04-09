@@ -1,6 +1,10 @@
 const path = require(`path`);
 const { createFilePath } = require(`gatsby-source-filesystem`);
 
+const isPage = ({ frontmatter: { page } }) => {
+  return !!page;
+};
+
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions;
 
@@ -20,6 +24,7 @@ exports.createPages = ({ graphql, actions }) => {
               }
               frontmatter {
                 title
+                page
               }
             }
           }
@@ -35,9 +40,19 @@ exports.createPages = ({ graphql, actions }) => {
     const posts = result.data.allMarkdownRemark.edges;
 
     posts.forEach((post, index) => {
-      const previous =
-        index === posts.length - 1 ? null : posts[index + 1].node;
-      const next = index === 0 ? null : posts[index - 1].node;
+      let previous = index === posts.length - 1 ? null : posts[index + 1].node;
+      let next = index === 0 ? null : posts[index - 1].node;
+
+      /*
+      - Previous, Next shouldn't be a Page,
+      - Also page doesn't need previous and next
+      */
+      if (previous && isPage(previous)) previous = null;
+      if (next && isPage(next)) next = null;
+      if (isPage(post.node)) {
+        previous = null;
+        next = null;
+      }
 
       createPage({
         path: post.node.fields.slug,
