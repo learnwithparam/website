@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link, graphql } from 'gatsby';
 import styled from '@emotion/styled';
+import { DiscussionEmbed } from 'disqus-react';
 
 import { Container } from '../components/commonStyles';
 import Header from '../components/header';
@@ -26,6 +27,7 @@ const PreviousNextContainer = styled.ul`
   list-style: none;
   margin-left: 0;
   margin-top: 2rem;
+  margin-bottom: 2rem;
   display: flex;
   @media (max-width: 575.98px) {
     flex-direction: column;
@@ -90,6 +92,7 @@ class BlogPostTemplate extends React.Component {
     const post = this.props.data.markdownRemark;
     const { previous, next } = this.props.pageContext;
     const slug = post.fields.slug;
+    const title = post.frontmatter.title;
     const editUrl = `https://github.com/${GITHUB_USERNAME}/${GITHUB_REPO_NAME}/edit/master/content${slug}index.md`;
 
     const editLink = (
@@ -100,13 +103,18 @@ class BlogPostTemplate extends React.Component {
 
     const shareUrl = siteUrl + slug;
 
+    const disqusConfig = {
+      shortname: 'learnwithparam',
+      config: { identifier: slug, title },
+    };
+
     return (
       <Layout>
-        <SEO title={post.frontmatter.title} description={post.excerpt} />
+        <SEO title={title} description={post.excerpt} />
         <Header />
         <BlogContainer>
           <Container>
-            <h1>{post.frontmatter.title}</h1>
+            <h1>{title}</h1>
             {!post.frontmatter.page && (
               <>
                 <small>
@@ -125,7 +133,7 @@ class BlogPostTemplate extends React.Component {
             {!post.frontmatter.page && (
               <>
                 <Share
-                  title={post.frontmatter.title}
+                  title={title}
                   description={post.excerpt}
                   url={shareUrl}
                   author={twitter}
@@ -152,6 +160,7 @@ class BlogPostTemplate extends React.Component {
                     </li>
                   )}
                 </PreviousNextContainer>
+                <DiscussionEmbed {...disqusConfig} />
               </>
             )}
           </Container>
