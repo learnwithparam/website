@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'gatsby';
 import styled from '@emotion/styled';
+import { formatReadingTime } from '../utils/helpers';
 
 const BlogPostContainer = styled.section`
   padding: 2rem 4rem;
@@ -25,9 +26,12 @@ const BlogPostContainer = styled.section`
     margin: 0;
     color: #555;
   }
+  .sep {
+    margin: 0 0.4rem;
+  }
 `;
 
-const BlogPost = ({ title, slug, date, modifiedDate, excerpt }) => {
+const BlogPost = ({ title, slug, date, modifiedDate, timeToRead, excerpt }) => {
   return (
     <BlogPostContainer>
       <h3>
@@ -37,7 +41,9 @@ const BlogPost = ({ title, slug, date, modifiedDate, excerpt }) => {
         <small>
           <strong>Updated on: </strong>
           {modifiedDate || date}
+          <span className="sep">{` • `}</span>
         </small>
+        <small>{formatReadingTime(timeToRead)}</small>
       </p>
       <p>{excerpt}</p>
       <Link to={slug}>Continue reading →</Link>
@@ -51,6 +57,7 @@ BlogPost.propTypes = {
   date: PropTypes.any,
   modifiedDate: PropTypes.any,
   excerpt: PropTypes.string,
+  timeToRead: PropTypes.number,
 };
 
 export default BlogPost;

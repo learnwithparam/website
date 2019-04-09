@@ -45,6 +45,7 @@ const BlogContainer = ({ posts, sectionTitle }) => {
               date={node.frontmatter.date}
               modifiedDate={node.frontmatter.modifiedDate}
               excerpt={node.excerpt}
+              timeToRead={node.timeToRead}
             />
           );
         })}

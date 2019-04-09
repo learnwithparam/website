@@ -8,6 +8,7 @@ import Header from '../components/header';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import Share from '../components/share';
+import { formatReadingTime } from '../utils/helpers';
 
 const BlogContainer = styled.div`
   background: #fafafa;
@@ -15,8 +16,8 @@ const BlogContainer = styled.div`
   .blog-content {
     margin: 2rem 0;
   }
-  .inline-space {
-    margin-left: 1rem;
+  .sep {
+    margin: 0 0.4rem;
   }
   @media (max-width: 575.98px) {
     padding: 1rem 0;
@@ -120,8 +121,13 @@ class BlogPostTemplate extends React.Component {
                 <small>
                   <strong>Updated on: </strong>
                   {post.frontmatter.modifiedDate || post.frontmatter.date}
+                  <span className="sep">{` • `}</span>
                 </small>
-                <small className="inline-space">{editLink}</small>
+                <small>
+                  {formatReadingTime(post.timeToRead)}
+                  <span className="sep">{` • `}</span>
+                </small>
+                <small>{editLink}</small>
               </>
             )}
 
@@ -192,6 +198,7 @@ export const pageQuery = graphql`
       fields {
         slug
       }
+      timeToRead
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")
