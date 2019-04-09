@@ -3,7 +3,7 @@ import styled from '@emotion/styled';
 import { TextCenter } from '../components/commonStyles';
 
 const FooterContainer = styled(TextCenter)`
-  padding: 2rem;
+  padding: 2rem 0 1.5rem;
   p {
     margin: 0;
   }
@@ -14,9 +14,7 @@ const FooterContainer = styled(TextCenter)`
 
 const Footer = () => (
   <FooterContainer>
-    <p>
-      © Learn with Param. Made in <strong>Tallinn, Estonia</strong> {` ❤️`}
-    </p>
+    <p>Made with {` ❤️`} in Tallinn, Estonia</p>
   </FooterContainer>
 );
 
