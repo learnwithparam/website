@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from '@emotion/styled';
 import { Link } from 'gatsby';
+import { SocialIcon } from 'react-social-icons';
 
 const HeaderGrid = styled.div`
   display: flex;
@@ -13,6 +14,7 @@ const HeaderGrid = styled.div`
 
 const HeaderColumn = styled.div`
   display: flex;
+  align-items: center;
   a {
     &:hover {
       text-decoration: none;
@@ -56,6 +58,12 @@ const MenuItem = styled(Link)`
   }
 `;
 
+const socialIconStyle = {
+  width: `30px`,
+  height: `30px`,
+  marginLeft: `0.5rem`,
+};
+
 const TransparentHeader = () => (
   <HeaderGrid>
     <HeaderColumn>
@@ -71,6 +79,14 @@ const TransparentHeader = () => (
       <MenuItem to="/about" activeClassName="active">
         About
       </MenuItem>
+      <SocialIcon
+        title="Follow me on twitter"
+        alt="Twitter profile"
+        style={socialIconStyle}
+        target="_blank"
+        rel="noopener noreferrer"
+        url="https://twitter.com/learnwithparam"
+      />
     </HeaderColumnRight>
   </HeaderGrid>
 );
