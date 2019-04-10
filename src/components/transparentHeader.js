@@ -81,11 +81,11 @@ const TransparentHeader = () => (
       </MenuItem>
       <SocialIcon
         title="Follow me on twitter"
-        alt="Twitter profile"
+        alt="Twitter follow intent"
         style={socialIconStyle}
         target="_blank"
         rel="noopener noreferrer"
-        url="https://twitter.com/learnwithparam"
+        url="https://twitter.com/intent/follow?screen_name=learnwithparam"
       />
     </HeaderColumnRight>
   </HeaderGrid>
