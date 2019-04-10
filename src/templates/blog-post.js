@@ -17,10 +17,13 @@ const BlogContainer = styled.div`
     margin: 2rem 0;
   }
   .sep {
-    margin: 0 0.4rem;
+    margin: 0 0.25rem;
   }
   @media (max-width: 575.98px) {
     padding: 1rem 0;
+    .blog-content {
+      margin: 1rem 0;
+    }
   }
 `;
 
@@ -119,7 +122,6 @@ class BlogPostTemplate extends React.Component {
             {!post.frontmatter.page && (
               <>
                 <small>
-                  <strong>Updated on: </strong>
                   {post.frontmatter.modifiedDate || post.frontmatter.date}
                   <span className="sep">{` • `}</span>
                 </small>

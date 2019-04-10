@@ -27,7 +27,7 @@ const BlogPostContainer = styled.section`
     color: #555;
   }
   .sep {
-    margin: 0 0.4rem;
+    margin: 0 0.25rem;
   }
 `;
 
@@ -39,7 +39,6 @@ const BlogPost = ({ title, slug, date, modifiedDate, timeToRead, excerpt }) => {
       </h3>
       <p>
         <small>
-          <strong>Updated on: </strong>
           {modifiedDate || date}
           <span className="sep">{` • `}</span>
         </small>

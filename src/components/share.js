@@ -18,6 +18,10 @@ const ShareContainer = styled.section`
   padding: 0rem 0 2rem;
   strong {
     margin-right: 0.5rem;
+    @media (max-width: 575.98px) {
+      display: block;
+      margin-bottom: 0.5rem;
+    }
   }
   .SocialMediaShareButton {
     display: inline-block;
