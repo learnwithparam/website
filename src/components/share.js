@@ -26,15 +26,23 @@ const ShareContainer = styled.section`
   }
 `;
 
-const Share = ({ title, description, url, author, hashTags, children }) => {
+const Share = ({
+  title,
+  description,
+  url,
+  author,
+  hashTags,
+  size,
+  children,
+}) => {
   return (
     <ShareContainer>
       {children}
       <FacebookShareButton quote={title} url={url}>
-        <FacebookIcon size={42} round />
+        <FacebookIcon size={size} round />
       </FacebookShareButton>
       <LinkedinShareButton title={title} description={description} url={url}>
-        <LinkedinIcon size={42} round />
+        <LinkedinIcon size={size} round />
       </LinkedinShareButton>
       <TwitterShareButton
         title={title}
@@ -42,10 +50,10 @@ const Share = ({ title, description, url, author, hashTags, children }) => {
         hashtags={hashTags}
         url={url}
       >
-        <TwitterIcon size={42} round />
+        <TwitterIcon size={size} round />
       </TwitterShareButton>
       <WhatsappShareButton title={title} url={url}>
-        <WhatsappIcon size={42} round />
+        <WhatsappIcon size={size} round />
       </WhatsappShareButton>
     </ShareContainer>
   );
@@ -57,7 +65,12 @@ Share.propTypes = {
   url: PropTypes.string,
   author: PropTypes.string,
   hashTags: PropTypes.array,
+  size: PropTypes.number,
   children: PropTypes.any,
+};
+
+Share.defaultProps = {
+  size: 42,
 };
 
 export default Share;

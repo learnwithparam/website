@@ -57,7 +57,7 @@ const TeachList = styled.li`
       transform: none;
     }
   }
-  @media (max-width: 575.98px) {
+  @media (max-width: 767.98px) {
     flex-direction: column;
     padding: 1.2rem 1rem;
     margin: 0 0 1rem 0;
