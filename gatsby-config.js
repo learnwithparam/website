@@ -58,6 +58,9 @@ module.exports = {
               height: 400,
             },
           },
+          {
+            resolve: require.resolve('./plugins/remark-embedder'),
+          },
         ],
       },
     },

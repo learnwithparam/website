@@ -156,6 +156,8 @@ const App = () => {
 
 Now both the component will render fine and the Link will work properly.
 
+https://codesandbox.io/s/9j8l8325qy
+
 Thats all folks, you have already completed the part 1 of Deep dive into React Router series. Hope you enjoyed and learned few things for your next big react app 🤗
 
 You can checkout the codebase for this series [here](https://github.com/learnwithparam/react-router-series) and the code for this section [here](https://github.com/learnwithparam/react-router-series/commit/3db2531748a6f314f108c4b1024118c2d89e41a3)
