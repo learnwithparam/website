@@ -1,5 +1,5 @@
 ---
-title: Basic Routing in React using React Router
+title: Basic routing in React using React Router
 date: '2019-04-10'
 modifiedDate: '2019-04-10'
 published: true
@@ -7,7 +7,7 @@ series: 'Deep dive into React Router'
 tags: ['React', 'React Router']
 ---
 
-React is widely used library for client side web applications. In any web applications, there will be multiple pages. Routing the URL properly and load different pages based on route parameters is a general requirement.
+React is widely used library for client side web applications. In any web applications, there will be multiple pages. routing the URL properly and load different pages based on route parameters is a general requirement.
 
 There is an awesome npm package which takes all the complexity to serve the purpose of routing in React. `react-router-dom` is one of the widely used react library.
 
@@ -27,7 +27,7 @@ import React from 'react';
 const App = () => {
   return (
     <section className="App">
-      <h1>React Routing Example</h1>
+      <h1>React routing Example</h1>
     </section>
   );
 };
@@ -58,9 +58,9 @@ const AboutPage = () => {
 
 Before diving deep into react router code, First lets understand, what are all needed for routing a page in react application.
 
-- There will be links to navigate between pages
-- Define each Routes to the pages
-- Define a Router which will check whether the requested URL exist in the defined Routes
+- There will be links to navigate between pages.
+- Define Route to the pages. It define the URL path and component to load for the URL.
+- Define a Router which will check whether the requested URL exist in the defined Routes.
 
 Lets create the links and routes using react router's `Link` and `Route` components.
 
@@ -100,14 +100,14 @@ Here we are importing three components,
 > We will discuss in more details about different types of router later in this series.
 
 ```jsx
+// Link with URL
 <Router>
-  // Link with URL
   <Link to="/">Home</Link>
   <Link to="/about">About</Link>
 </Router>
 ```
 
-`Router` should be the parent component enclosing `Link` and `Route`. So that it can handle the Routing. If we place the Link or Route outside it won't work. It will throw an error.
+`Router` should be the parent component enclosing `Link` and `Route`. So that it can handle the routing. If we place the Link or Route outside it won't work. It will throw an error.
 
 `Link` accept `to` props which defines the URL it want to link.
 
@@ -127,9 +127,11 @@ If you go ahead and check whether our routes are working, it will work. But it h
 
 If you click about link, it will render both `IndexPage` and `AboutPage` component in its page. Why 🤔
 
-Because the path defined for about is `/about`. Here router traverses through the route definitions from top to bottom. First checks the Route with path `/` and the about URL have `/`, so it renders that component. And then it checks the next Route `/about`, that also matches, so it renders About component.
+Because the path defined for about is `/about`. Here router traverses through the route definitions from top to bottom. First checks the Route with path `/` and the about URL have `/`, so it renders IndexPage component first. And then it checks the next Route `/about`, that also matches, so it renders AboutPage component.
 
-How to match exact route? Its very simple, the question itself have the answer 😎. Use `exact` props in Route.
+#### How to match exact route?
+
+Its very simple, the question itself have the answer 😎. Use `exact` props in Route.
 
 ```jsx{9-10}
 ...
@@ -156,4 +158,4 @@ Now both the component will render fine and the Link will work properly.
 
 Thats all folks, you have already completed the part 1 of Deep dive into React Router series. Hope you enjoyed and learned few things for your next big react app 🤗
 
-You can checkout the codebase for this series [here](https://github.com/learnwithparam/react-router-series) and the codebase for this section [here](https://github.com/learnwithparam/react-router-series/commit/3db2531748a6f314f108c4b1024118c2d89e41a3)
+You can checkout the codebase for this series [here](https://github.com/learnwithparam/react-router-series) and the code for this section [here](https://github.com/learnwithparam/react-router-series/commit/3db2531748a6f314f108c4b1024118c2d89e41a3)
