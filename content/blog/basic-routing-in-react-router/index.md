@@ -18,7 +18,7 @@ Lets create two simple pages
 - Home page (`/`)
 - About page (`/about`)
 
-Create a simple react app using `create-react-app`.
+Create a simple react app using `create-react-app` CLI. Its very easy with npx - `npx create-react-app my-react-app`
 
 ```jsx
 // App.js
@@ -62,7 +62,7 @@ Before diving deep into react router code, First lets understand, what are all n
 - Define Route to the pages. It define the URL path and component to load for the URL.
 - Define a Router which will check whether the requested URL exist in the defined Routes.
 
-Lets create the links and routes using react router's `Link` and `Route` components.
+Lets create the links and routes using react router's `Link` and `Route` components. First install the package `yarn add react-router-dom`.
 
 ```jsx{3,9-14}
 // App.js
