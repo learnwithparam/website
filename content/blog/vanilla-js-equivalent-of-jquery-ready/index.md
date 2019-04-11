@@ -3,7 +3,6 @@ title: Vanilla JS equivalent for jQuery Ready
 date: '2019-04-01'
 modifiedDate: '2019-04-05'
 published: true
-series: "You don't need jQuery"
 tags: ['jQuery', 'javascript']
 ---
 
