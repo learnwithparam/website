@@ -56,7 +56,7 @@ https://codesandbox.io/s/yq6onnlj4v
   https://example.com/
   https://example.com/about
 */
-import { HashRouter as Router } from 'react-router-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
 ```
 
 - The widely popular router and a router for modern browsers which user HTML5 pushState API. (i.e., `pushState`, `replaceState` and `popState` API).
