@@ -27,7 +27,7 @@ function SEO({ description, lang, meta, keywords, title }) {
   );
 
   const metaDescription = description || site.siteMetadata.description;
-  const bannerImage = `${siteUrl}/banner.svg`;
+  const bannerImage = `${site.siteMetadata.siteUrl}/banner.svg`;
 
   return (
     <Helmet
