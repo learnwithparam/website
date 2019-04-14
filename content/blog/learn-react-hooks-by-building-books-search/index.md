@@ -12,11 +12,12 @@ Lets build a simple books search page using google books API in react. While dev
 This will be a multipart series.
 
 1. Basic books search page using react and google API
-2. Refactoring the code to separate components and state management
-3. Error Handling and loading state for the application
+2. Error Handling and loading state for the application
+3. Refactoring the code to separate components and state management
 4. Create book detail page with routing using react router
 5. Styling the page with CSS Modules
-6. Testing the app using jest and other kids
+6. Lazy loading components and pages
+7. Testing the app using jest and other kids
 
 ## React app setup
 
