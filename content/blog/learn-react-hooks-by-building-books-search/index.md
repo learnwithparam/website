@@ -1,5 +1,5 @@
 ---
-title: Learn by building a book search app using react and its siblings, Part 1
+title: Hooked with React, Part 1 - Learn by building a book search app using react and its siblings
 date: '2019-04-14'
 modifiedDate: '2019-04-14'
 published: true
