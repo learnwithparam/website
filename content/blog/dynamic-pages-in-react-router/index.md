@@ -7,7 +7,7 @@ series: 'Deep dive into React Router'
 tags: ['React', 'React Router']
 ---
 
-In [part 1](/blog/basic-routing-in-react-router/), we learnt how to create basic static pages in react router. Now we are going to learn how to create dynamic URLs in react router.
+In [part 1](/blog/basic-routing-in-react-router/), we learned how to create basic static pages in react router. Now we are going to learn how to create dynamic URLs in react router.
 
 We are going to create two routes,
 
