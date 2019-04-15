@@ -205,6 +205,8 @@ const UserPage = ({ match, location }) => {
 ...
 ```
 
+https://codesandbox.io/s/p3ozwy018j
+
 ```jsx
 // Object destructuring in JavaScript
 const {
