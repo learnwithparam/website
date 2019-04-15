@@ -61,9 +61,9 @@ const App = () => {
 ...
 ```
 
-We have created a link to users page and also the the route definition for users page along with its associated component (`UsersPage`).
+We have created a link to users page and also the route definition for users page along with its associated component (`UsersPage`).
 
-Lets add links to each users in the UsersPage (`/user/1`, `/user/2`, `/user/3`)
+Lets add links to each user in the UsersPage (`/user/1`, `/user/2`, `/user/3`)
 
 ```jsx
 // userId will be Array index + 1
