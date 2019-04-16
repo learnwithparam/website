@@ -3,6 +3,7 @@ title: Scale elements on hover using CSS
 date: '2019-04-02'
 modifiedDate: '2019-04-06'
 published: true
+page: false
 series: 'CSS Nuggets'
 tags: ['CSS']
 ---

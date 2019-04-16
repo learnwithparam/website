@@ -9,6 +9,8 @@ exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions;
 
   const blogPost = path.resolve(`./src/templates/blog-post.js`);
+  const blogList = path.resolve(`./src/templates/blog-list.js`);
+
   return graphql(
     `
       {
@@ -61,6 +63,26 @@ exports.createPages = ({ graphql, actions }) => {
           slug: post.node.fields.slug,
           previous,
           next,
+        },
+      });
+    });
+
+    // Create blog post list pages
+    const postsWithoutPage = posts.filter(post => {
+      return !isPage(post.node);
+    });
+    const postsPerPage = 4;
+    const numPages = Math.ceil(postsWithoutPage.length / postsPerPage);
+
+    Array.from({ length: numPages }).forEach((_, i) => {
+      createPage({
+        path: i === 0 ? `/blog` : `/blog/${i + 1}`,
+        component: blogList,
+        context: {
+          limit: postsPerPage,
+          skip: i * postsPerPage,
+          numPages,
+          currentPage: i + 1,
         },
       });
     });

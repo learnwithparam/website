@@ -25,7 +25,7 @@ function getUrl(string) {
 
 function getCodeSandboxHTML(string) {
   const iframeUrl = string.replace('/s/', '/embed/');
-  return `<iframe src="${iframeUrl}" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"></iframe>`;
+  return `<iframe class="iframe-embed" src="${iframeUrl}" style="width:100%; height:400px; border:0; border-radius: 4px; overflow:hidden;"></iframe>`;
 }
 
 module.exports = getCodeSandboxHTML;
