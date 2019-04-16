@@ -159,6 +159,10 @@ pre[data-line] {
   .gatsby-highlight {
     margin: 2rem -1rem;
   }
+  .iframe-embed {
+    margin: 0 -1rem;
+    min-width: calc(100% + 2rem);
+  }
 }
 
 .gatsby-highlight pre[class*='language-'] {
