@@ -3,6 +3,7 @@ title: Dynamic pages in react router
 date: '2019-04-15'
 modifiedDate: '2019-04-15'
 published: true
+page: false
 series: 'Deep dive into React Router'
 tags: ['React', 'React Router']
 ---

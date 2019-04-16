@@ -3,6 +3,7 @@ title: Basic routing in React using React Router
 date: '2019-04-10'
 modifiedDate: '2019-04-10'
 published: true
+page: false
 series: 'Deep dive into React Router'
 tags: ['React', 'React Router']
 ---

@@ -3,6 +3,7 @@ title: Hooked with React, Part 1 - Learn by building a book search app using rea
 date: '2019-04-14'
 modifiedDate: '2019-04-14'
 published: true
+page: false
 series: 'Hooked with react'
 tags: ['React', 'React Hooks']
 ---

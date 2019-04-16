@@ -3,6 +3,7 @@ title: Different types of routers in react router
 date: '2019-04-12'
 modifiedDate: '2019-04-12'
 published: true
+page: false
 series: 'Deep dive into React Router'
 tags: ['React', 'React Router']
 ---
