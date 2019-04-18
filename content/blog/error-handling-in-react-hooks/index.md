@@ -8,7 +8,7 @@ series: 'Hooked with react'
 tags: ['React', 'React Hooks']
 ---
 
-In [part 1](/blog/learn-react-hooks-by-building-books-search/), we created the books search react app. But we didn't handled any errors or have any loading state before fetching the data from API.
+In [part 1](/blog/learn-react-hooks-by-building-books-search/), we created the books search react app. But we didn't handle any errors or have any loading state before fetching the data from API.
 
 In this part, we will see
 
@@ -168,7 +168,9 @@ return (
 ...
 ```
 
-That works, we have shown the loading state when API fetches and shows the searched books after APi finished fetching and loading completes.
+https://codesandbox.io/s/48j0pqr8w9
+
+That works, we have shown the loading state when API fetches and shows the searched books after API finished fetching and loading completes.
 
 Lets add a simple HTML validation to not allow empty string value,
 
@@ -185,8 +187,6 @@ Lets add a simple HTML validation to not allow empty string value,
 Thats it folks, we have successfully implemented loading and error state for our books search app.
 
 https://codesandbox.io/s/n47kmr7m9j
-
-> In order to check how the error message shows up, remove `required` from input element and click on the button without inputting any text. check this [codesandbox](https://codesandbox.io/s/48j0pqr8w9).
 
 Next steps in our series,
 
