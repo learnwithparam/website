@@ -27,6 +27,7 @@ exports.createPages = ({ graphql, actions }) => {
               frontmatter {
                 title
                 page
+                series
               }
             }
           }
@@ -63,6 +64,7 @@ exports.createPages = ({ graphql, actions }) => {
           slug: post.node.fields.slug,
           previous,
           next,
+          series: post.node.frontmatter.series || '',
         },
       });
     });

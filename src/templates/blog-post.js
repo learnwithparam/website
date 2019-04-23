@@ -181,7 +181,7 @@ class BlogPostTemplate extends React.Component {
 export default BlogPostTemplate;
 
 export const pageQuery = graphql`
-  query BlogPostBySlug($slug: String!) {
+  query BlogPostBySlug($slug: String!, $series: String) {
     site {
       siteMetadata {
         title
@@ -207,6 +207,29 @@ export const pageQuery = graphql`
         modifiedDate(formatString: "MMMM DD, YYYY")
         tags
         page
+      }
+    }
+    allMarkdownRemark(
+      sort: { fields: [frontmatter___date], order: ASC }
+      filter: {
+        frontmatter: {
+          published: { eq: true }
+          page: { ne: true }
+          series: { eq: $series }
+        }
+      }
+    ) {
+      edges {
+        node {
+          fields {
+            slug
+          }
+          frontmatter {
+            date(formatString: "MMMM DD, YYYY")
+            modifiedDate(formatString: "MMMM DD, YYYY")
+            title
+          }
+        }
       }
     }
   }
