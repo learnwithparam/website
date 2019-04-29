@@ -12,7 +12,7 @@ Until [part 2](/blog/error-handling-in-react-hooks/), we have created a book sea
 
 We have written the whole app in `App.js`. Its still a small example, so there is no real need to split it into folders. This post will just showcase how to split the large applications without causing mess to debug later on.
 
-There is no common best practices for folder structure, it depends mainly on two factors
+There are no common best practices for folder structure, it depends mainly on two factors
 
 - How big is the project?
 - How large is your team?
@@ -26,7 +26,7 @@ My personal opinion is to keep it simple, flat and scale only when you need. You
 
 Lets move on to the code,
 
-In out books search application, we can create these components
+In our books search application, we can create these components
 
 - BookSearchForm
 - Loader

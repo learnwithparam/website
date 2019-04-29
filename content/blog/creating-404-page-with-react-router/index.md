@@ -1,7 +1,7 @@
 ---
 title: Creating 404 page in react using React Router
-date: '2019-04-26'
-modifiedDate: '2019-04-26'
+date: '2019-04-30'
+modifiedDate: '2019-04-30'
 published: false
 page: false
 series: 'Deep dive into React Router'
