@@ -21,7 +21,7 @@ Its also helpful to keep track of things when you get reply through threads.
 
 ## Daily or weekly standups
 
-Depends on the nature of work, frequency of standups can be implemented. Standups usually help to ask and offer help among your team members. It helps us to see what others are working on and how it will help overall team goals. It will help to find out any misalignment on task as early as possible and avoid surprises.
+Depends on the nature of work, frequency of standups can be implemented. Standups usually help to ask and offer help to your team members. It helps us to see what others are working on and how it will help overall team goals. It will help to find out any misalignment on task as early as possible and avoid surprises.
 
 ## Discussion threads for rapid decision making
 
@@ -78,6 +78,6 @@ A company or team wide roadmap quarter by quarter with added transparency on wha
 
 Standups help the close teams to get more details on what others are doing and how it impacts the overall team goal. Whereas microblogging with updates about win across different team helps to motivate other teams and also give overall updates on the direction company and independent teams are going forward.
 
-These are some of the techniques to communicate better and collaborate as a team. There are several techniques which can be adapted at different stages of a company. Overall, these are just the techniques. How to effectively use it for our work force depends on trial and error.
+These are some of the techniques to communicate better and collaborate as a team. There are several techniques which can be adapted at different stages of a company. Overall, these are just the techniques. How to effectively use it for our workforce depends on trial and error.
 
 Hope this helps to understand different ways of effective communication in a team.
