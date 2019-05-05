@@ -5,7 +5,7 @@ modifiedDate: '2019-05-05'
 published: true
 page: false
 series: Process with Param
-tags: ['Process', 'Product Management']
+tags: ['Process', 'UI and UX design']
 ---
 
 UI and UX design skills are overlooked by developers, especially in large organizations. It's one of the important skills to build better products and help product teams with efficient feedbacks early on the UI and UX designs.
@@ -37,6 +37,6 @@ Developers are the first set of users who look at the design early before taking
 - Spacing and sizing for different screens
 - Colors, how to use colors properly in different UI context
 - Readability and accessibility best practices
-- Images and icons usage As more and more designs are images and icons heavy nowadays, you should learn best practices in how to utilize different icons, icons fonts and image contrast, image colors etc.
+- Images and icons usage. As more and more designs are images and icons heavy nowadays, you should learn best practices in how to utilize different icons, icons fonts and image contrast, image colors etc.
 
 Hope this helps you learn about how to contribute better and give feedback early on in the design process as a developer 😎
