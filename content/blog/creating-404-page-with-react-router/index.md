@@ -8,7 +8,7 @@ series: 'Deep dive into React Router'
 tags: ['React', 'React Router']
 ---
 
-We have learned how to create dynamic URL in react router and also we learned how to handle query params in react router and pass those values to the page component.
+We have learned how to create [dynamic URL in react router](/blog/dynamic-pages-in-react-router/) and also we learned how to handle [query params in react router](/blog/how-to-handle-query-params-in-react-router/) and pass those values to the page component in our previous posts.
 
 In this part, we will learn how to show a 404 page if there is no route matching the URL.
 
