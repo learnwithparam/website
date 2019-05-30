@@ -6,7 +6,7 @@ import { Container } from '../components/commonStyles';
 const FooterContainer = styled(Container)`
   display: flex;
   justify-content: space-between;
-  padding: 2rem 2rem 1.5rem;
+  padding: 2rem 2rem 1rem;
   p {
     margin: 0 0 0.5rem 0;
   }
@@ -19,6 +19,7 @@ const FooterContainer = styled(Container)`
 `;
 
 const LinksContainer = styled.div`
+  display: flex;
   a {
     margin: 0 0.25rem;
   }
