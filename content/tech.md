@@ -34,8 +34,8 @@ This will be ever changing based on trends in web and mobile development space
   - tailwind.css
   - Bootstrap
 - Mobile development
-  - Flutter (Dart)
   - React Native
+  - Flutter (Dart)
 - Docker
 
 ### Interested in learning

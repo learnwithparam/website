@@ -7,7 +7,7 @@ const typography = new Typography({
   headerFontFamily: ['Bitter', 'serif'],
   bodyFontFamily: ['Rubik', 'sans-serif'],
   bodyColor: '#241c15',
-  includeNormalize: false,
+  includeNormalize: true,
   blockMarginBottom: `1rem`,
   overrideStyles: () => ({
     html: {

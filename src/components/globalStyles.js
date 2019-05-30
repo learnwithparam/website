@@ -1,5 +1,4 @@
 import React from 'react';
-import sanitizeCSS from 'sanitize.css';
 import { Global, css } from '@emotion/core';
 
 import prismCSS from './../styles/prism.css';
@@ -7,7 +6,6 @@ import prismCSS from './../styles/prism.css';
 const GlobalStyles = () => (
   <Global
     styles={css`
-      ${sanitizeCSS}
       ${prismCSS}
       body {
         background-color: var(--bg);
