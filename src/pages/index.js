@@ -14,8 +14,9 @@ import cssInJSImage from '../../images/css-in-js.svg';
 import gatsbyImage from '../../images/gatsby.svg';
 import graphQLImage from '../../images/graphql.svg';
 import javascriptImage from '../../images/javascript.svg';
-import flutterImage from '../../images/flutter.svg';
+import nativeImage from '../../images/native.svg';
 import reactImage from '../../images/react.svg';
+import djangoImage from '../../images/django.svg';
 
 class IndexPage extends React.Component {
   render() {
@@ -33,6 +34,7 @@ class IndexPage extends React.Component {
             `redux and mobx`,
             `learn with param`,
             `graphql`,
+            `django`,
           ]}
         />
         <Header />
@@ -68,14 +70,19 @@ class IndexPage extends React.Component {
               image: cssInJSImage,
             },
             {
-              title: `Flirting with Flutter`,
-              description: `Why flutter? Aren't react developers choose react native for mobile development? Well, I strongly believe in Horses for the Courses. Web and mobile frameworks requires different strategies. I like flutter for several reason, but the main one is, It helps me to learn good things from non JavaScript world. After all, Monopoly is bad, no?! 😎`,
-              image: flutterImage,
+              title: `Flirting with Native`,
+              description: `I use both react native and flutter for mobile development, I love both and felt flutter is better in some aspects. But so far, I have released only react native apps to production. Love to learn more and teach more in mobile development through React Native and flutter 😎`,
+              image: nativeImage,
             },
             {
               title: `Gatsby Party`,
               description: `Isn't Gatsby belongs to React ecosystem? Yes it does. But I want to keep a special mention for this awesome framework. Gatsby along with headless CMS will replace a lot of traditional decades old websites very soon. Oh boy, this is just a leaf out of whole Gatsby plant, I can't wait to see when the plants becomes a beautiful garden.`,
               image: gatsbyImage,
+            },
+            {
+              title: `Django++ for rapid prototyping`,
+              description: `I believe in horses for the courses, if there is a requirement for rapid prototyping for basic rest API or website. I prefer Python / Django over Javascript based stack. After all, tools are chosen based on what we want to accomplish? 😊`,
+              image: djangoImage,
             },
           ]}
         />
