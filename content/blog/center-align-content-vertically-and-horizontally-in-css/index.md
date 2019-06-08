@@ -4,7 +4,6 @@ date: '2019-04-04'
 modifiedDate: '2019-04-07'
 published: true
 page: false
-series: 'CSS Nuggets'
 tags: ['CSS']
 ---
 
