@@ -9,11 +9,11 @@
     "@emotion/styled": "^10.0.11",
     "@weknow/gatsby-remark-codepen": "^0.1.0",
     "disqus-react": "^1.0.5",
-    "gatsby": "^2.8.5",
+    "gatsby": "^2.8.6",
     "gatsby-image": "^2.1.2",
     "gatsby-plugin-catch-links": "^2.0.15",
     "gatsby-plugin-emotion": "^4.0.7",
-    "gatsby-plugin-feed": "^2.2.2",
+    "gatsby-plugin-feed": "^2.2.3",
     "gatsby-plugin-google-analytics": "^2.0.20",
     "gatsby-plugin-manifest": "^2.1.1",
     "gatsby-plugin-offline": "^2.1.1",
@@ -24,7 +24,7 @@
     "gatsby-remark-copy-linked-files": "^2.0.13",
     "gatsby-remark-external-links": "^0.0.4",
     "gatsby-remark-images": "^3.0.14",
-    "gatsby-remark-prismjs": "^3.2.10",
+    "gatsby-remark-prismjs": "^3.2.11",
     "gatsby-remark-responsive-iframe": "^2.1.1",
     "gatsby-remark-smartypants": "^2.0.9",
     "gatsby-source-filesystem": "^2.0.38",
@@ -43,7 +43,7 @@
   "devDependencies": {
     "husky": "^2.4.0",
     "lint-staged": "^8.2.0",
-    "prettier": "^1.17.1",
+    "prettier": "^1.18.2",
     "unist-util-visit": "^1.4.1"
   },
   "keywords": [
