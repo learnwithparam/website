@@ -4,7 +4,6 @@ date: '2019-04-29'
 modifiedDate: '2019-04-29'
 published: true
 page: false
-series: Process with Param
 tags: ['Process', 'Product Management']
 ---
 

@@ -4,7 +4,6 @@ date: '2019-05-23'
 modifiedDate: '2019-05-30'
 published: true
 page: false
-series: Process with Param
 tags: ['Process', 'Working Remotely']
 ---
 

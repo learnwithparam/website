@@ -4,7 +4,6 @@ date: '2019-05-05'
 modifiedDate: '2019-05-05'
 published: true
 page: false
-series: Process with Param
 tags: ['Process', 'UI and UX design']
 ---
 
