@@ -11,7 +11,6 @@ import Share from '../components/share';
 import { formatReadingTime } from '../utils/helpers';
 
 const BlogContainer = styled.div`
-  background: #fafafa;
   padding: 2rem 0;
   .blog-content {
     margin: 2rem 0;
@@ -94,9 +93,10 @@ class BlogPostTemplate extends React.Component {
       },
     } = this.props.data;
     const post = this.props.data.markdownRemark;
+    const seriesArray = this.props.data.allMarkdownRemark.edges;
     const { previous, next } = this.props.pageContext;
     const slug = post.fields.slug;
-    const title = post.frontmatter.title;
+    const { title, series } = post.frontmatter;
     const editUrl = `https://github.com/${GITHUB_USERNAME}/${GITHUB_REPO_NAME}/edit/master/content${slug}index.md`;
 
     const editLink = (
@@ -111,6 +111,11 @@ class BlogPostTemplate extends React.Component {
       shortname: 'learnwithparam',
       config: { identifier: slug, title },
     };
+
+    const currentPartIndex = seriesArray.findIndex(part => {
+      if (part.node.fields.slug === slug) return true;
+      return false;
+    });
 
     return (
       <Layout>
@@ -132,6 +137,35 @@ class BlogPostTemplate extends React.Component {
                 <small>{editLink}</small>
               </>
             )}
+
+            {seriesArray.length ? (
+              <blockquote>
+                <p>
+                  This is part {currentPartIndex + 1} of {seriesArray.length} in
+                  my series on "<strong>{series}</strong>"
+                </p>
+                <ul>
+                  {seriesArray.map((part, index) => {
+                    const partNode = part.node;
+                    return (
+                      <li key={index}>
+                        Part {index + 1}:{' '}
+                        {currentPartIndex === index ? (
+                          <span>
+                            {partNode.frontmatter.title} (
+                            <strong>this post</strong>)
+                          </span>
+                        ) : (
+                          <a href={partNode.fields.slug}>
+                            {partNode.frontmatter.title}
+                          </a>
+                        )}
+                      </li>
+                    );
+                  })}
+                </ul>
+              </blockquote>
+            ) : null}
 
             <BlogContent
               className="blog-content"
@@ -207,6 +241,7 @@ export const pageQuery = graphql`
         modifiedDate(formatString: "MMMM DD, YYYY")
         tags
         page
+        series
       }
     }
     allMarkdownRemark(
