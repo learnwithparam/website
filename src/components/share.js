@@ -27,6 +27,7 @@ const ShareContainer = styled.section`
     display: inline-block;
     cursor: pointer;
     margin-right: 0.5rem;
+    vertical-align: middle;
   }
 `;
 

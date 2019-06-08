@@ -72,7 +72,7 @@ const BlogContent = styled.div`
   h6,
   p,
   ul {
-    margin-bottom: 1rem;
+    margin-bottom: 1.2rem;
   }
 `;
 

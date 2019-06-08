@@ -22,7 +22,7 @@ const GlobalStyles = () => (
         border-left: 5px solid rgb(87, 62, 222);
         background: rgb(249, 251, 255);
         margin: 2rem 0;
-        padding: 2rem 1.5rem;
+        padding: 2rem 1.5rem 1rem;
       }
     `}
   />

@@ -73,7 +73,7 @@ exports.createPages = ({ graphql, actions }) => {
     const postsWithoutPage = posts.filter(post => {
       return !isPage(post.node);
     });
-    const postsPerPage = 5;
+    const postsPerPage = 8;
     const numPages = Math.ceil(postsWithoutPage.length / postsPerPage);
 
     Array.from({ length: numPages }).forEach((_, i) => {
