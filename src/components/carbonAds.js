@@ -5,6 +5,10 @@ const CarbonAdsContainer = styled.section`
   display: flex;
   justify-content: center;
   padding-top: 1.5rem;
+  @media (max-width: 575.98px) {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
 `;
 
 const CarbonAdsWideContainer = styled(CarbonAdsContainer)`
