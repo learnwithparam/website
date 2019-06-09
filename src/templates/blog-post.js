@@ -140,7 +140,9 @@ class BlogPostTemplate extends React.Component {
                   url={shareUrl}
                   author={twitter}
                   hashTags={hashTags}
-                ></Share>
+                >
+                  <strong>Share: </strong>
+                </Share>
                 <div>
                   <small>
                     {post.frontmatter.modifiedDate || post.frontmatter.date}
@@ -202,7 +204,7 @@ class BlogPostTemplate extends React.Component {
                   author={twitter}
                   hashTags={hashTags}
                 >
-                  <strong>Share article: </strong>
+                  <strong>Share: </strong>
                 </Share>
                 <EditLink>{editLink}</EditLink>
                 <PreviousNextContainer>
