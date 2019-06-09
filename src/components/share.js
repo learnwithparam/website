@@ -28,6 +28,11 @@ const ShareContainer = styled.section`
     cursor: pointer;
     margin-right: 0.5rem;
     vertical-align: middle;
+    opacity: 0.8;
+    transition: all 0.2s linear;
+    &:hover {
+      opacity: 1;
+    }
   }
 `;
 
