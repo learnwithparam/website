@@ -2,7 +2,6 @@ import React from 'react';
 import { Global, css } from '@emotion/core';
 
 import prismCSS from './../styles/prism.css';
-import carbonAdsCSS from './../styles/carbon-ads.css';
 
 const GlobalStyles = () => (
   <Global
@@ -25,7 +24,6 @@ const GlobalStyles = () => (
         margin: 2rem 0;
         padding: 2rem 1.5rem 1rem;
       }
-      ${carbonAdsCSS}
     `}
   />
 );

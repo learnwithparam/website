@@ -7,6 +7,7 @@ import SEO from '../components/seo';
 import Header from '../components/header';
 import BlogContainer from '../components/blogContainer';
 import { Container } from '../components/commonStyles';
+import { CarbonAdsWide } from '../components/carbonAds';
 
 const StyledBlogContainer = styled.div`
   background-color: #fafafa;
@@ -56,6 +57,7 @@ class BlogIndex extends React.Component {
         />
         <Header />
         <StyledBlogContainer>
+          <CarbonAdsWide />
           <BlogContainer posts={posts} />
           <Container>
             <PrevNextPageContainer>

@@ -8,6 +8,8 @@ import Header from '../components/header';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import Share from '../components/share';
+import { CarbonAdsWide } from '../components/carbonAds';
+
 import { formatReadingTime } from '../utils/helpers';
 
 const BlogContainer = styled.div`
@@ -166,6 +168,8 @@ class BlogPostTemplate extends React.Component {
                 </ul>
               </blockquote>
             ) : null}
+
+            <CarbonAdsWide />
 
             <BlogContent
               className="blog-content"

@@ -4,7 +4,7 @@ import styled from '@emotion/styled';
 const CarbonAdsContainer = styled.section`
   display: flex;
   justify-content: center;
-  margin-top: 1rem;
+  padding-top: 1.5rem;
 `;
 
 const CarbonAdsWideContainer = styled(CarbonAdsContainer)`
