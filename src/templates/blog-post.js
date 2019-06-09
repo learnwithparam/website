@@ -169,7 +169,7 @@ class BlogPostTemplate extends React.Component {
               </blockquote>
             ) : null}
 
-            <CarbonAdsWide />
+            {!post.frontmatter.page && <CarbonAdsWide />}
 
             <BlogContent
               className="blog-content"
