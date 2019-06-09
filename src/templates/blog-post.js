@@ -14,6 +14,7 @@ import { formatReadingTime } from '../utils/helpers';
 
 const BlogContainer = styled.div`
   padding: 2rem 0;
+  background-color: #fcfcfc;
   .blog-content {
     margin: 2rem 0;
   }

@@ -26,6 +26,9 @@ const LinksContainer = styled.div`
   img {
     margin-bottom: 0;
   }
+  @media (max-width: 575.98px) {
+    justify-content: center;
+  }
 `;
 
 const socialIconStyle = {
