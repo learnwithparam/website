@@ -2,11 +2,13 @@ import React from 'react';
 import { Global, css } from '@emotion/core';
 
 import prismCSS from './../styles/prism.css';
+import carbonAdsCSS from './../styles/carbon-ads.css';
 
 const GlobalStyles = () => (
   <Global
     styles={css`
       ${prismCSS}
+      ${carbonAdsCSS}
       body {
         background-color: var(--bg);
       }
