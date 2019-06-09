@@ -11,7 +11,6 @@ import { StaticQuery, graphql } from 'gatsby';
 
 import GlobalStyles from './globalStyles';
 import Footer from './footer';
-import CarbonAds from './carbonAds';
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -26,7 +25,6 @@ const Layout = ({ children }) => (
     `}
     render={data => (
       <>
-        <CarbonAds />
         <GlobalStyles />
         {children}
         <Footer />

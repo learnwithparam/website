@@ -8,7 +8,6 @@ const GlobalStyles = () => (
   <Global
     styles={css`
       ${prismCSS}
-      ${carbonAdsCSS}
       body {
         background-color: var(--bg);
       }
@@ -26,6 +25,7 @@ const GlobalStyles = () => (
         margin: 2rem 0;
         padding: 2rem 1.5rem 1rem;
       }
+      ${carbonAdsCSS}
     `}
   />
 );
