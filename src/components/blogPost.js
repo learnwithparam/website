@@ -15,7 +15,7 @@ const BlogPostContainer = styled.section`
   @media (max-width: 575.98px) {
     padding: 1.5rem 1rem;
   }
-  h3 {
+  h2 {
     margin-top: 0;
     margin-bottom: 0.75rem;
     @media (max-width: 575.98px) {
@@ -24,7 +24,8 @@ const BlogPostContainer = styled.section`
   }
   small {
     margin: 0;
-    color: #555;
+    color: #828282;
+    font-size: 0.9rem;
   }
   .sep {
     margin: 0 0.25rem;
@@ -34,9 +35,9 @@ const BlogPostContainer = styled.section`
 const BlogPost = ({ title, slug, date, modifiedDate, timeToRead, excerpt }) => {
   return (
     <BlogPostContainer>
-      <h3>
+      <h2>
         <Link to={slug}>{title}</Link>
-      </h3>
+      </h2>
       <p>
         <small>
           {modifiedDate || date}

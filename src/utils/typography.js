@@ -1,12 +1,12 @@
 import Typography from 'typography';
 
 const typography = new Typography({
-  baseFontSize: '18px',
+  baseFontSize: '16px',
   baseLineHeight: 1.6,
   headerLineHeight: 1.25,
   headerFontFamily: ['Bitter', 'serif'],
   bodyFontFamily: ['Rubik', 'sans-serif'],
-  bodyColor: '#241c15',
+  bodyColor: '#3c3c3c',
   includeNormalize: true,
   blockMarginBottom: `1rem`,
   overrideStyles: () => ({

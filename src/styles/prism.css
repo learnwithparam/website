@@ -1,6 +1,5 @@
 :root {
   --pink: rgb(255, 167, 196);
-  --bg: #fff;
   --header: var(--pink);
   --textNormal: #222;
   --textTitle: #222;

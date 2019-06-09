@@ -17,6 +17,11 @@ const BlogContainer = styled.div`
   .blog-content {
     margin: 2rem 0;
   }
+  small {
+    margin: 0;
+    color: #828282;
+    font-size: 0.9rem;
+  }
   .sep {
     margin: 0 0.25rem;
   }
@@ -128,15 +133,26 @@ class BlogPostTemplate extends React.Component {
             <h1>{title}</h1>
             {!post.frontmatter.page && (
               <>
-                <small>
-                  {post.frontmatter.modifiedDate || post.frontmatter.date}
-                  <span className="sep">{` • `}</span>
-                </small>
-                <small>
-                  {formatReadingTime(post.timeToRead)}
-                  <span className="sep">{` • `}</span>
-                </small>
-                <small>{editLink}</small>
+                <Share
+                  title={title}
+                  description={post.excerpt}
+                  url={shareUrl}
+                  author={twitter}
+                  hashTags={hashTags}
+                ></Share>
+                <div>
+                  <small>
+                    {post.frontmatter.modifiedDate || post.frontmatter.date}
+                  </small>
+                  <small>
+                    <span className="sep">{` • `}</span>
+                    {formatReadingTime(post.timeToRead)}
+                  </small>
+                  <small>
+                    <span className="sep">{` • `}</span>
+                    {editLink}
+                  </small>
+                </div>
               </>
             )}
 

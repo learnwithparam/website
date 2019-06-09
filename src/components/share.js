@@ -15,7 +15,7 @@ import {
 
 const ShareContainer = styled.section`
   display: inline-block;
-  padding: 0rem 0 2rem;
+  padding: 0rem 0 1.5rem;
   strong {
     margin-right: 0.5rem;
     @media (max-width: 575.98px) {

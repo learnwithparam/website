@@ -7,9 +7,6 @@ const GlobalStyles = () => (
   <Global
     styles={css`
       ${prismCSS}
-      body {
-        background-color: var(--bg);
-      }
       a {
         transition: all 0.2s ease-in;
         color: var(--textLink);

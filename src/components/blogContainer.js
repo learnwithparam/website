@@ -8,20 +8,21 @@ import { Container, TextCenter } from '../components/commonStyles';
 
 const BlogWrapper = styled.div`
   padding: 2rem 0;
-  h2 {
-    margin-bottom: 2rem;
-    display: flex;
-    @media (max-width: 575.98px) {
-      margin-top: 1rem;
-    }
-    a {
-      margin-left: auto;
-      font-size: 1rem;
-      align-self: center;
-    }
-  }
   h3 {
     margin-top: 2rem;
+  }
+`;
+
+const SectionTitle = styled.h2`
+  margin-bottom: 2rem;
+  display: flex;
+  @media (max-width: 575.98px) {
+    margin-top: 1rem;
+  }
+  a {
+    margin-left: auto;
+    font-size: 1rem;
+    align-self: center;
   }
 `;
 
@@ -30,10 +31,10 @@ const BlogContainer = ({ posts, sectionTitle }) => {
     <BlogWrapper>
       <Container>
         {sectionTitle ? (
-          <h2>
+          <SectionTitle>
             {sectionTitle}
             <Link to="/blog">View all articles</Link>
-          </h2>
+          </SectionTitle>
         ) : null}
         {posts.map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug;
