@@ -188,7 +188,7 @@ Alright, we have done linking between the pages. Now we need to show details abo
 
 Here is the code for books detail page,
 
-- It uses `useEffect` react hooks to fetch the book detail only during page mounting. To know more about useEffect hook, check this official docs [here](https://reactjs.org/docs/hooks-effect.html)
+- It uses `useEffect` react hooks to call the book detail API only when the page mounts. To know more about useEffect hook, check this official docs [here](https://reactjs.org/docs/hooks-effect.html).
 
 ```js
 import React, { useState, useEffect } from 'react';
