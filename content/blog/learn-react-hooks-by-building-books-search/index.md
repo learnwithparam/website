@@ -15,11 +15,6 @@ This will be a multipart series.
 1. Basic books search page using react and google books API
 2. Error Handling and loading state for the application
 3. Refactoring the code to separate components
-4. Create book detail page with routing using react router
-5. Revisiting state management
-6. Styling the page with Emotion (styled components)
-7. Lazy loading components and pages
-8. Testing the app using jest and other kids
 
 ## React app setup
 

@@ -191,8 +191,12 @@ https://codesandbox.io/s/n47kmr7m9j
 Next steps in our series,
 
 - Refactoring the code to separate components
-- Talk more on state management
-- and many more with styling and testing
+
+It can be extended further with
+
+- talk more on state management
+- styling with emotion or styled components
+- and testing with jest
 
 Hope this series help you to build your next big react app 😅. Stay tuned for the next parts of the series 🤗
 

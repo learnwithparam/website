@@ -139,9 +139,7 @@ const Book = ({ book }) => {
       <div>
         <img
           alt={`${book.volumeInfo.title} book`}
-          src={`http://books.google.com/books/content?id=${
-            book.id
-          }&printsec=frontcover&img=1&zoom=1&source=gbs_api`}
+          src={`http://books.google.com/books/content?id=${book.id}&printsec=frontcover&img=1&zoom=1&source=gbs_api`}
         />
         <div>
           <h3>{book.volumeInfo.title}</h3>
@@ -186,9 +184,9 @@ return (
 
 https://codesandbox.io/s/rl20opm2l4
 
-Thats it folks, we have successfully split all our components. We can optimize it further by moving around states. Thats for next part.
+Thats it folks, we have successfully split all our components. We can optimize it further by moving around states.
 
-We will see,
+It can be further explored about
 
 - how to manage state and
 - Different ways to manage state (custom hooks, useReducer)

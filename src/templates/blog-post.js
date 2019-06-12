@@ -84,6 +84,11 @@ const BlogContent = styled.div`
   }
 `;
 
+const SeriesContainer = styled.blockquote`
+  box-shadow: rgba(54, 91, 155, 0.1) 0px 18px 35px,
+    rgba(0, 0, 0, 0.07) 0px 8px 15px;
+`;
+
 const EditLink = styled.div``;
 
 const GITHUB_USERNAME = 'learnwithparam';
@@ -160,7 +165,7 @@ class BlogPostTemplate extends React.Component {
             )}
 
             {seriesArray.length ? (
-              <blockquote>
+              <SeriesContainer>
                 <p>
                   This is part {currentPartIndex + 1} of {seriesArray.length} in
                   my series on "<strong>{series}</strong>"
@@ -185,7 +190,7 @@ class BlogPostTemplate extends React.Component {
                     );
                   })}
                 </ul>
-              </blockquote>
+              </SeriesContainer>
             ) : null}
 
             {!post.frontmatter.page && <CarbonAdsWide />}
