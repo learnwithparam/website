@@ -102,7 +102,7 @@ Add `react-router-dom` package and render the search page through routes
 yarn add react-router-dom
 ```
 
-```js{2,7-9,13-18}
+```js{2,7-8,11-16}
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
