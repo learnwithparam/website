@@ -184,12 +184,12 @@ return (
 
 https://codesandbox.io/s/rl20opm2l4
 
-Thats it folks, we have successfully split all our components. We can optimize it further by moving around states.
+Thats it folks, we have successfully split all our components. We can explore further with this app through
 
-It can be further explored about
-
-- how to manage state and
-- Different ways to manage state (custom hooks, useReducer)
-- why we are managing all state in App.js instead of the components itself in more detail
+- Creating books detail page using react router
+- Revisiting state management
+- Styling the page with Emotion (styled components)
+- Lazy loading components and pages
+- Testing the app using jest and other kids
 
 Checkout the codebase for this part 3 [here](https://github.com/learnwithparam/books-series-react-hooks/commit/e08570665b6954f30054ca6c4b3a09b15323ff12) and the whole series codebase can be referred [here](https://github.com/learnwithparam/books-series-react-hooks).
