@@ -6,7 +6,7 @@ import { Container } from '../components/commonStyles';
 const FooterContainer = styled(Container)`
   display: flex;
   justify-content: space-between;
-  padding: 2rem 2rem 1rem;
+  padding: 2rem 2rem 1.5rem;
   p {
     margin: 0 0 0.5rem 0;
   }
@@ -40,6 +40,17 @@ const Footer = () => (
   <FooterContainer>
     <p>Made with {` ❤️`} in Tallinn, Estonia</p>
     <LinksContainer>
+      <a
+        href="https://www.buymeacoffee.com/learnwithparam"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img
+          src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png"
+          alt="Buy Me A Coffee"
+          style={{ height: `30px` }}
+        />
+      </a>
       <a
         href="https://dev.to/paramharrison"
         target="_blank"
