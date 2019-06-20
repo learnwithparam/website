@@ -38,7 +38,7 @@ const Hero = ({ image }) => (
           <img src={image} alt="Param at Desk" />
         </HeroColumnImage>
         <HeroColumn>
-          <h4>{`Hi, I'm Param 👋`}</h4>
+          <h3>{`Hi, I'm Param 👋`}</h3>
           <p>
             I help people to learn web and mobile technologies through
             workshops, webinars and courses.

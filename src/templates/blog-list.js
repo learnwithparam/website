@@ -10,7 +10,7 @@ import { Container } from '../components/commonStyles';
 import { CarbonAdsWide } from '../components/carbonAds';
 
 const StyledBlogContainer = styled.div`
-  background-color: #fcfcfc;
+  background-color: #fdfdfd;
 `;
 
 const PrevNextPageContainer = styled.section`

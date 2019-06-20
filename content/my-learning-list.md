@@ -9,16 +9,16 @@ It contains the details of tech books I read and courses I take online.
 ### Current Books
 
 - [The Road to GraphQL](https://roadtoreact.com/course-details?courseId=THE_ROAD_TO_GRAPHQL) by Robin Wieruch
-- [Web Scalability for Startup Engineers](https://www.amazon.com/Scalability-Startup-Engineers-Artur-Ejsmont-ebook/dp/B00ZPS4KI0) by Artur Ejsmont
-- [Intercom On Starting Up](https://www.intercom.com/books/starting-up) by Intercom
 
-### Ongoing Courses
+### Courses
 
 - [Docker and Kubernetes: The Complete Guide](https://www.udemy.com/docker-and-kubernetes-the-complete-guide/) by Stephen Grider
 
 ### Next up
 
 - [The Manager's Path](https://www.amazon.com/Managers-Path-Leaders-Navigating-Growth-ebook/dp/B06XP3GJ7F/) by Camille Fournier
+- [Web Scalability for Startup Engineers](https://www.amazon.com/Scalability-Startup-Engineers-Artur-Ejsmont-ebook/dp/B00ZPS4KI0) by Artur Ejsmont
+- [Intercom On Starting Up](https://www.intercom.com/books/starting-up) by Intercom
 
 ### Recently completed Books
 
