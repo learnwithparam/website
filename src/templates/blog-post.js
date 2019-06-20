@@ -84,10 +84,7 @@ const BlogContent = styled.div`
   }
 `;
 
-const SeriesContainer = styled.blockquote`
-  box-shadow: rgba(54, 91, 155, 0.1) 0px 18px 35px,
-    rgba(0, 0, 0, 0.07) 0px 8px 15px;
-`;
+const SeriesContainer = styled.blockquote``;
 
 const EditLink = styled.div``;
 

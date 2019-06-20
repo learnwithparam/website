@@ -41,17 +41,6 @@ const Footer = () => (
     <p>Made with {` ❤️`} in Tallinn, Estonia</p>
     <LinksContainer>
       <a
-        href="https://www.buymeacoffee.com/learnwithparam"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <img
-          src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png"
-          alt="Buy Me A Coffee"
-          style={{ height: `30px` }}
-        />
-      </a>
-      <a
         href="https://dev.to/paramharrison"
         target="_blank"
         rel="noopener noreferrer"
