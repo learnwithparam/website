@@ -10,7 +10,7 @@ I have been a software engineer since 2011. I worked on different domains mostly
 
 Currently I'm working full time as full stack developer in [jobbatical](https://jobbatical.com/?ref=learnwithparam). I am a strong believer of
 
-> Skills matter more than your passport
+> Skills matter more than your passport.
 
 ## Teaching and Beyond
 
@@ -20,5 +20,4 @@ In 2019, I started teaching to local group in Tamilnadu through webinars. I have
 
 > P.S. Here are a few pages on this site that aren't included in the normal site navigation, but might interest you
 >
-> - [Tech I learn and teach](/tech) - My current preferred tech stack. It will be subjective and ever-changing based on interest, challenges and future scope.
-> - [My learning list](/my-learning-list) - Links to the books and courses I read and watch online 😎
+> - [Books I read](https://www.goodreads.com/user/show/96018434-paramanantham-harrison) - Links to the books I read or currently reading 😎
