@@ -5,7 +5,8 @@ modifiedDate: '2019-06-12'
 published: true
 page: false
 series: 'Hooked with react'
-tags: ['React', 'React Hooks']
+category: ['Series']
+tags: ['React', 'JavaScript']
 ---
 
 We have already created the books list page for our book search page. Now lets create another page for each book using react router.

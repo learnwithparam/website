@@ -5,7 +5,8 @@ modifiedDate: '2019-04-14'
 published: true
 page: false
 series: 'Hooked with react'
-tags: ['React', 'React Hooks']
+category: ['Series']
+tags: ['React', 'JavaScript']
 ---
 
 Lets build a simple books search page using google books API in react. While developing it, we will explore react hooks, css modules and testing in react application.

@@ -4,7 +4,8 @@ date: '2019-05-06'
 modifiedDate: '2019-05-12'
 published: true
 page: false
-tags: ['Open Source', 'Hacks & Tricks']
+category: ['Article']
+tags: ['Open Source', 'React']
 ---
 
 Every engineering team face problem of where to maintain documentation once team grows. We at [Jobbatical](https://jobbatical.com?ref=learnwithparam.com) faced similar problem and finally comes to a working solution.

@@ -5,7 +5,8 @@ modifiedDate: '2019-06-17'
 published: true
 page: false
 series: 'Deep dive into React Router'
-tags: ['React', 'React Router']
+category: ['Series']
+tags: ['React', 'JavaScript']
 ---
 
 We have seen several examples and use cases in react router. One among them is passing props to the route component directly.

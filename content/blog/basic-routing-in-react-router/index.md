@@ -5,7 +5,8 @@ modifiedDate: '2019-04-10'
 published: true
 page: false
 series: 'Deep dive into React Router'
-tags: ['React', 'React Router']
+category: ['Series']
+tags: ['React', 'JavaScript']
 ---
 
 React is widely used library for client side web applications. In any web applications, there will be multiple pages. routing the URL properly and load different pages based on route parameters is a general requirement.

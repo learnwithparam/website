@@ -5,7 +5,8 @@ modifiedDate: '2019-06-18'
 published: false
 page: false
 series: 'Deep dive into React Router'
-tags: ['React', 'React Router']
+category: ['Series']
+tags: ['React', 'JavaScript']
 ---
 
 Redirecting is used primarily to check whether the user is authorized to visit this page, if not redirect them to relevant page.

@@ -4,7 +4,8 @@ date: '2019-03-02'
 modifiedDate: '2019-03-08'
 published: true
 page: false
-tags: ['Tech Platforms', 'Gatsby', 'Contentful', 'Netlify']
+category: ['Article']
+tags: ['Gatsby', 'CMS', 'Hosting', 'React']
 ---
 
 Last week I tried checking different platform around Gatsby. I am grateful that I did it.

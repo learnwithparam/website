@@ -4,7 +4,8 @@ date: '2019-04-01'
 modifiedDate: '2019-04-05'
 published: true
 page: false
-tags: ['jQuery', 'javascript']
+category: ['Tutorial']
+tags: ['jQuery', 'JavaScript']
 ---
 
 > jQuery has solved the problems of neutralizing side effects in JS rendering across different browsers for last decade. Now web browsers and rendering engines are much more smarter and increasingly support standard javascript API.

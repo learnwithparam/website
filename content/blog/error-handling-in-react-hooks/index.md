@@ -5,7 +5,8 @@ modifiedDate: '2019-04-18'
 published: true
 page: false
 series: 'Hooked with react'
-tags: ['React', 'React Hooks']
+category: ['Series']
+tags: ['React', 'JavaScript']
 ---
 
 In [part 1](/blog/learn-react-hooks-by-building-books-search/), we created the books search react app. But we didn't handle any errors or have any loading state before fetching the data from API.
