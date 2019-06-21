@@ -5,7 +5,8 @@ modifiedDate: '2019-04-22'
 published: true
 page: false
 series: 'Deep dive into React Router'
-tags: ['React', 'React Router']
+category: ['Series']
+tags: ['React', 'JavaScript']
 ---
 
 In [part 3](/blog/dynamic-pages-in-react-router/), we learned how to create dynamic URLs in react router. In this part, we will learn how to handle query params in the URL.

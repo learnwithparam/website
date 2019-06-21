@@ -4,7 +4,8 @@ date: '2019-04-16'
 modifiedDate: '2019-04-19'
 published: true
 page: false
-tags: ['Hacks & Tricks']
+category: ['Article']
+tags: ['Git']
 ---
 
 Many of you might got nightmares due to file rename issues in git. Recently I encountered one issue, everything works locally but repeatedly my circle CI throwing error as file not found while transpilling JSX.

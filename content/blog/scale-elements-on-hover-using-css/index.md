@@ -5,6 +5,8 @@ modifiedDate: '2019-04-06'
 published: true
 page: false
 tags: ['CSS']
+category: ['Tutorial']
+tags: ['CSS']
 ---
 
 Often we get a requirement to scale images on hover or content block on hover, it can be achieved using CSS through `transform` property

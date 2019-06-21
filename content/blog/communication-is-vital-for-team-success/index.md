@@ -4,7 +4,8 @@ date: '2019-04-29'
 modifiedDate: '2019-04-29'
 published: true
 page: false
-tags: ['Process', 'Product Management']
+category: ['Article']
+tags: ['Workflow']
 ---
 
 When your team grow, the biggest pain will be collaboration. It should be solved as a company culture, else it can become a big mess for productivity.

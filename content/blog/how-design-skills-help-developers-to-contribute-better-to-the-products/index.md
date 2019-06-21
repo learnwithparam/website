@@ -4,7 +4,8 @@ date: '2019-05-05'
 modifiedDate: '2019-05-05'
 published: true
 page: false
-tags: ['Process', 'UI and UX design']
+category: ['Article']
+tags: ['UI design', 'UX design', 'Workflow']
 ---
 
 UI and UX design skills are overlooked by developers, especially in large organizations. It's one of the important skills to build better products and help product teams with efficient feedbacks early on the UI and UX designs.

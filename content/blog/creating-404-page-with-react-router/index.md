@@ -5,7 +5,8 @@ modifiedDate: '2019-05-08'
 published: true
 page: false
 series: 'Deep dive into React Router'
-tags: ['React', 'React Router']
+category: ['Series']
+tags: ['React', 'JavaScript']
 ---
 
 We have learned how to create [dynamic URL in react router](/blog/dynamic-pages-in-react-router/) and also we learned how to handle [query params in react router](/blog/how-to-handle-query-params-in-react-router/) and pass those values to the page component in our previous posts.

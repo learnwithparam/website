@@ -4,7 +4,8 @@ date: '2019-05-02'
 modifiedDate: '2019-05-05'
 published: true
 page: false
-tags: ['JS Nuggets', 'Site Performance', 'Hacks & Tricks']
+category: ['Article']
+tags: ['Open Source', 'JavaScript', 'Performance']
 ---
 
 Most of the modern web frameworks handle loading subsequent pages faster by different techniques like code splitting, front end caching, service workers etc.

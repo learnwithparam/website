@@ -5,7 +5,8 @@ modifiedDate: '2019-04-12'
 published: true
 page: false
 series: 'Deep dive into React Router'
-tags: ['React', 'React Router']
+category: ['Series']
+tags: ['React', 'JavaScript']
 ---
 
 In the [part 1](/blog/basic-routing-in-react-router/), we discussed about basic routing. We have used `BrowserRouter` as our router.

@@ -4,7 +4,8 @@ date: '2019-05-09'
 modifiedDate: '2019-05-16'
 published: true
 page: false
-tags: ['JS Nuggets']
+category: ['Article']
+tags: ['React', 'JavaScript']
 ---
 
 You might have used several template engine along with your web frameworks. Common template engines used for websites are,

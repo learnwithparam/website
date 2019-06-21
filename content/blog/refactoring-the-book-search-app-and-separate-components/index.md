@@ -5,7 +5,8 @@ modifiedDate: '2019-04-25'
 published: true
 page: false
 series: 'Hooked with react'
-tags: ['React', 'React Hooks']
+category: ['Series']
+tags: ['React', 'JavaScript']
 ---
 
 Until [part 2](/blog/error-handling-in-react-hooks/), we have created a book search app and handled the loading and error state. Now we are going to see how we can split the app structure into components.

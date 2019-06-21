@@ -4,7 +4,8 @@ date: '2019-05-23'
 modifiedDate: '2019-05-30'
 published: true
 page: false
-tags: ['Process', 'Working Remotely']
+category: ['Article']
+tags: ['Workflow', 'Remote Work']
 ---
 
 There are many companies operating completely as remote first companies and many other companies are started giving remote as perks while hiring.
