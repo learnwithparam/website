@@ -9,9 +9,10 @@ const BlogPostContainer = styled.section`
   border-radius: 6px;
   transition: all 0.2s ease-in;
   background-color: rgba(255, 255, 255, 0.9);
-  box-shadow: rgba(54, 91, 155, 0.1) 0px 18px 35px,
-    rgba(0, 0, 0, 0.07) 0px 8px 15px;
-  margin-bottom: 1rem;
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: rgba(46, 41, 51, 0.08) 0px 4px 16px,
+    rgba(71, 63, 79, 0.16) 0px 8px 24px;
+  margin-bottom: 1.5rem;
   @media (max-width: 575.98px) {
     padding: 1.5rem 1rem;
   }
