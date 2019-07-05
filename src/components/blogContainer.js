@@ -1,10 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from '@emotion/styled';
-import { Link } from 'gatsby';
 
 import BlogPost from '../components/blogPost';
-import { Container, TextCenter } from '../components/commonStyles';
+import { Container, TextCenter, ButtonLink } from '../components/commonStyles';
 
 const BlogWrapper = styled.div`
   padding: 2rem 0;
@@ -21,8 +20,6 @@ const SectionTitle = styled.h2`
   }
   a {
     margin-left: auto;
-    font-size: 1rem;
-    align-self: center;
   }
 `;
 
@@ -33,7 +30,7 @@ const BlogContainer = ({ posts, sectionTitle }) => {
         {sectionTitle ? (
           <SectionTitle>
             {sectionTitle}
-            <Link to="/blog">View all articles</Link>
+            <ButtonLink to="/blog">View all articles →</ButtonLink>
           </SectionTitle>
         ) : null}
         {posts.map(({ node }) => {
@@ -53,7 +50,7 @@ const BlogContainer = ({ posts, sectionTitle }) => {
         {sectionTitle ? (
           <h3>
             <TextCenter>
-              <Link to="/blog">View all articles</Link>
+              <ButtonLink to="/blog">View all articles →</ButtonLink>
             </TextCenter>
           </h3>
         ) : null}

@@ -1,4 +1,5 @@
 import styled from '@emotion/styled';
+import { Link } from 'gatsby';
 
 const Container = styled.div`
   max-width: 860px;
@@ -20,4 +21,21 @@ const TextCenter = styled.div`
   text-align: center;
 `;
 
-export { Container, TextCenter };
+const ButtonLink = styled(Link)`
+  font-size: 0.8rem;
+  font-weight: bold;
+  padding: 0.65rem 1rem;
+  border-radius: 2rem;
+  color: #fff;
+  background-color: #eb5424;
+  border-color: #e14615;
+  &:hover,
+  &:focus,
+  &:active {
+    text-decoration: none;
+    background-color: #ca3f12;
+    border-color: #a93510;
+  }
+`;
+
+export { Container, TextCenter, ButtonLink };

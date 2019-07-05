@@ -1,12 +1,11 @@
 import React from 'react';
 import styled from '@emotion/styled';
-import { graphql, Link } from 'gatsby';
 
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import Header from '../components/header';
 import BlogContainer from '../components/blogContainer';
-import { Container } from '../components/commonStyles';
+import { Container, ButtonLink } from '../components/commonStyles';
 import { CarbonAdsWide } from '../components/carbonAds';
 
 const StyledBlogContainer = styled.div`
@@ -20,6 +19,7 @@ const PrevNextPageContainer = styled.section`
 
 const PrevNextItem = styled.div`
   margin-bottom: 3rem;
+  display: flex;
   @media (max-width: 575.98px) {
     margin-bottom: 2rem;
   }
@@ -63,16 +63,16 @@ class BlogIndex extends React.Component {
             <PrevNextPageContainer>
               <PrevNextItem>
                 {!isFirst && (
-                  <Link to={prevPage} rel="prev">
+                  <ButtonLink to={prevPage} rel="prev">
                     ← Previous Page
-                  </Link>
+                  </ButtonLink>
                 )}
               </PrevNextItem>
               <PrevNextItem>
                 {!isLast && (
-                  <Link to={nextPage} rel="next">
+                  <ButtonLink to={nextPage} rel="next">
                     Next Page →
-                  </Link>
+                  </ButtonLink>
                 )}
               </PrevNextItem>
             </PrevNextPageContainer>

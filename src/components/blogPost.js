@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'gatsby';
 import styled from '@emotion/styled';
+
 import { formatReadingTime } from '../utils/helpers';
 
 const BlogPostContainer = styled.section`
