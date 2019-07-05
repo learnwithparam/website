@@ -27,14 +27,12 @@ const ButtonLink = styled(Link)`
   padding: 0.65rem 1rem;
   border-radius: 2rem;
   color: #fff;
-  background-color: #eb5424;
-  border-color: #e14615;
+  background-color: #ff2e73;
   &:hover,
   &:focus,
   &:active {
     text-decoration: none;
-    background-color: #ca3f12;
-    border-color: #a93510;
+    background-color: #d23669;
   }
 `;
 

@@ -8,12 +8,12 @@ import { Container, TextCenter, ButtonLink } from '../components/commonStyles';
 const BlogWrapper = styled.div`
   padding: 2rem 0;
   h3 {
-    margin-top: 2rem;
+    margin-top: 2.5rem;
   }
 `;
 
 const SectionTitle = styled.h2`
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
   display: flex;
   @media (max-width: 575.98px) {
     margin-top: 1rem;
