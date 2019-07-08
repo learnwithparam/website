@@ -36,7 +36,8 @@ const BlogPostContainer = styled.section`
 
 const ContinueReading = styled(Link)`
   text-transform: uppercase;
-  font-size: 0.85rem;
+  font-size: 14px;
+  font-weight: bold;
 `;
 
 const BlogPost = ({

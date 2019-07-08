@@ -22,12 +22,14 @@ const TextCenter = styled.div`
 `;
 
 const ButtonLink = styled(Link)`
-  font-size: 0.8rem;
+  font-size: 14px;
+  line-height: 1;
   font-weight: bold;
-  padding: 0.65rem 1rem;
+  padding: 1rem 2rem;
   border-radius: 2rem;
   color: #fff;
   background-color: #ff2e73;
+  text-transform: uppercase;
   &:hover,
   &:focus,
   &:active {

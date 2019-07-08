@@ -23,16 +23,15 @@ const SectionTitle = styled.h2`
   }
 `;
 
+const ViewAllLink = styled(TextCenter)`
+  padding: 3rem 0;
+`;
+
 const BlogContainer = ({ posts, sectionTitle }) => {
   return (
     <BlogWrapper>
       <Container>
-        {sectionTitle ? (
-          <SectionTitle>
-            {sectionTitle}
-            <ButtonLink to="/blog">View all articles →</ButtonLink>
-          </SectionTitle>
-        ) : null}
+        {sectionTitle ? <SectionTitle>{sectionTitle}</SectionTitle> : null}
         {posts.map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug;
           return (
@@ -48,11 +47,9 @@ const BlogContainer = ({ posts, sectionTitle }) => {
           );
         })}
         {sectionTitle ? (
-          <h3>
-            <TextCenter>
-              <ButtonLink to="/blog">View all articles →</ButtonLink>
-            </TextCenter>
-          </h3>
+          <ViewAllLink>
+            <ButtonLink to="/blog">View all articles →</ButtonLink>
+          </ViewAllLink>
         ) : null}
       </Container>
     </BlogWrapper>
