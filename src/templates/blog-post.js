@@ -71,18 +71,7 @@ const PreviousNextContainer = styled.ul`
   }
 `;
 
-const BlogContent = styled.div`
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6,
-  p,
-  ul {
-    margin-bottom: 1.2rem;
-  }
-`;
+const BlogContent = styled.div``;
 
 const SeriesContainer = styled.blockquote`
   p {
