@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from '@emotion/styled';
+import { graphql } from 'gatsby';
 
 import Layout from '../components/layout';
 import SEO from '../components/seo';
@@ -100,7 +101,6 @@ export const pageQuery = graphql`
     ) {
       edges {
         node {
-          excerpt(pruneLength: 200)
           fields {
             slug
           }
@@ -109,6 +109,7 @@ export const pageQuery = graphql`
             date(formatString: "MMMM DD, YYYY")
             modifiedDate(formatString: "MMMM DD, YYYY")
             title
+            description
           }
         }
       }

@@ -7,6 +7,7 @@ page: false
 series: 'Deep dive into React Router'
 category: ['Series']
 tags: ['React', 'JavaScript']
+description: There are several types of router supported by react router package. We will see the use cases for each types briefly in this article.
 ---
 
 In the [part 1](/blog/basic-routing-in-react-router/), we discussed about basic routing. We have used `BrowserRouter` as our router.

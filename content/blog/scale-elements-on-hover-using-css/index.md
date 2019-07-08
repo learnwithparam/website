@@ -6,7 +6,7 @@ published: true
 page: false
 tags: ['CSS']
 category: ['Tutorial']
-tags: ['CSS']
+description: Learn how to scale HTML elements or images on hover using CSS3 transform property.
 ---
 
 Often we get a requirement to scale images on hover or content block on hover, it can be achieved using CSS through `transform` property

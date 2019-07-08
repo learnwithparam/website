@@ -1,5 +1,5 @@
 ---
-title: Hooked with React - Error handling and loading state in react hooks, Part 2
+title: Hooked with React - Error handling and loading state in react hooks
 date: '2019-04-18'
 modifiedDate: '2019-04-18'
 published: true
@@ -7,6 +7,7 @@ page: false
 series: 'Hooked with react'
 category: ['Series']
 tags: ['React', 'JavaScript']
+description: Learn how to handle errors and loading state in react hooks through our book search app - Part 2
 ---
 
 In [part 1](/blog/learn-react-hooks-by-building-books-search/), we created the books search react app. But we didn't handle any errors or have any loading state before fetching the data from API.

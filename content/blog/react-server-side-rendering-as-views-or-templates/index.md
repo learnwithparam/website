@@ -6,6 +6,7 @@ published: true
 page: false
 category: ['Article']
 tags: ['React', 'JavaScript']
+description: React has been used in desktop, mobile, web and VR development. In this article, we will see how it can be used in server side applications as templates.
 ---
 
 You might have used several template engine along with your web frameworks. Common template engines used for websites are,

@@ -6,6 +6,7 @@ published: true
 page: false
 category: ['Article']
 tags: ['Gatsby', 'CMS', 'Hosting', 'React']
+description: My experience on working with a demo project using Gatsby, Contentful and Netlify. It is opinionated and not through with a production level project.
 ---
 
 Last week I tried checking different platform around Gatsby. I am grateful that I did it.

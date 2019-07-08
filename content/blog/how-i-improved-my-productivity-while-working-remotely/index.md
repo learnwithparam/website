@@ -6,6 +6,7 @@ published: true
 page: false
 category: ['Article']
 tags: ['Workflow', 'Remote Work']
+description: Some of my experience working remotely and tip to make sure we are productive while doing work from home or from remote location.
 ---
 
 There are many companies operating completely as remote first companies and many other companies are started giving remote as perks while hiring.

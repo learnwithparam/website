@@ -6,6 +6,7 @@ published: true
 page: false
 category: ['Article']
 tags: ['Open Source', 'JavaScript', 'Performance']
+description: Page loading speed is one of the most important metric. Quicklink is a simple javascript library to make any site faster. Lets see how to get started with Quicklink.
 ---
 
 Most of the modern web frameworks handle loading subsequent pages faster by different techniques like code splitting, front end caching, service workers etc.

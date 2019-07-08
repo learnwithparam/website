@@ -7,6 +7,7 @@ page: false
 series: 'Deep dive into React Router'
 category: ['Series']
 tags: ['React', 'JavaScript']
+description: Redirecting a page based on some condition is an usual need in a web application. React router provides an easy way to achieve it. Lets learn how to do that.
 ---
 
 Redirecting is used primarily to check whether the user is authorized to visit this page, if not redirect them to relevant page.

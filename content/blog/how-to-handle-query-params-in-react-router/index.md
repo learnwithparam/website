@@ -7,6 +7,7 @@ page: false
 series: 'Deep dive into React Router'
 category: ['Series']
 tags: ['React', 'JavaScript']
+description: Learn how to handle query params in a client side react application using react router library
 ---
 
 In [part 3](/blog/dynamic-pages-in-react-router/), we learned how to create dynamic URLs in react router. In this part, we will learn how to handle query params in the URL.

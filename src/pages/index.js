@@ -109,7 +109,6 @@ export const pageQuery = graphql`
     ) {
       edges {
         node {
-          excerpt(pruneLength: 200)
           fields {
             slug
           }
@@ -118,6 +117,7 @@ export const pageQuery = graphql`
             date(formatString: "MMMM DD, YYYY")
             modifiedDate(formatString: "MMMM DD, YYYY")
             title
+            description
           }
         }
       }

@@ -6,6 +6,7 @@ published: true
 page: false
 category: ['Tutorial']
 tags: ['CSS']
+description: Learn how to center align content vertically and horizontally using CSS3. We discuss techniques using CSS transform and flexbox.
 ---
 
 Center aligning content vertically and horizontally are usual requirement in any website. There are several ways to achieve it using CSS.

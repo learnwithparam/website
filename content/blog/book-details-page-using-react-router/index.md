@@ -1,5 +1,5 @@
 ---
-title: Hooked with React - Creating book details page using react router, Part 4
+title: Hooked with React - Using react router in our react application to route a dynamic page
 date: '2019-06-12'
 modifiedDate: '2019-06-12'
 published: true
@@ -7,6 +7,7 @@ page: false
 series: 'Hooked with react'
 category: ['Series']
 tags: ['React', 'JavaScript']
+description: Creating book details page using react router in our book search application - Part 4
 ---
 
 We have already created the books list page for our book search page. Now lets create another page for each book using react router.

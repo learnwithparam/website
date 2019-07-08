@@ -6,6 +6,7 @@ published: true
 page: false
 category: ['Article']
 tags: ['Workflow']
+description: When your team grow, the biggest pain will be collaboration. It should be solved as a company culture, else it can become a big mess for productivity. Learn some tips to overcome those issues and communicate better in teams
 ---
 
 When your team grow, the biggest pain will be collaboration. It should be solved as a company culture, else it can become a big mess for productivity.

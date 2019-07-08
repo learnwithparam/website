@@ -84,7 +84,11 @@ const BlogContent = styled.div`
   }
 `;
 
-const SeriesContainer = styled.blockquote``;
+const SeriesContainer = styled.blockquote`
+  p {
+    margin-bottom: 1.5rem;
+  }
+`;
 
 const EditLink = styled.div``;
 
@@ -106,7 +110,7 @@ class BlogPostTemplate extends React.Component {
     const seriesArray = this.props.data.allMarkdownRemark.edges;
     const { previous, next } = this.props.pageContext;
     const slug = post.fields.slug;
-    const { title, series } = post.frontmatter;
+    const { title, series, description } = post.frontmatter;
     const editUrl = `https://github.com/${GITHUB_USERNAME}/${GITHUB_REPO_NAME}/edit/master/content${slug}index.md`;
 
     const editLink = (
@@ -129,7 +133,7 @@ class BlogPostTemplate extends React.Component {
 
     return (
       <Layout>
-        <SEO title={title} description={post.excerpt} />
+        <SEO title={title} description={description} />
         <Header />
         <BlogContainer>
           <Container>
@@ -138,7 +142,7 @@ class BlogPostTemplate extends React.Component {
               <>
                 <Share
                   title={title}
-                  description={post.excerpt}
+                  description={description}
                   url={shareUrl}
                   author={twitter}
                   hashTags={hashTags}
@@ -201,7 +205,7 @@ class BlogPostTemplate extends React.Component {
               <>
                 <Share
                   title={title}
-                  description={post.excerpt}
+                  description={description}
                   url={shareUrl}
                   author={twitter}
                   hashTags={hashTags}
@@ -254,7 +258,6 @@ export const pageQuery = graphql`
     }
     markdownRemark(fields: { slug: { eq: $slug } }) {
       id
-      excerpt(pruneLength: 160)
       html
       fields {
         slug
@@ -262,6 +265,7 @@ export const pageQuery = graphql`
       timeToRead
       frontmatter {
         title
+        description
         date(formatString: "MMMM DD, YYYY")
         modifiedDate(formatString: "MMMM DD, YYYY")
         tags

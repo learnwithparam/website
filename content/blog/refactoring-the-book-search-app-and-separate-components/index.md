@@ -1,5 +1,5 @@
 ---
-title: Refactor the book search app and separate components, Part 3
+title: Hooked with React - Refactor the react application and separate components into separate files
 date: '2019-04-25'
 modifiedDate: '2019-04-25'
 published: true
@@ -7,6 +7,7 @@ page: false
 series: 'Hooked with react'
 category: ['Series']
 tags: ['React', 'JavaScript']
+description: Learn how to split the react app into components and talk about folder structures briefly, Part 3
 ---
 
 Until [part 2](/blog/error-handling-in-react-hooks/), we have created a book search app and handled the loading and error state. Now we are going to see how we can split the app structure into components.

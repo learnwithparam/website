@@ -6,6 +6,7 @@ published: true
 page: false
 category: ['Tutorial']
 tags: ['CSS']
+description: Understanding how to create background image with gradient overlay using CSS3. Support for gradient colors have improved in recent years, more and more website start using gradient as background for header, cards, etc
 ---
 
 Background images with overlay are very common UI feature. It will be seen more on Hero, Cards components.

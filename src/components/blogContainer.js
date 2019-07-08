@@ -42,7 +42,7 @@ const BlogContainer = ({ posts, sectionTitle }) => {
               slug={node.fields.slug}
               date={node.frontmatter.date}
               modifiedDate={node.frontmatter.modifiedDate}
-              excerpt={node.excerpt}
+              description={node.frontmatter.description}
               timeToRead={node.timeToRead}
             />
           );

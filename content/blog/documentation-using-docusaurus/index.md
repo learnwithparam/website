@@ -6,6 +6,7 @@ published: true
 page: false
 category: ['Article']
 tags: ['Open Source', 'React']
+description: Documentation is always a headache for engineering teams. Once engineering teams start growing, its very difficult to on-board engineers. Docusaurus was a react based documentation tool created by facebook to centralize your documentation.
 ---
 
 Every engineering team face problem of where to maintain documentation once team grows. We at [Jobbatical](https://jobbatical.com?ref=learnwithparam.com) faced similar problem and finally comes to a working solution.

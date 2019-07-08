@@ -7,9 +7,10 @@ page: false
 series: 'Deep dive into React Router'
 category: ['Series']
 tags: ['React', 'JavaScript']
+description: Learn how to do routing in React applications using React router library. React is widely used library for client side web applications. In any web applications, there will be multiple pages. Routing the URL properly and load different pages based on route parameters is a general requirement.
 ---
 
-React is widely used library for client side web applications. In any web applications, there will be multiple pages. routing the URL properly and load different pages based on route parameters is a general requirement.
+React is widely used library for client side web applications. In any web applications, there will be multiple pages. Routing the URL properly and load different pages based on route parameters is a general requirement.
 
 There is an awesome npm package which takes all the complexity to serve the purpose of routing in React. `react-router-dom` is one of the widely used react library.
 

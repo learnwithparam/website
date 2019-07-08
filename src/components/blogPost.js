@@ -34,7 +34,14 @@ const BlogPostContainer = styled.section`
   }
 `;
 
-const BlogPost = ({ title, slug, date, modifiedDate, timeToRead, excerpt }) => {
+const BlogPost = ({
+  title,
+  slug,
+  date,
+  modifiedDate,
+  timeToRead,
+  description,
+}) => {
   return (
     <BlogPostContainer>
       <h2>
@@ -47,7 +54,7 @@ const BlogPost = ({ title, slug, date, modifiedDate, timeToRead, excerpt }) => {
         </small>
         <small>{formatReadingTime(timeToRead)}</small>
       </p>
-      <p>{excerpt}</p>
+      <p>{description}</p>
       <Link to={slug}>Continue reading →</Link>
     </BlogPostContainer>
   );
@@ -58,7 +65,7 @@ BlogPost.propTypes = {
   slug: PropTypes.string,
   date: PropTypes.any,
   modifiedDate: PropTypes.any,
-  excerpt: PropTypes.string,
+  description: PropTypes.string,
   timeToRead: PropTypes.number,
 };
 

@@ -20,6 +20,9 @@ const GlobalStyles = () => (
         background: #fcf8f3;
         margin: 2rem 0;
         padding: 2rem 1.5rem;
+        p {
+          margin-bottom: 0;
+        }
       }
     `}
   />

@@ -6,6 +6,7 @@ published: true
 page: false
 category: ['Tutorial']
 tags: ['jQuery', 'JavaScript']
+description: Document ready function is widely used feature from jQuery. With growing trends in modern web development and much better browser support for vanilla JS API's, We can replace or reduce jQuery dependency easily.
 ---
 
 > jQuery has solved the problems of neutralizing side effects in JS rendering across different browsers for last decade. Now web browsers and rendering engines are much more smarter and increasingly support standard javascript API.

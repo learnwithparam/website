@@ -6,6 +6,7 @@ published: true
 page: false
 category: ['Tutorial']
 tags: ['CSS']
+description: Gradient backgrounds started the trend, nowadays websites have more gradient colors for many elements after gradient become widely supported on modern browsers. In this article, we will learn how to do gradient text style using CSS3.
 ---
 
 Gradient backgrounds started the trend, nowadays websites have more gradient colors for many elements after gradient become widely supported on modern browsers.

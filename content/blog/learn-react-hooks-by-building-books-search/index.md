@@ -1,5 +1,5 @@
 ---
-title: Hooked with React - Learn by building a book search app using react and its siblings, Part 1
+title: Hooked with React - Learn by building a book search app using react and its siblings
 date: '2019-04-14'
 modifiedDate: '2019-04-14'
 published: true
@@ -7,6 +7,7 @@ page: false
 series: 'Hooked with react'
 category: ['Series']
 tags: ['React', 'JavaScript']
+description: Lets build a simple books search page using google books API in react. While developing it, we will explore react hooks, css modules and testing in react application - Part 1
 ---
 
 Lets build a simple books search page using google books API in react. While developing it, we will explore react hooks, css modules and testing in react application.
