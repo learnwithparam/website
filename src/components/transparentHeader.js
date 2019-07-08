@@ -73,10 +73,10 @@ const TransparentHeader = () => (
       </LogoText>
     </HeaderColumn>
     <HeaderColumnRight>
-      <MenuItem to="/blog" activeClassName="active">
+      <MenuItem to="/blog/" activeClassName="active">
         Blog
       </MenuItem>
-      <MenuItem to="/about" activeClassName="active">
+      <MenuItem to="/about/" activeClassName="active">
         About
       </MenuItem>
       <SocialIcon
