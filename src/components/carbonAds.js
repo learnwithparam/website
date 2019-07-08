@@ -4,7 +4,9 @@ import styled from '@emotion/styled';
 const CarbonAdsContainer = styled.section`
   display: flex;
   justify-content: center;
-  padding-top: 1.5rem;
+  background-color: #f8f6fc;
+  padding: 1.5rem 0;
+  min-height: 172px;
   @media (max-width: 575.98px) {
     padding-left: 1rem;
     padding-right: 1rem;
