@@ -4,6 +4,7 @@ import styled from '@emotion/styled';
 import { Container } from './commonStyles';
 
 const HeroContainer = styled.section`
+  background-color: #fdfdfd;
   display: flex;
   flex-direction: column;
   justify-content: center;

@@ -34,6 +34,11 @@ const BlogPostContainer = styled.section`
   }
 `;
 
+const ContinueReading = styled(Link)`
+  text-transform: uppercase;
+  font-size: 0.85rem;
+`;
+
 const BlogPost = ({
   title,
   slug,
@@ -55,7 +60,7 @@ const BlogPost = ({
         <small>{formatReadingTime(timeToRead)}</small>
       </p>
       <p>{description}</p>
-      <Link to={slug}>Continue reading →</Link>
+      <ContinueReading to={slug}>Continue reading →</ContinueReading>
     </BlogPostContainer>
   );
 };

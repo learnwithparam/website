@@ -13,7 +13,7 @@ Every engineering team face problem of where to maintain documentation once team
 
 ### What is Docusaurus?
 
-- [Docusaurus](https://docusaurus.io/) is an open source by facebook. It is written in React and easily extended to create similar documents like react docs.
+[Docusaurus](https://docusaurus.io/) is an open source by facebook. It is written in React and easily extended to create similar documents like react docs.
 
 #### How it helps
 
