@@ -7,6 +7,7 @@
   "dependencies": {
     "@emotion/core": "^10.0.14",
     "@emotion/styled": "^10.0.14",
+    "@rebass/emotion": "^3.1.1",
     "@weknow/gatsby-remark-codepen": "^0.1.0",
     "disqus-react": "^1.0.6",
     "gatsby": "^2.13.41",
@@ -38,6 +39,7 @@
     "react-share": "^3.0.0",
     "react-social-icons": "^4.1.0",
     "react-typography": "^0.16.19",
+    "styled-system": "^5.0.16",
     "typography": "^0.16.19"
   },
   "devDependencies": {
