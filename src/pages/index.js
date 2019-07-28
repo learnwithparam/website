@@ -118,6 +118,7 @@ export const pageQuery = graphql`
             modifiedDate(formatString: "MMMM DD, YYYY")
             title
             description
+            type
           }
         }
       }

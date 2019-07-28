@@ -47,21 +47,27 @@ const BlogPost = ({
   modifiedDate,
   timeToRead,
   description,
+  type,
 }) => {
+  console.log(type);
   return (
     <BlogPostContainer>
       <h2>
         <Link to={slug}>{title}</Link>
       </h2>
       <p>
-        <small>
-          {modifiedDate || date}
-          <span className="sep">{` • `}</span>
-        </small>
-        <small>{formatReadingTime(timeToRead)}</small>
+        <small>{modifiedDate || date}</small>
+        {(!type || type !== 'video') && (
+          <>
+            <span className="sep">{` • `}</span>
+            <small>{formatReadingTime(timeToRead)}</small>
+          </>
+        )}
       </p>
       <p>{description}</p>
-      <ContinueReading to={slug}>Continue reading →</ContinueReading>
+      <ContinueReading to={slug}>
+        Continue {type === 'video' ? 'watching' : 'reading'} →
+      </ContinueReading>
     </BlogPostContainer>
   );
 };

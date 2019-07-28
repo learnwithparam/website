@@ -25,7 +25,7 @@ function getUrl(string) {
 
 function getYouTubeHTML(string) {
   const iframeSrc = getYouTubeIFrameSrc(string);
-  return `<iframe width="100%" height="315" class="iframe-embed" src="${iframeSrc}" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>`;
+  return `<iframe width="100%" height="450px" class="iframe-embed youtube-embed" src="${iframeSrc}" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>`;
 }
 
 function getYouTubeIFrameSrc(string) {

@@ -162,6 +162,9 @@ pre[data-line] {
     margin: 0 -1rem;
     min-width: calc(100% + 2rem);
   }
+  .youtube-embed {
+    height: 450px;
+  }
 }
 
 .gatsby-highlight pre[class*='language-'] {
