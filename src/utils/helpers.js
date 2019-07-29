@@ -1,6 +1,7 @@
-export function formatReadingTime(minutes, text) {
-  let popcorns = Math.round(minutes / 5);
+export function formatReadingTime(minutes, type) {
+  const factor = type && type === 'video' ? 10 : 5;
+  let popcorns = Math.round(minutes / factor);
   return `${new Array(popcorns || 1).fill('🍿').join('')} ${minutes} min ${
-    text ? text : 'read'
+    type && type === 'video' ? 'watch' : 'read'
   }`;
 }

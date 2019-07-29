@@ -60,7 +60,7 @@ const BlogPost = ({
         <small>{modifiedDate || date}</small>
         <span className="sep">{` • `}</span>
         {type && type === 'video' ? (
-          <small>{formatReadingTime(duration, 'watch')}</small>
+          <small>{formatReadingTime(duration, type)}</small>
         ) : (
           <small>{formatReadingTime(timeToRead)}</small>
         )}
