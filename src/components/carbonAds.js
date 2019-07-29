@@ -116,12 +116,20 @@ const CarbonAdsWide = () => {
   }, []);
 
   return (
-    <CarbonAdsWideContainer id="carbonAdsContainer"></CarbonAdsWideContainer>
+    <CarbonAdsWideContainer
+      className="carbonAdsContainer"
+      id="carbonAdsContainer"
+    ></CarbonAdsWideContainer>
   );
 };
 
 const CarbonAds = () => {
-  return <CarbonAdsContainer id="carbonAdsContainer"></CarbonAdsContainer>;
+  return (
+    <CarbonAdsContainer
+      className="carbonAdsContainer"
+      id="carbonAdsContainer"
+    ></CarbonAdsContainer>
+  );
 };
 
 export { CarbonAdsWide };

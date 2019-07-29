@@ -48,6 +48,7 @@ const BlogPost = ({
   timeToRead,
   description,
   type,
+  duration,
 }) => {
   console.log(type);
   return (
@@ -57,11 +58,11 @@ const BlogPost = ({
       </h2>
       <p>
         <small>{modifiedDate || date}</small>
-        {(!type || type !== 'video') && (
-          <>
-            <span className="sep">{` • `}</span>
-            <small>{formatReadingTime(timeToRead)}</small>
-          </>
+        <span className="sep">{` • `}</span>
+        {type && type === 'video' ? (
+          <small>{formatReadingTime(duration, 'watch')}</small>
+        ) : (
+          <small>{formatReadingTime(timeToRead)}</small>
         )}
       </p>
       <p>{description}</p>

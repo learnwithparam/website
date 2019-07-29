@@ -43,6 +43,7 @@ const BlogContainer = ({ posts, sectionTitle }) => {
               modifiedDate={node.frontmatter.modifiedDate}
               description={node.frontmatter.description}
               type={node.frontmatter.type}
+              duration={node.frontmatter.duration}
               timeToRead={node.timeToRead}
             />
           );

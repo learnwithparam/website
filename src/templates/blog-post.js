@@ -26,6 +26,9 @@ const BlogContainer = styled.div`
   .sep {
     margin: 0 0.25rem;
   }
+  .carbonAdsContainer {
+    margin-top: 1rem;
+  }
   @media (max-width: 575.98px) {
     padding: 1rem 0;
     .blog-content {
@@ -38,10 +41,11 @@ const PreviousNextContainer = styled.ul`
   list-style: none;
   margin-left: 0;
   margin-top: 2rem;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
   display: flex;
   @media (max-width: 575.98px) {
     flex-direction: column;
+    margin-bottom: 2rem;
   }
   li {
     border-radius: 6px;
@@ -99,7 +103,7 @@ class BlogPostTemplate extends React.Component {
     const seriesArray = this.props.data.allMarkdownRemark.edges;
     const { previous, next } = this.props.pageContext;
     const slug = post.fields.slug;
-    const { title, series, description } = post.frontmatter;
+    const { title, series, description, type, duration } = post.frontmatter;
     const editUrl = `https://github.com/${GITHUB_USERNAME}/${GITHUB_REPO_NAME}/edit/master/content${slug}index.md`;
 
     const editLink = (
@@ -144,7 +148,9 @@ class BlogPostTemplate extends React.Component {
                   </small>
                   <small>
                     <span className="sep">{` • `}</span>
-                    {formatReadingTime(post.timeToRead)}
+                    {type && type === 'video'
+                      ? formatReadingTime(duration, 'watch')
+                      : formatReadingTime(post.timeToRead)}
                   </small>
                   <small>
                     <span className="sep">{` • `}</span>
@@ -260,6 +266,8 @@ export const pageQuery = graphql`
         tags
         page
         series
+        type
+        duration
       }
     }
     allMarkdownRemark(
