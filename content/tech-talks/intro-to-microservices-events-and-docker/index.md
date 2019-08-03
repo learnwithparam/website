@@ -1,7 +1,7 @@
 ---
 title: A quick intro to Event driven architecture and Microservices
-date: '2019-08-03'
-modifiedDate: '2019-08-03'
+date: '2019-08-01'
+modifiedDate: '2019-08-01'
 published: true
 page: false
 category: ['Tech Talks']

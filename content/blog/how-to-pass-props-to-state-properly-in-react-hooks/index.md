@@ -1,7 +1,7 @@
 ---
 title: How to sync props to state properly in React Hooks
-date: '2019-08-01'
-modifiedDate: '2019-08-01'
+date: '2019-08-02'
+modifiedDate: '2019-08-02'
 published: true
 page: false
 category: ['Tutorial']
