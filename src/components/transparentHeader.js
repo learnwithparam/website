@@ -76,6 +76,9 @@ const TransparentHeader = () => (
       <MenuItem to="/blog/" activeClassName="active">
         Blog
       </MenuItem>
+      <MenuItem to="/tech-talks/" activeClassName="active">
+        Tech Talks
+      </MenuItem>
       <MenuItem to="/about/" activeClassName="active">
         About
       </MenuItem>
@@ -86,6 +89,14 @@ const TransparentHeader = () => (
         target="_blank"
         rel="noopener noreferrer"
         url="https://twitter.com/intent/follow?screen_name=learnwithparam"
+      />
+      <SocialIcon
+        title="Like us on facebook"
+        alt="Facebook profile"
+        style={socialIconStyle}
+        target="_blank"
+        rel="noopener noreferrer"
+        url="https://www.facebook.com/learnwithparam"
       />
     </HeaderColumnRight>
   </HeaderGrid>

@@ -1,15 +1,20 @@
 const path = require(`path`);
 const { createFilePath } = require(`gatsby-source-filesystem`);
 
-const isPage = ({ frontmatter: { page } }) => {
-  return !!page;
+const isBlog = ({ frontmatter: { page, type } }) => {
+  return !!page || type !== 'video';
+};
+
+const isTypeVideo = ({ frontmatter: { page, type } }) => {
+  return type === 'video';
 };
 
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions;
 
   const blogPost = path.resolve(`./src/templates/blog-post.js`);
-  const blogList = path.resolve(`./src/templates/blog-list.js`);
+  const blogList = path.resolve(`./src/templates/blog.js`);
+  const TechTalks = path.resolve(`./src/templates/tech-talks.js`);
 
   return graphql(
     `
@@ -28,6 +33,7 @@ exports.createPages = ({ graphql, actions }) => {
                 title
                 page
                 series
+                type
               }
             }
           }
@@ -50,9 +56,9 @@ exports.createPages = ({ graphql, actions }) => {
       - Previous, Next shouldn't be a Page,
       - Also page doesn't need previous and next
       */
-      if (previous && isPage(previous)) previous = null;
-      if (next && isPage(next)) next = null;
-      if (isPage(post.node)) {
+      if (previous && !isBlog(previous)) previous = null;
+      if (next && !isBlog(next)) next = null;
+      if (!isBlog(post.node)) {
         previous = null;
         next = null;
       }
@@ -70,16 +76,35 @@ exports.createPages = ({ graphql, actions }) => {
     });
 
     // Create blog post list pages
-    const postsWithoutPage = posts.filter(post => {
-      return !isPage(post.node);
+    const blogPosts = posts.filter(post => {
+      return isBlog(post.node);
     });
     const postsPerPage = 8;
-    const numPages = Math.ceil(postsWithoutPage.length / postsPerPage);
+    let numPages = Math.ceil(blogPosts.length / postsPerPage);
 
     Array.from({ length: numPages }).forEach((_, i) => {
       createPage({
         path: i === 0 ? `/blog` : `/blog/${i + 1}`,
         component: blogList,
+        context: {
+          limit: postsPerPage,
+          skip: i * postsPerPage,
+          numPages,
+          currentPage: i + 1,
+        },
+      });
+    });
+
+    // Tech Talks Page
+    const videoPosts = posts.filter(post => {
+      return isTypeVideo(post.node);
+    });
+    numPages = Math.ceil(videoPosts.length / postsPerPage);
+
+    Array.from({ length: numPages }).forEach((_, i) => {
+      createPage({
+        path: i === 0 ? `/tech-talks` : `/tech-talks/${i + 1}`,
+        component: TechTalks,
         context: {
           limit: postsPerPage,
           skip: i * postsPerPage,

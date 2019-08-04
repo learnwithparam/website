@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from '@emotion/styled';
-import { graphql } from 'gatsby';
 
 import Layout from '../components/layout';
 import SEO from '../components/seo';
@@ -85,36 +84,3 @@ class BlogIndex extends React.Component {
 }
 
 export default BlogIndex;
-
-export const pageQuery = graphql`
-  query blogPageQuery($skip: Int!, $limit: Int!) {
-    site {
-      siteMetadata {
-        title
-      }
-    }
-    allMarkdownRemark(
-      sort: { fields: [frontmatter___date], order: DESC }
-      filter: { frontmatter: { published: { eq: true }, page: { ne: true } } }
-      limit: $limit
-      skip: $skip
-    ) {
-      edges {
-        node {
-          fields {
-            slug
-          }
-          timeToRead
-          frontmatter {
-            date(formatString: "MMMM DD, YYYY")
-            modifiedDate(formatString: "MMMM DD, YYYY")
-            title
-            description
-            type
-            duration
-          }
-        }
-      }
-    }
-  }
-`;

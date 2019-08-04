@@ -64,7 +64,7 @@ const Footer = () => (
         style={socialIconStyle}
         target="_blank"
         rel="noopener noreferrer"
-        url="https://www.facebook.com/paramanantham.harrison"
+        url="https://www.facebook.com/learnwithparam"
       />
       <SocialIcon
         alt="Twitter profile"

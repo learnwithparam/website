@@ -50,7 +50,6 @@ const BlogPost = ({
   type,
   duration,
 }) => {
-  console.log(type);
   return (
     <BlogPostContainer>
       <h2>
