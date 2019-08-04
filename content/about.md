@@ -14,10 +14,12 @@ Currently I'm working full time as full stack developer in [jobbatical](https://
 
 ## Teaching and Beyond
 
-In 2019, I started teaching to local group in Tamilnadu through webinars. I have started passion for teaching code in tamil language. I am in progress to develop this site ([tamilcode.org](https://tamilcode.org)) to create more workshops, webinars and courses for cutting edge technologies in Tamil.
+In 2019, I started teaching to local group in Tamilnadu through webinars. I have started passion for teaching code in tamil language.
 
-[Learn with Param](/) is another initiative to teach coding through practical examples in english.
+[Learn with Param](/) is one of my initiative to teach coding through practical examples in english.
 
 > P.S. Here are a few pages on this site that aren't included in the normal site navigation, but might interest you
+>
+> &nbsp;
 >
 > - [Books I read](https://www.goodreads.com/user/show/96018434-paramanantham-harrison) - Links to the books I read or currently reading 😎
