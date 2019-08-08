@@ -70,7 +70,7 @@ Lets create the links and routes using react router's `Link` and `Route` compone
 ```jsx{3,9-14}
 // App.js
 ...
-import { Link, Router as BrowserRouter, Route } from 'react-router-dom';
+import { Link, BrowserRouter as Router, Route } from 'react-router-dom';
 ...
 
 const App = () => {
@@ -90,7 +90,7 @@ const App = () => {
 Let's go through each line separately
 
 ```jsx
-import { Link, Router as BrowserRouter, Route } from 'react-router-dom';
+import { Link, BrowserRouter as Router, Route } from 'react-router-dom';
 ```
 
 Here we are importing three components,
