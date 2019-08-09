@@ -37,6 +37,8 @@ const LinkMobile = styled(Link)`
   display: none;
   @media (max-width: 575.98px) {
     display: inline;
+    position: relative;
+    top: -2px;
   }
 `;
 
