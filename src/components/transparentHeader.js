@@ -87,14 +87,6 @@ const TransparentHeader = () => (
         rel="noopener noreferrer"
         url="https://twitter.com/intent/follow?screen_name=learnwithparam"
       />
-      <SocialIcon
-        title="Like us on facebook"
-        alt="Facebook profile"
-        style={socialIconStyle}
-        target="_blank"
-        rel="noopener noreferrer"
-        url="https://www.facebook.com/learnwithparam"
-      />
     </HeaderColumnRight>
   </HeaderGrid>
 );
