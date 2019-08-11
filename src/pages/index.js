@@ -104,14 +104,8 @@ export const pageQuery = graphql`
     }
     allMarkdownRemark(
       sort: { fields: [frontmatter___date], order: DESC }
-      filter: {
-        frontmatter: {
-          published: { eq: true }
-          page: { ne: true }
-          type: { ne: "video" }
-        }
-      }
-      limit: 4
+      filter: { frontmatter: { published: { eq: true }, page: { ne: true } } }
+      limit: 5
     ) {
       edges {
         node {

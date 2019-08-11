@@ -1,7 +1,7 @@
 ---
 title: How Atlassian implemented Multi tenant architecture
-date: '2019-07-29'
-modifiedDate: '2019-07-29'
+date: '2019-08-02'
+modifiedDate: '2019-08-02'
 published: true
 page: false
 category: ['Tech Talks']
