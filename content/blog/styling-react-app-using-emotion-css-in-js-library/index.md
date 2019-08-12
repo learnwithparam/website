@@ -2,7 +2,7 @@
 title: Styling a react app using Emotion CSS in JS library - An introduction to Emotion
 date: '2019-08-13'
 modifiedDate: '2019-08-13'
-published: false
+published: true
 page: false
 series: 'Hooked with react'
 category: ['Series']
