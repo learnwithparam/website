@@ -20,15 +20,58 @@ You can see it in action here,
 
 https://codesandbox.io/s/books-detail-page-by2nj
 
-### Installation
+#### Install emotion
 
-- yarn add @emotion/core
-- yarn add @emotion/styled
+There are two packages, one is `core` and one which powers the styled components `@emotion/styled`. We will see examples for both.
 
-### Global styles and reset in emotion
+```bash
+yarn add @emotion/core
+yarn add @emotion/styled
+```
 
-- Normalize css
-- body color
+### Global styles in emotion
+
+Before starting any site styles, we always need some reset to normalize browser default styles. I am going to use `normalize.css`. Lets install that,
+
+```bash
+yarn add normalize.css
+```
+
+There are several ways to add external stylesheet in `create-react-app`. I am going to use an unusual technique to showcase how it can be done using emotion.
+
+Emotion has a `Global` component, which will create global styles for your app. Lets add it in our search page.
+
+```jsx
+/* App.js */
+
+// Adding global CSS
+import { Global, css } from "@emotion/core";
+// importing the text from normalize.css file
+import normalize from "normalize.css";
+
+...
+
+const App = () => {
+  return (
+    <>
+      <Global
+        styles={css`
+          ${normalize}
+          body {
+            background-color: #fafafa;
+          }
+        `}
+      />
+      ...
+    </>
+  );
+};
+
+...
+
+```
+
+Here we have added the normalize css along with background color for body element. We can add any common global CSS like this in emotion. But it is an anti-pattern to add common CSS when you can always extract out styles along with the component and reuse shared components when needed.
 
 ### Styling the header using emotion styled react components
 
@@ -37,9 +80,15 @@ https://codesandbox.io/s/books-detail-page-by2nj
 - input with hover, focus elements
 - button component
 
-### Styling loader and error component using CSS in JS
+### Styling loader component using CSS in JS
 
 - css props
+- hack to make it work on `create-react-app`
+- refactoring loader to make it reusable on both the pages
+
+### Shared error component using emotion without react
+
+- Error text will be a separate file
 
 ### Media queries in emotion to style the page for responsiveness
 
