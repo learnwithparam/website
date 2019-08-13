@@ -111,7 +111,7 @@ export const pageQuery = graphql`
           type: { ne: "video" }
         }
       }
-      limit: 5
+      limit: 6
     ) {
       edges {
         node {
