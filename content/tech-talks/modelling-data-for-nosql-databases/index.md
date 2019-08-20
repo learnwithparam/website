@@ -5,7 +5,7 @@ modifiedDate: '2019-07-27'
 published: true
 page: false
 category: ['Tech Talks']
-type: video
+type: Tech Talks
 duration: 32
 isExternal: false
 tags: ['NoSQL', 'Data Modelling', 'Databases', 'MongoDB']

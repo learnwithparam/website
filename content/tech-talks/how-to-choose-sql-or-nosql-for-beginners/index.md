@@ -5,7 +5,7 @@ modifiedDate: '2019-08-08'
 published: true
 page: false
 category: ['Tech Talks']
-type: video
+type: Tech Talks
 duration: 19
 isExternal: false
 tags: ['NoSQL', 'MongoDB', 'SQL', 'MySQL']

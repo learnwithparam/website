@@ -1,6 +1,6 @@
 import { graphql } from 'gatsby';
 
-import TechTalksIndex from './blog-list';
+import TechTalksIndex from './blog-template';
 
 export default TechTalksIndex;
 
@@ -17,7 +17,7 @@ export const pageQuery = graphql`
         frontmatter: {
           published: { eq: true }
           page: { ne: true }
-          type: { eq: "video" }
+          type: { eq: "Tech Talks" }
         }
       }
       limit: $limit

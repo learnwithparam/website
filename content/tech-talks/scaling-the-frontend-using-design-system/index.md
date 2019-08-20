@@ -5,7 +5,7 @@ modifiedDate: '2019-08-14'
 published: true
 page: false
 category: ['Tech Talks']
-type: video
+type: Tech Talks
 duration: 20
 isExternal: false
 tags: ['Architecture', 'Frontend', 'Design System']
