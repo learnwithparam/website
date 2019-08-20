@@ -7,10 +7,16 @@ import {
   LinkedinShareButton,
   TwitterShareButton,
   WhatsappShareButton,
+  RedditShareButton,
+  TelegramShareButton,
+  PinterestShareButton,
   FacebookIcon,
   TwitterIcon,
   LinkedinIcon,
   WhatsappIcon,
+  RedditIcon,
+  TelegramIcon,
+  PinterestIcon,
 } from 'react-share';
 
 const ShareContainer = styled.section`
@@ -48,12 +54,6 @@ const Share = ({
   return (
     <ShareContainer>
       {children}
-      <FacebookShareButton quote={title} url={url}>
-        <FacebookIcon size={size} round />
-      </FacebookShareButton>
-      <LinkedinShareButton title={title} description={description} url={url}>
-        <LinkedinIcon size={size} round />
-      </LinkedinShareButton>
       <TwitterShareButton
         title={title}
         via={author}
@@ -62,9 +62,24 @@ const Share = ({
       >
         <TwitterIcon size={size} round />
       </TwitterShareButton>
+      <LinkedinShareButton title={title} description={description} url={url}>
+        <LinkedinIcon size={size} round />
+      </LinkedinShareButton>
+      <FacebookShareButton quote={title} url={url}>
+        <FacebookIcon size={size} round />
+      </FacebookShareButton>
+      <RedditShareButton title={title} url={url}>
+        <RedditIcon size={size} round />
+      </RedditShareButton>
+      <PinterestShareButton title={title} description={description} url={url}>
+        <PinterestIcon size={size} round />
+      </PinterestShareButton>
       <WhatsappShareButton title={title} url={url}>
         <WhatsappIcon size={size} round />
       </WhatsappShareButton>
+      <TelegramShareButton title={title} url={url}>
+        <TelegramIcon size={size} round />
+      </TelegramShareButton>
     </ShareContainer>
   );
 };
