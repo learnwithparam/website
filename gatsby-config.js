@@ -61,7 +61,41 @@ module.exports = {
           {
             resolve: require.resolve('./plugins/remark-embedder'),
           },
-          `gatsby-remark-social-cards`,
+          {
+            resolve: `gatsby-remark-social-cards`,
+            options: {
+              title: {
+                // This is the frontmatter field the title should come from
+                field: 'title',
+                // Currently only supports DejaVuSansCondensed
+                // More fonts coming soon!
+                font: 'DejaVuSansCondensed',
+                color: 'black', // black|white
+                size: 48, // 16|24|32|48|64
+                style: 'bold', // normal|bold|italic
+                x: null, // Will default to xMargin
+                y: null, // Will default to yMargin
+              },
+              meta: {
+                parts: [
+                  { field: 'series' },
+                  ' » ',
+                  { field: 'date', format: 'mmmm dS' },
+                ],
+                // Currently only supports DejaVuSansCondensed
+                // More fonts coming soon!
+                font: 'DejaVuSansCondensed',
+                color: 'black', // black|white
+                size: 24, // 16|24|32|48|64
+                style: 'normal', // normal|bold|italic
+                x: null, // Will default to xMargin
+                y: null, // Will default to cardHeight - yMargin - size
+              },
+              background: '#F9F6FC', // Background color for the card
+              xMargin: 24, // Edge margin used when x value is not set
+              yMargin: 24, // Edge margin used when y value is not set
+            },
+          },
         ],
       },
     },
