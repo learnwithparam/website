@@ -116,7 +116,7 @@ class BlogPostTemplate extends React.Component {
 
     const disqusConfig = {
       shortname: 'learnwithparam',
-      config: { identifier: slug, title },
+      config: { identifier: slug, title, url: shareUrl },
     };
 
     const currentPartIndex = seriesArray.findIndex(part => {
