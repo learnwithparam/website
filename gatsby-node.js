@@ -7,7 +7,7 @@ const checkType = ({ frontmatter: { page, type } }, value) => {
     return type === value;
   } else {
     // Blogs
-    return !!page || !!type;
+    return !page || !type;
   }
 };
 
