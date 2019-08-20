@@ -4,7 +4,7 @@ date: '2019-05-09'
 modifiedDate: '2019-05-16'
 published: true
 page: false
-category: ['Article']
+category: 'Article'
 tags: ['React', 'JavaScript']
 description: React has been used in desktop, mobile, web and VR development. In this article, we will see how it can be used in server side applications as templates.
 ---

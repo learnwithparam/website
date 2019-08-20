@@ -4,7 +4,7 @@ date: '2019-03-05'
 modifiedDate: '2019-03-09'
 published: true
 page: false
-category: ['Article']
+category: 'Article'
 tags: ['Open Source', 'CMS']
 description: Yesterday I was looking for open source alternates to contentful CMS. I found one called netlify CMS. It might not be a direct alternate, but for small projects, netlify CMS will do.
 ---

@@ -5,7 +5,7 @@ modifiedDate: '2019-04-22'
 published: true
 page: false
 series: 'Deep dive into React Router'
-category: ['Series']
+category: 'Series'
 tags: ['React', 'JavaScript']
 description: Learn how to handle query params in a client side react application using react router library
 ---

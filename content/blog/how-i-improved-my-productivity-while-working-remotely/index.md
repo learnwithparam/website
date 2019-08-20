@@ -4,7 +4,7 @@ date: '2019-05-23'
 modifiedDate: '2019-05-30'
 published: true
 page: false
-category: ['Article']
+category: 'Article'
 tags: ['Workflow', 'Remote Work']
 description: Some of my experience working remotely and tip to make sure we are productive while doing work from home or from remote location.
 ---

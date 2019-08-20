@@ -4,7 +4,7 @@ date: '2019-08-08'
 modifiedDate: '2019-08-08'
 published: true
 page: false
-category: ['Tech Talks']
+category: 'Tech Talks'
 type: Tech Talks
 duration: 19
 isExternal: false

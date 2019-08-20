@@ -4,7 +4,7 @@ date: '2019-04-04'
 modifiedDate: '2019-04-07'
 published: true
 page: false
-category: ['Tutorial']
+category: 'Tutorial'
 tags: ['CSS']
 description: Learn how to center align content vertically and horizontally using CSS3. We discuss techniques using CSS transform and flexbox.
 ---

@@ -5,7 +5,7 @@ modifiedDate: '2019-04-05'
 published: true
 page: false
 series: You don't need jQuery
-category: ['Tutorial']
+category: 'Tutorial'
 tags: ['jQuery', 'JavaScript']
 description: Document ready function is widely used feature from jQuery. With growing trends in modern web development and much better browser support for vanilla JS API's, We can replace or reduce jQuery dependency easily.
 ---

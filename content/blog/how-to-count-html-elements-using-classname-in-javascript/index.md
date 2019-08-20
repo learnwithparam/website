@@ -5,7 +5,7 @@ modifiedDate: '2019-08-10'
 published: true
 page: false
 series: You don't need jQuery
-category: ['Series']
+category: 'Series'
 tags: ['jQuery', 'JavaScript']
 description: How to count the number of child elements using classnames in javascript. It is very easy with jQuery, but do you know how to do it in javascript, lets learn it today.
 ---

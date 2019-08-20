@@ -4,7 +4,7 @@ date: '2019-07-18'
 modifiedDate: '2019-07-18'
 published: true
 page: false
-category: ['Tutorial']
+category: 'Tutorial'
 tags: ['CSS']
 series: 'Drawing and animate heart shape using CSS3'
 description: We can learn how to use border radius and transform property to draw a Heart shape using CSS

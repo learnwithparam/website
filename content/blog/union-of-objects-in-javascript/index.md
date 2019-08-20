@@ -4,7 +4,7 @@ date: '2019-08-13'
 modifiedDate: '2019-08-13'
 published: true
 page: false
-category: ['Tutorial']
+category: 'Tutorial'
 tags: ['JavaScript']
 description: In modern javascript, its very easy to merge two objects, but do you know how to merge more complex objects or arrays based on unique values on two different objects. Lets leran that technique together.
 ---

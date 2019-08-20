@@ -5,7 +5,7 @@ modifiedDate: '2019-07-25'
 published: true
 page: false
 series: 'Deep dive into React Router'
-category: ['Series']
+category: 'Series'
 tags: ['React', 'JavaScript']
 description: Redirecting a page based on some condition is an usual need in a react web application. React router provides an easy way to achieve it. Lets learn how to do that in this article.
 ---

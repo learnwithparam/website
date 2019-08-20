@@ -4,7 +4,7 @@ date: '2019-05-02'
 modifiedDate: '2019-05-05'
 published: true
 page: false
-category: ['Article']
+category: 'Article'
 tags: ['Open Source', 'JavaScript', 'Performance']
 description: Page loading speed is one of the most important metric. Quicklink is a simple javascript library to make any site faster. Lets see how to get started with Quicklink.
 ---

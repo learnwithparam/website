@@ -4,7 +4,7 @@ date: '2019-07-21'
 modifiedDate: '2019-07-21'
 published: true
 page: false
-category: ['Tutorial']
+category: 'Tutorial'
 tags: ['CSS']
 series: 'Drawing and animate heart shape using CSS3'
 description: Learn how to CSS animations on a element using keyframes and animation property. Here, we learn how to create a heart beat animation using CSS3

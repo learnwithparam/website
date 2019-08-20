@@ -5,7 +5,7 @@ modifiedDate: '2019-04-06'
 published: true
 page: false
 tags: ['CSS']
-category: ['Tutorial']
+category: 'Tutorial'
 description: Learn how to scale HTML elements or images on hover using CSS3 transform property.
 ---
 

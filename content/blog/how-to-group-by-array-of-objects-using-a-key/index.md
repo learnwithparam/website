@@ -4,7 +4,7 @@ date: '2019-08-06'
 modifiedDate: '2019-08-06'
 published: true
 page: false
-category: ['Tutorial']
+category: 'Tutorial'
 tags: ['JavaScript']
 description: Understand how to group an array of objects using one of its key. We will achieve this function using array reduce in javascript.
 ---

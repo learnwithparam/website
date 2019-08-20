@@ -4,7 +4,7 @@ date: '2019-03-02'
 modifiedDate: '2019-03-08'
 published: true
 page: false
-category: ['Article']
+category: 'Article'
 tags: ['Gatsby', 'CMS', 'Hosting', 'React']
 description: My experience on working with a demo project using Gatsby, Contentful and Netlify. It is opinionated and not through with a production level project.
 ---

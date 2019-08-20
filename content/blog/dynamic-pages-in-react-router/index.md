@@ -5,7 +5,7 @@ modifiedDate: '2019-04-15'
 published: true
 page: false
 series: 'Deep dive into React Router'
-category: ['Series']
+category: 'Series'
 tags: ['React', 'JavaScript']
 description: Learn how to create dynamic URLs in react application using react router package
 ---

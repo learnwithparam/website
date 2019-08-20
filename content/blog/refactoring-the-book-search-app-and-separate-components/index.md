@@ -5,7 +5,7 @@ modifiedDate: '2019-04-25'
 published: true
 page: false
 series: 'Hooked with react'
-category: ['Series']
+category: 'Series'
 tags: ['React', 'JavaScript']
 description: Learn how to split the react app into components and talk about folder structures briefly, Part 3
 ---
