@@ -126,7 +126,12 @@ class BlogPostTemplate extends React.Component {
 
     return (
       <Layout>
-        <SEO title={title} description={description} />
+        <SEO
+          title={title}
+          description={description}
+          slug={slug}
+          url={shareUrl}
+        />
         <Header />
         <BlogContainer>
           <Container>

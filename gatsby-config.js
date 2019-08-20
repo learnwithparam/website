@@ -61,6 +61,7 @@ module.exports = {
           {
             resolve: require.resolve('./plugins/remark-embedder'),
           },
+          `gatsby-remark-social-cards`,
         ],
       },
     },
@@ -100,7 +101,6 @@ module.exports = {
         icon: `images/favicon.png`, // This path is relative to the root of the site.
       },
     },
-    `gatsby-remark-social-cards`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     `gatsby-plugin-offline`,
