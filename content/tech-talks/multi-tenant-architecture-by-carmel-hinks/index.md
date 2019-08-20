@@ -5,7 +5,7 @@ modifiedDate: '2019-08-02'
 published: true
 page: false
 category: ['Tech Talks']
-type: video
+type: Tech Talks
 duration: 19
 isExternal: false
 tags: ['Architecture', 'Web Scalability']

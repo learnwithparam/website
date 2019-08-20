@@ -5,7 +5,7 @@ modifiedDate: '2019-08-01'
 published: true
 page: false
 category: ['Tech Talks']
-type: video
+type: Tech Talks
 duration: 40
 isExternal: false
 tags: ['Docker', 'Microservices', 'Events', 'Architecture']

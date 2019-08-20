@@ -108,7 +108,7 @@ export const pageQuery = graphql`
         frontmatter: {
           published: { eq: true }
           page: { ne: true }
-          type: { ne: "video" }
+          type: { eq: null }
         }
       }
       limit: 6

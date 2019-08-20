@@ -1,6 +1,6 @@
 import { graphql } from 'gatsby';
 
-import BlogIndex from './blog-list';
+import BlogIndex from './blog-template';
 
 export default BlogIndex;
 
@@ -17,7 +17,7 @@ export const pageQuery = graphql`
         frontmatter: {
           published: { eq: true }
           page: { ne: true }
-          type: { ne: "video" }
+          type: { eq: null }
         }
       }
       limit: $limit
