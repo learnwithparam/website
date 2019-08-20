@@ -29,12 +29,16 @@ class BlogIndex extends React.Component {
   render() {
     const { data } = this.props;
     const posts = data.allMarkdownRemark.edges;
-    const { currentPage, numPages } = this.props.pageContext;
+    const { currentPage = 1, numPages = 1, url } = this.props.pageContext;
     const isFirst = currentPage === 1;
     const isLast = currentPage === numPages;
+    let urlPath = url ? url : `blog`;
+
     const prevPage =
-      currentPage - 1 === 1 ? '/blog' : `/blog/${(currentPage - 1).toString()}`;
-    const nextPage = `/blog/${(currentPage + 1).toString()}`;
+      currentPage - 1 === 1
+        ? `/${urlPath}`
+        : `/${urlPath}/${(currentPage - 1).toString()}`;
+    const nextPage = `/${urlPath}/${(currentPage + 1).toString()}`;
 
     return (
       <Layout>

@@ -1,5 +1,8 @@
 const path = require(`path`);
+const _ = require(`lodash`);
 const { createFilePath } = require(`gatsby-source-filesystem`);
+
+const slugify = str => _.kebabCase(str.toLowerCase());
 
 const checkType = ({ frontmatter: { page, type } }, value) => {
   if (value) {
@@ -18,7 +21,7 @@ const createBlogListPages = (createPage, posts, url, type, template) => {
   const filterPosts = posts.filter(post => {
     return checkType(post.node, type);
   });
-  const postsPerPage = 8;
+  const postsPerPage = 8; // This number decides the pagination
   const numPages = Math.ceil(filterPosts.length / postsPerPage);
 
   Array.from({ length: numPages }).forEach((_, i) => {
@@ -30,6 +33,7 @@ const createBlogListPages = (createPage, posts, url, type, template) => {
         skip: i * postsPerPage,
         numPages,
         currentPage: i + 1,
+        url,
       },
     });
   });
@@ -59,6 +63,11 @@ exports.createPages = ({ graphql, actions }) => {
                 type
               }
             }
+          }
+        }
+        tagsGroup: allMarkdownRemark(limit: 2000) {
+          group(field: frontmatter___tags) {
+            fieldValue
           }
         }
       }
@@ -101,6 +110,21 @@ exports.createPages = ({ graphql, actions }) => {
 
     createBlogListPages(createPage, posts, `blog`);
     createBlogListPages(createPage, posts, `tech-talks`, `Tech Talks`);
+
+    // Tags Page
+    const tags = result.data.tagsGroup.group;
+    const tagTemplate = path.resolve(`./src/templates/tag.js`);
+    tags.forEach(tag => {
+      const url = slugify(tag.fieldValue);
+      createPage({
+        path: `/${url}/`,
+        component: tagTemplate,
+        context: {
+          tag: tag.fieldValue,
+          url,
+        },
+      });
+    });
   });
 };
 
