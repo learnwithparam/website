@@ -81,7 +81,7 @@ const secondObj = {
 const { lastName = 'Harrison', country } = secondObj;
 
 console.log(lastName); // Harrison
-console.log(country); // Tallinn
+console.log(country); // Estonia
 ```
 
 Here in this example, even though `lastName` is not defined in object, it takes the default value we assigned while destructuring.
