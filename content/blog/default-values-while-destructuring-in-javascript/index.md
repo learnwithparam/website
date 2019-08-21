@@ -90,7 +90,7 @@ This will be very useful when you want to have default values set in your applic
 
 #### Edge case while setting default value in destructuring
 
-This has an edge case though, destructuring will work well with default value if the value is undefined. It won't work for other non true values, for example `null`, `0`, 'false'.
+This has an edge case though, destructuring will work well with default value if the value is undefined. It won't work for other non true values, for example `null`, `0`, `false`.
 
 Let see it in example,
 
@@ -119,6 +119,6 @@ console.log(notFound); // Not Found
 
 Hope you enjoyed and learnt some tricks about destructuring in javascript 😎
 
-Checkout the whole example here,
+Checkout the examples here,
 
-https://repl.it/@ParamHarrison/destructuring-with-default-values
+<iframe height="400px" width="100%" src="https://repl.it/@ParamHarrison/destructuring-with-default-values?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
