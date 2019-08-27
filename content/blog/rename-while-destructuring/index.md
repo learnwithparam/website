@@ -1,7 +1,7 @@
 ---
 title: Rename variables while destructuring
-date: '2019-08-18'
-modifiedDate: '2019-08-18'
+date: '2019-08-27'
+modifiedDate: '2019-08-27'
 published: true
 page: false
 category: 'Tutorial'
