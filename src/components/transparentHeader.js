@@ -48,7 +48,7 @@ const HeaderColumnRight = styled(HeaderColumn)`
 
 const MenuItem = styled(Link)`
   color: inherit;
-  margin-left: 0.25rem;
+  margin-right: 0.25rem;
   font-size: 0.9rem;
   padding: 0.4rem 0.75rem;
   border-radius: 6px;
@@ -77,6 +77,9 @@ const TransparentHeader = () => (
     <HeaderColumnRight>
       <MenuItem to="/blog/" activeClassName="active">
         Blog
+      </MenuItem>
+      <MenuItem to="/tech-talks/" activeClassName="active">
+        Tech Talks
       </MenuItem>
       <SocialIcon
         title="Follow me on twitter"

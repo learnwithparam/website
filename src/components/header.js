@@ -31,11 +31,6 @@ const links = [
     url: '/javascript/',
     color: '#ffe725',
   },
-  {
-    name: '#tech talks',
-    url: '/tech-talks/',
-    color: '#ff8682',
-  },
 ];
 
 const StyledLink = styled(Link)`
