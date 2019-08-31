@@ -6,7 +6,7 @@ published: true
 page: false
 series: 'Hooked with react'
 category: 'Series'
-tags: ['React', 'JavaScript']
+tags: ['React']
 description: Creating book details page using react router in our book search application - Part 4
 ---
 

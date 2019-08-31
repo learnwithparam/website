@@ -5,7 +5,7 @@ modifiedDate: '2019-08-02'
 published: true
 page: false
 category: 'Tutorial'
-tags: ['React', 'JavaScript']
+tags: ['React']
 description: It is easy to pass props to state in react hooks, but do you know how to sync props changes to state changes after initialization. It is also easy, lets see that in this article.
 ---
 

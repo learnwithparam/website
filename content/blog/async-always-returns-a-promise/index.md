@@ -6,7 +6,7 @@ published: true
 page: false
 category: 'Tutorial'
 tags: ['JavaScript']
-description: Async await become integral part of any modern application in Javascript. We have used async for all asynchronous operation and return the promise ourself. But do you know, how async works? Lets see it in detail.
+description: Async await become integral part of any modern application in JavaScript. We have used async for all asynchronous operation and return the promise ourself. But do you know, how async works? Lets see it in detail.
 ---
 
 Async functions are a way to make the asynchrounous operation synchronously by awaiting for the resopnse. Lets see it in the example straight away,

@@ -6,7 +6,7 @@ published: true
 page: false
 series: 'Hooked with react'
 category: 'Series'
-tags: ['React', 'JavaScript']
+tags: ['React']
 description: Learn how to handle errors and loading state in react hooks through our book search app - Part 2
 ---
 

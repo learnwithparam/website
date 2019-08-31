@@ -6,7 +6,7 @@ published: true
 page: false
 series: 'Deep dive into React Router'
 category: 'Series'
-tags: ['React', 'JavaScript']
+tags: ['React']
 description: There are several types of router supported by react router package. We will see the use cases for each types briefly in this article.
 ---
 

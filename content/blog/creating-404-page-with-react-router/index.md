@@ -6,7 +6,7 @@ published: true
 page: false
 series: 'Deep dive into React Router'
 category: 'Series'
-tags: ['React', 'JavaScript']
+tags: ['React']
 description: Learn how to show a 404 page in a client side routed react application if there is no route matching the URL
 ---
 

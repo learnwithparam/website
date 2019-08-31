@@ -6,7 +6,7 @@ published: true
 page: false
 series: 'Hooked with react'
 category: 'Series'
-tags: ['React', 'JavaScript', 'CSS in JS', 'Emotion']
+tags: ['React', 'CSS in JS', 'Emotion']
 description: How to style your react app using emotion library. It has several ways to style the app. We will learn how to create global styles, styled components and CSS in JS through set of emotion libraries.
 ---
 
