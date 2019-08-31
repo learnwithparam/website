@@ -49,7 +49,7 @@ const Header = () => (
         <Flex justifyContent="center">
           {links.map(link => {
             return (
-              <Box mr={4} key={`link-${link.url}`}>
+              <Box mx={3} key={`link-${link.url}`}>
                 <StyledLink color={link.color} to={link.url}>
                   {link.name}
                 </StyledLink>
