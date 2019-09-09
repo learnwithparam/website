@@ -8,14 +8,12 @@ import {
   TwitterShareButton,
   WhatsappShareButton,
   RedditShareButton,
-  TelegramShareButton,
   PinterestShareButton,
   FacebookIcon,
   TwitterIcon,
   LinkedinIcon,
   WhatsappIcon,
   RedditIcon,
-  TelegramIcon,
   PinterestIcon,
 } from 'react-share';
 
@@ -77,9 +75,6 @@ const Share = ({
       <WhatsappShareButton title={title} url={url}>
         <WhatsappIcon size={size} round />
       </WhatsappShareButton>
-      <TelegramShareButton title={title} url={url}>
-        <TelegramIcon size={size} round />
-      </TelegramShareButton>
     </ShareContainer>
   );
 };

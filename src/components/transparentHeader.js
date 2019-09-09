@@ -78,9 +78,6 @@ const TransparentHeader = () => (
       <MenuItem to="/blog/" activeClassName="active">
         Blog
       </MenuItem>
-      <MenuItem to="/tech-talks/" activeClassName="active">
-        Tech Talks
-      </MenuItem>
       <SocialIcon
         title="Follow me on twitter"
         alt="Twitter follow intent"

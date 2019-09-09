@@ -31,10 +31,26 @@ const links = [
     url: '/javascript/',
     color: '#ffe725',
   },
+  {
+    name: '#tech talks',
+    url: '/tech-talks/',
+    color: '#f8a978',
+  },
 ];
 
 const StyledLink = styled(Link)`
   color: ${props => (props.color ? props.color : '#ffffff')};
+`;
+
+const LinkBox = styled(Box)`
+  @media (max-width: 575.98px) {
+    font-size: 16px;
+  }
+  @media (max-width: 374.98px) {
+    font-size: 14px;
+    margin-left: 6px;
+    margin-right: 6px;
+  }
 `;
 
 const Header = () => (
@@ -49,11 +65,11 @@ const Header = () => (
         <Flex justifyContent="center">
           {links.map(link => {
             return (
-              <Box mx={3} key={`link-${link.url}`}>
+              <LinkBox mx={[2, 3]} key={`link-${link.url}`}>
                 <StyledLink color={link.color} to={link.url}>
                   {link.name}
                 </StyledLink>
-              </Box>
+              </LinkBox>
             );
           })}
         </Flex>
