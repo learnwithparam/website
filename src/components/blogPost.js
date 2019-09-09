@@ -58,7 +58,7 @@ const BlogPost = ({
       <p>
         <small>{modifiedDate || date}</small>
         <span className="sep">{` • `}</span>
-        {type && (type === 'video' || type === 'Tech Talks') ? (
+        {type && (type === 'Videos' || type === 'Tech Talks') ? (
           <small>{formatReadingTime(duration, type)}</small>
         ) : (
           <small>{formatReadingTime(timeToRead)}</small>
@@ -67,7 +67,7 @@ const BlogPost = ({
       <p>{description}</p>
       <ContinueReading to={slug}>
         Continue{' '}
-        {type === 'video' || type === 'Tech Talks' ? 'watching' : 'reading'} →
+        {type === 'Videos' || type === 'Tech Talks' ? 'watching' : 'reading'} →
       </ContinueReading>
     </BlogPostContainer>
   );

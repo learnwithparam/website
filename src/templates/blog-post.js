@@ -153,7 +153,7 @@ class BlogPostTemplate extends React.Component {
                   </small>
                   <small>
                     <span className="sep">{` • `}</span>
-                    {type && (type === 'video' || type === 'Tech Talks')
+                    {type && (type === 'Videos' || type === 'Tech Talks')
                       ? formatReadingTime(duration, type)
                       : formatReadingTime(post.timeToRead)}
                   </small>
