@@ -124,6 +124,13 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-plugin-mailchimp`,
+      options: {
+        endpoint:
+          'https://live.us4.list-manage.com/subscribe/post?u=fbe609052f18d98b13eb516f2&amp;id=4cf68a060f',
+      },
+    },
+    {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `gatsby-starter-default`,

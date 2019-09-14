@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link, graphql } from 'gatsby';
 import styled from '@emotion/styled';
+import { Box } from '@rebass/emotion';
 import { DiscussionEmbed } from 'disqus-react';
 
 import { Container } from '../components/commonStyles';
@@ -9,6 +10,7 @@ import Layout from '../components/layout';
 import SEO from '../components/seo';
 import Share from '../components/share';
 import { CarbonAdsWide } from '../components/carbonAds';
+import EmailListForm from '../components/EmailListForm';
 
 import { formatReadingTime } from '../utils/helpers';
 
@@ -200,7 +202,9 @@ class BlogPostTemplate extends React.Component {
               className="blog-content"
               dangerouslySetInnerHTML={{ __html: post.html }}
             />
-
+            <Box mb={4}>
+              <EmailListForm />
+            </Box>
             {!post.frontmatter.page && (
               <>
                 <Share

@@ -7,6 +7,7 @@ import Header from '../components/header';
 import BlogContainer from '../components/blogContainer';
 import { Container, ButtonLink } from '../components/commonStyles';
 import { CarbonAdsWide } from '../components/carbonAds';
+import EmailListForm from '../components/EmailListForm';
 
 const StyledBlogContainer = styled.div`
   background-color: #fdfdfd;
@@ -81,6 +82,7 @@ class BlogIndex extends React.Component {
               </PrevNextItem>
             </PrevNextPageContainer>
           </Container>
+          <EmailListForm />
         </StyledBlogContainer>
       </Layout>
     );

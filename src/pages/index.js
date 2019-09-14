@@ -8,6 +8,7 @@ import TeachSection from '../components/teachSection';
 import BlogContainer from '../components/blogContainer';
 import Header from '../components/header';
 import { CarbonAdsWide } from '../components/carbonAds';
+import EmailListForm from '../components/EmailListForm';
 
 import heroImage from './../../images/programming.svg';
 import htmlCSSImage from '../../images/html-css.svg';
@@ -42,6 +43,7 @@ class IndexPage extends React.Component {
         <Hero image={heroImage} />
         <CarbonAdsWide />
         <BlogContainer posts={posts} sectionTitle={`Latest posts`} />
+        <EmailListForm />
         <TeachSection
           title={`What I teach and Learn`}
           description={`In the large JavaScript Ocean, I am exploring few of the Islands. On my way, I love to guide through those islands for beginners and professionals`}

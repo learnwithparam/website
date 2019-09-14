@@ -38,4 +38,24 @@ const ButtonLink = styled(Link)`
   }
 `;
 
-export { Container, TextCenter, ButtonLink };
+const Button = styled.button`
+  font-size: 14px;
+  line-height: 1;
+  font-weight: bold;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  color: #fff;
+  background-color: #ff2e73;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: none;
+  background-image: none;
+  &:hover,
+  &:focus,
+  &:active {
+    text-decoration: none;
+    background-color: #d23669;
+  }
+`;
+
+export { Container, TextCenter, ButtonLink, Button };
