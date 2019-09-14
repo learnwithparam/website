@@ -16,12 +16,13 @@ const Input = styled.input`
 
 const EmailListForm = () => {
   const [email, setEmail] = useState('');
+  const [success, setSuccess] = useState(false);
 
   const handleSubmit = e => {
     e.preventDefault();
     addToMailchimp(email)
       .then(data => {
-        console.log(data);
+        setSuccess(true); // TODO: check status and display proper message
       })
       .catch(error => {
         console.log(error);
@@ -49,21 +50,28 @@ const EmailListForm = () => {
               I share best news, articles and projects about JavaScript, React,
               GraphQL and real world development practices
             </Text>
-            <Flex py={2} flexDirection={['column', 'row']}>
-              <Box flex="0.7">
-                <Input
-                  placeholder="Email address"
-                  name="email"
-                  type="text"
-                  onChange={handleEmailChange}
-                  required
-                />
-              </Box>
-              <Box pl={[0, 3]} mt={[3, 0]}>
-                <Button type="submit">Subscribe</Button>
-              </Box>
-            </Flex>
+            {!success && (
+              <Flex py={2} flexDirection={['column', 'row']}>
+                <Box flex="0.7">
+                  <Input
+                    placeholder="Email address"
+                    name="email"
+                    type="text"
+                    onChange={handleEmailChange}
+                    required
+                  />
+                </Box>
+                <Box pl={[0, 3]} mt={[3, 0]}>
+                  <Button type="submit">Subscribe</Button>
+                </Box>
+              </Flex>
+            )}
           </form>
+          {success && (
+            <Text as="h4" color="#1fab89">
+              Thanks for subscribing to my newsletter!
+            </Text>
+          )}
         </Box>
       </Container>
     </Flex>
