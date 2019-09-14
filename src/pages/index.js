@@ -41,7 +41,7 @@ class IndexPage extends React.Component {
         <Header />
         <Hero image={heroImage} />
         <CarbonAdsWide />
-        <BlogContainer posts={posts} sectionTitle={`Blog`} />
+        <BlogContainer posts={posts} sectionTitle={`Latest posts`} />
         <TeachSection
           title={`What I teach and Learn`}
           description={`In the large JavaScript Ocean, I am exploring few of the Islands. On my way, I love to guide through those islands for beginners and professionals`}
@@ -104,14 +104,8 @@ export const pageQuery = graphql`
     }
     allMarkdownRemark(
       sort: { fields: [frontmatter___date], order: DESC }
-      filter: {
-        frontmatter: {
-          published: { eq: true }
-          page: { ne: true }
-          type: { eq: null }
-        }
-      }
-      limit: 6
+      filter: { frontmatter: { published: { eq: true }, page: { ne: true } } }
+      limit: 8
     ) {
       edges {
         node {
