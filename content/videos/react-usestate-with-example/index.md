@@ -6,6 +6,7 @@ published: true
 page: false
 category: 'Videos'
 type: Videos
+series: 'Small steps on React'
 duration: 5
 isExternal: false
 tags: ['React']
