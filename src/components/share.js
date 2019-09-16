@@ -8,13 +8,11 @@ import {
   TwitterShareButton,
   WhatsappShareButton,
   RedditShareButton,
-  PinterestShareButton,
   FacebookIcon,
   TwitterIcon,
   LinkedinIcon,
   WhatsappIcon,
   RedditIcon,
-  PinterestIcon,
 } from 'react-share';
 
 const ShareContainer = styled.section`
@@ -69,9 +67,6 @@ const Share = ({
       <RedditShareButton title={title} url={url}>
         <RedditIcon size={size} round />
       </RedditShareButton>
-      <PinterestShareButton title={title} description={description} url={url}>
-        <PinterestIcon size={size} round />
-      </PinterestShareButton>
       <WhatsappShareButton title={title} url={url}>
         <WhatsappIcon size={size} round />
       </WhatsappShareButton>
