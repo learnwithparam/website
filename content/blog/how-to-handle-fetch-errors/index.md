@@ -1,7 +1,7 @@
 ---
 title: Error handling while using native fetch API in JavaScript
 date: '2019-09-16'
-modifiedDate: '2019-08-16'
+modifiedDate: '2019-09-16'
 published: true
 page: false
 category: 'Tutorial'
