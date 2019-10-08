@@ -269,4 +269,4 @@ https://codesandbox.io/s/nested-routes-react-router-y5pt4
 
 In our next tutorial, we will see how to highlight the routes when selected in react router.
 
-Hope you learned some trick to use react router for your nested routing needs. Stay tuned for more content I share through [twitter](https://twitter.com/learnwithparam) and subscibe to my email newsletter 🤗
+Hope you learned some trick to use react router for your nested routing needs. Stay tuned for more content I share through [twitter](https://twitter.com/learnwithparam) and subscribe to my email newsletter 🤗
