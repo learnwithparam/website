@@ -6,7 +6,7 @@ published: true
 page: false
 category: 'Tutorial'
 tags: ['MongoDB']
-description: In NoSQL, you can save different document in a single collection. Now you want to find documents with specific field. how do you find that? There is an easy way, we will see it in example.
+description: In NoSQL, you can save different document in a single collection. Now if you want to find documents with specific field, how do you find that? There is an easy way, we will see it in example.
 ---
 
 MongoDB find syntax is pretty simple. Lets have a collection named `users` and find all the documents in the collection,
