@@ -2,7 +2,6 @@ import React from 'react';
 import { Link, graphql } from 'gatsby';
 import styled from '@emotion/styled';
 import { Box } from '@rebass/emotion';
-import { DiscussionEmbed } from 'disqus-react';
 
 import { Container } from '../components/commonStyles';
 import Header from '../components/header';
@@ -115,11 +114,6 @@ class BlogPostTemplate extends React.Component {
     );
 
     const shareUrl = siteUrl + slug;
-
-    const disqusConfig = {
-      shortname: 'learnwithparam',
-      config: { identifier: slug, title, url: shareUrl },
-    };
 
     const currentPartIndex = seriesArray.findIndex(part => {
       if (part.node.fields.slug === slug) return true;
@@ -235,7 +229,6 @@ class BlogPostTemplate extends React.Component {
                     </li>
                   )}
                 </PreviousNextContainer>
-                <DiscussionEmbed {...disqusConfig} />
               </>
             )}
           </Container>
