@@ -36,9 +36,19 @@ const links = [
     url: '/tech-talks/',
     color: '#f8a978',
   },
+  {
+    name: '#My articles on Logrocket',
+    url: 'https://blog.logrocket.com/author/paramananthamharrison/',
+    color: '#f6e1e1',
+    external: true,
+  },
 ];
 
 const StyledLink = styled(Link)`
+  color: ${props => (props.color ? props.color : '#ffffff')};
+`;
+
+const StyledAnchor = styled('a')`
   color: ${props => (props.color ? props.color : '#ffffff')};
 `;
 
@@ -62,13 +72,23 @@ const Header = () => (
     </HeaderContainer>
     <HeaderContainer backgroundColor="#403D99">
       <Container>
-        <Flex justifyContent="center">
+        <Flex justifyContent="center" flexWrap="wrap">
           {links.map(link => {
             return (
               <LinkBox mx={[2, 3]} key={`link-${link.url}`}>
-                <StyledLink color={link.color} to={link.url}>
-                  {link.name}
-                </StyledLink>
+                {link.external ? (
+                  <StyledAnchor
+                    href={link.url}
+                    color={link.color}
+                    target="_blank"
+                  >
+                    {link.name}
+                  </StyledAnchor>
+                ) : (
+                  <StyledLink color={link.color} to={link.url}>
+                    {link.name}
+                  </StyledLink>
+                )}
               </LinkBox>
             );
           })}
