@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from '@emotion/styled';
+import { Heading } from '@chakra-ui/core';
 import { Link } from 'gatsby';
 import { SocialIcon } from 'react-social-icons';
 
@@ -22,7 +23,7 @@ const HeaderColumn = styled.div`
   }
 `;
 
-const LogoText = styled.h3`
+const LogoText = styled(Heading)`
   margin: 0;
   line-height: inherit;
 `;
@@ -69,8 +70,18 @@ const socialIconStyle = {
 const TransparentHeader = () => (
   <HeaderGrid>
     <HeaderColumn>
-      <LogoText>
-        <LinkDesktop to="/">Learn with Param</LinkDesktop>
+      <LogoText as="h3" fontSize="2xl" textTransform="uppercase">
+        <LinkDesktop to="/">
+          <Heading as="strong" fontSize="2xl" color="purple.600">
+            Learn
+          </Heading>{' '}
+          <Heading as="strong" fontSize="lg" color="orange.400">
+            with
+          </Heading>{' '}
+          <Heading as="strong" fontSize="2xl" color="teal.600">
+            Param
+          </Heading>
+        </LinkDesktop>
         <LinkMobile to="/">{`{ P }`}</LinkMobile>
       </LogoText>
     </HeaderColumn>

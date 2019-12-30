@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import styled from '@emotion/styled';
-import { Flex, Box, Text } from '@rebass/emotion';
+import { Flex, Box, Text, Heading } from '@chakra-ui/core';
 import addToMailchimp from 'gatsby-plugin-mailchimp';
 
 import { Container, Button } from './commonStyles';
@@ -9,7 +9,7 @@ const Input = styled.input`
   color: #2a2a2a;
   width: 100%;
   padding: 0.5rem;
-  height: 50px;
+  height: 46px;
   border-radius: 5px;
   border: 1px solid;
 `;
@@ -36,17 +36,19 @@ const EmailListForm = () => {
   return (
     <Flex
       flexDirection="column"
-      bg="#e7f3ee"
+      bg="teal.50"
       color="#2a2a2a"
       justifyContent="center"
       alignItems="center"
-      py={5}
+      py={6}
     >
       <Container>
-        <Box>
+        <Box py={6} my={6}>
           <form onSubmit={handleSubmit}>
-            <Text as="h2">Subscribe to my Newsletter</Text>
-            <Text as="p">
+            <Heading as="h2" fontSize="3xl" mb={4}>
+              Subscribe to my Newsletter
+            </Heading>
+            <Text fontSize="lg" mb={3}>
               I share best news, articles and projects about JavaScript, React,
               GraphQL and real world development practices
             </Text>

@@ -1,18 +1,16 @@
 import React from 'react';
 import styled from '@emotion/styled';
-import { Flex, Box } from '@rebass/emotion';
+import { Flex, Box } from '@chakra-ui/core';
 import { Link } from 'gatsby';
 
 import { Container } from './commonStyles';
 import TransparentHeader from './transparentHeader';
 
-const HeaderContainer = styled.section`
+const HeaderContainer = styled(Box)`
   display: flex;
   flex-direction: column;
   justify-content: center;
   height: 80px;
-  background-color: ${props =>
-    props.backgroundColor ? props.backgroundColor : 'transparent'};
 `;
 
 const links = [
@@ -70,7 +68,7 @@ const Header = () => (
         <TransparentHeader />
       </Container>
     </HeaderContainer>
-    <HeaderContainer backgroundColor="#403D99">
+    <HeaderContainer bg="purple.800">
       <Container>
         <Flex justifyContent="center" flexWrap="wrap">
           {links.map(link => {

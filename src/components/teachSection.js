@@ -1,10 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from '@emotion/styled';
+import { Box, Heading, Text } from '@chakra-ui/core';
 import { Container } from './commonStyles';
 
-const TeachContainer = styled.section`
-  background: #f2f6fc;
+const TeachContainer = styled(Box)`
   padding: 5rem 0;
   @media (max-width: 575.98px) {
     padding: 2rem 0 1rem;
@@ -13,21 +13,7 @@ const TeachContainer = styled.section`
 
 const TeachWrapper = styled(Container)``;
 
-const TeachContent = styled.div`
-  > h1,
-  > p {
-    max-width: 640px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-  }
-  > h1 {
-    margin-top: 0;
-  }
-  > p {
-    margin-bottom: 2rem;
-  }
-`;
+const TeachContent = styled.div``;
 
 const TeachUnStyledList = styled.ul`
   list-style: none;
@@ -87,11 +73,17 @@ const TeachImageFragment = ({ image, title }) => {
 
 const TeachSection = ({ title, description, contents }) => {
   return (
-    <TeachContainer>
+    <TeachContainer bg="gray.50">
       <TeachWrapper>
         <TeachContent>
-          <h1>{title}</h1>
-          <p>{description}</p>
+          <Box pb={3}>
+            <Heading as="h1" fontSize="4xl" mb={4} textAlign="center">
+              {title}
+            </Heading>
+            <Text fontSize="lg" textAlign="center" mb={6}>
+              {description}
+            </Text>
+          </Box>
           <TeachUnStyledList>
             {contents.map((content, index) => (
               <TeachList key={index}>
@@ -99,8 +91,12 @@ const TeachSection = ({ title, description, contents }) => {
                   <TeachImageFragment {...content} />
                 )}
                 <TeachColumn>
-                  <h2>{content.title}</h2>
-                  <p>{content.description}</p>
+                  <Heading as="h2" fontSize="2xl" mb={4}>
+                    {content.title}
+                  </Heading>
+                  <Text fontSize="lg" color="gray.700">
+                    {content.description}
+                  </Text>
                 </TeachColumn>
                 {content.image && index % 2 === 0 && (
                   <TeachImageFragment {...content} />

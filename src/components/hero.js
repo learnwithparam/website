@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from '@emotion/styled';
+import { Heading, Text } from '@chakra-ui/core';
 import { Container } from './commonStyles';
 
 const HeroContainer = styled.section`
@@ -38,15 +39,15 @@ const Hero = ({ image }) => (
           <img src={image} alt="Param at Desk" />
         </HeroColumnImage>
         <HeroColumn>
-          <h3>{`Hi, I'm Param 👋`}</h3>
-          <p>
+          <Heading as="h3" mb={6} fontSize="2xl">{`Hi, I'm Param 👋`}</Heading>
+          <Text fontSize="lg" mb={3}>
             I help people to learn web and mobile technologies through
             workshops, webinars and courses.
-          </p>
-          <p>
+          </Text>
+          <Text fontSize="lg">
             I prefer teaching through practical examples and encourage everyone
             to learn by doing.
-          </p>
+          </Text>
         </HeroColumn>
       </HeroGrid>
     </Container>

@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'gatsby';
 import styled from '@emotion/styled';
+import { Heading, Text } from '@chakra-ui/core';
 
 import { formatReadingTime } from '../utils/helpers';
 
@@ -16,13 +17,6 @@ const BlogPostContainer = styled.section`
   margin-bottom: 1.5rem;
   @media (max-width: 575.98px) {
     padding: 1.5rem 1rem;
-  }
-  h2 {
-    margin-top: 0;
-    margin-bottom: 0.75rem;
-    @media (max-width: 575.98px) {
-      font-size: 1.2rem;
-    }
   }
   small {
     margin: 0;
@@ -52,10 +46,10 @@ const BlogPost = ({
 }) => {
   return (
     <BlogPostContainer>
-      <h2>
+      <Heading as="h2" fontSize="2xl" mb={3}>
         <Link to={slug}>{title}</Link>
-      </h2>
-      <p>
+      </Heading>
+      <Text>
         <small>{modifiedDate || date}</small>
         <span className="sep">{` • `}</span>
         {type && (type === 'Videos' || type === 'Tech Talks') ? (
@@ -63,8 +57,10 @@ const BlogPost = ({
         ) : (
           <small>{formatReadingTime(timeToRead)}</small>
         )}
-      </p>
-      <p>{description}</p>
+      </Text>
+      <Text fontSize="lg" my={4}>
+        {description}
+      </Text>
       <ContinueReading to={slug}>
         Continue{' '}
         {type === 'Videos' || type === 'Tech Talks' ? 'watching' : 'reading'} →

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link, graphql } from 'gatsby';
 import styled from '@emotion/styled';
-import { Box } from '@rebass/emotion';
+import { Box, Heading, Text, List, ListItem } from '@chakra-ui/core';
 
 import { Container } from '../components/commonStyles';
 import Header from '../components/header';
@@ -76,7 +76,47 @@ const PreviousNextContainer = styled.ul`
   }
 `;
 
-const BlogContent = styled.div``;
+const BlogContent = styled(Box)`
+  p {
+    margin-bottom: 1.2rem;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: Bitter, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
+      'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
+      'Helvetica Neue', 'Helvetica', 'Arial', serif;
+    font-weight: bold;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  h1 {
+    font-size: 3rem;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+  h3 {
+    font-size: 2rem;
+  }
+  h4 {
+    font-size: 1.5rem;
+  }
+  h5 {
+    font-size: 1.2rem;
+  }
+  h6 {
+    font-size: 1rem;
+  }
+  ul {
+    margin-left: 1.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+`;
 
 const SeriesContainer = styled.blockquote`
   p {
@@ -131,7 +171,9 @@ class BlogPostTemplate extends React.Component {
         <Header />
         <BlogContainer>
           <Container>
-            <h1>{title}</h1>
+            <Heading as="h1" fontSize="4xl" mb={4}>
+              {title}
+            </Heading>
             {!post.frontmatter.page && (
               <>
                 <Share
@@ -163,15 +205,15 @@ class BlogPostTemplate extends React.Component {
 
             {seriesArray.length ? (
               <SeriesContainer>
-                <p>
+                <Text as="p" fontSize="lg">
                   This is part {currentPartIndex + 1} of {seriesArray.length} in
                   my series on "<strong>{series}</strong>"
-                </p>
-                <ul>
+                </Text>
+                <List styleType="disc">
                   {seriesArray.map((part, index) => {
                     const partNode = part.node;
                     return (
-                      <li key={index}>
+                      <ListItem mb={3} key={index}>
                         Part {index + 1}:{' '}
                         {currentPartIndex === index ? (
                           <span>
@@ -183,16 +225,18 @@ class BlogPostTemplate extends React.Component {
                             {partNode.frontmatter.title}
                           </a>
                         )}
-                      </li>
+                      </ListItem>
                     );
                   })}
-                </ul>
+                </List>
               </SeriesContainer>
             ) : null}
 
             {!post.frontmatter.page && <CarbonAdsWide />}
 
             <BlogContent
+              fontSize="lg"
+              lineHeight="1.6"
               className="blog-content"
               dangerouslySetInnerHTML={{ __html: post.html }}
             />
@@ -200,7 +244,7 @@ class BlogPostTemplate extends React.Component {
               <EmailListForm />
             </Box>
             {!post.frontmatter.page && (
-              <>
+              <Box py={3}>
                 <Share
                   title={title}
                   description={description}
@@ -214,7 +258,9 @@ class BlogPostTemplate extends React.Component {
                 <PreviousNextContainer>
                   {previous && (
                     <li>
-                      <h5>Previous Article</h5>
+                      <Heading as="h5" fontSize="lg" mb={3}>
+                        Previous Article
+                      </Heading>
                       <Link to={previous.fields.slug} rel="prev">
                         ← {previous.frontmatter.title}
                       </Link>
@@ -222,14 +268,16 @@ class BlogPostTemplate extends React.Component {
                   )}
                   {next && (
                     <li>
-                      <h5>Next Article</h5>
+                      <Heading as="h5" fontSize="lg" mb={3}>
+                        Next Article
+                      </Heading>
                       <Link to={next.fields.slug} rel="next">
                         {next.frontmatter.title} →
                       </Link>
                     </li>
                   )}
                 </PreviousNextContainer>
-              </>
+              </Box>
             )}
           </Container>
         </BlogContainer>

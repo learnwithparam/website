@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from '@emotion/styled';
+import { Heading } from '@chakra-ui/core';
 
 import BlogPost from '../components/blogPost';
 import { Container, TextCenter, ButtonLink } from '../components/commonStyles';
@@ -12,7 +13,7 @@ const BlogWrapper = styled.div`
   }
 `;
 
-const SectionTitle = styled.h2`
+const SectionTitle = styled(Heading)`
   margin-bottom: 2.5rem;
   display: flex;
   @media (max-width: 575.98px) {
@@ -31,7 +32,11 @@ const BlogContainer = ({ posts, sectionTitle }) => {
   return (
     <BlogWrapper>
       <Container>
-        {sectionTitle ? <SectionTitle>{sectionTitle}</SectionTitle> : null}
+        {sectionTitle ? (
+          <SectionTitle as="h2" fontSize="2xl">
+            {sectionTitle}
+          </SectionTitle>
+        ) : null}
         {posts.map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug;
           return (
