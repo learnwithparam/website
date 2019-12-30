@@ -24,8 +24,8 @@ const TeachUnStyledList = styled.ul`
 `;
 
 const TeachList = styled.li`
-  padding: 2rem;
-  margin: 0.5rem;
+  padding: 3rem 2rem;
+  margin: 0.5rem 0;
   border-radius: 6px;
   transition: all 0.2s linear;
   display: flex;
@@ -76,7 +76,7 @@ const TeachSection = ({ title, description, contents }) => {
     <TeachContainer bg="gray.50">
       <TeachWrapper>
         <TeachContent>
-          <Box pb={3}>
+          <Box pb={6}>
             <Heading as="h1" fontSize="4xl" mb={4} textAlign="center">
               {title}
             </Heading>
@@ -91,10 +91,10 @@ const TeachSection = ({ title, description, contents }) => {
                   <TeachImageFragment {...content} />
                 )}
                 <TeachColumn>
-                  <Heading as="h2" fontSize="2xl" mb={4}>
+                  <Heading as="h2" fontSize="3xl" mb={6} px={2}>
                     {content.title}
                   </Heading>
-                  <Text fontSize="lg" color="gray.700">
+                  <Text fontSize="lg" color="gray.700" lineHeight="1.6" px={2}>
                     {content.description}
                   </Text>
                 </TeachColumn>
