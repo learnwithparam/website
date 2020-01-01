@@ -1,10 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from '@emotion/styled';
-import { Heading, Text } from '@chakra-ui/core';
+import { Heading, Text, Box } from '@chakra-ui/core';
 import { Container } from './commonStyles';
 
-const HeroContainer = styled.section`
+const HeroContainer = styled(Box)`
   background-color: #fdfdfd;
   display: flex;
   flex-direction: column;
@@ -32,7 +32,7 @@ const HeroColumnImage = styled(HeroColumn)`
 `;
 
 const Hero = ({ image }) => (
-  <HeroContainer>
+  <HeroContainer my={6}>
     <Container>
       <HeroGrid>
         <HeroColumnImage>
