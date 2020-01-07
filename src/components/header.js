@@ -30,6 +30,11 @@ const links = [
     color: '#ffe725',
   },
   {
+    name: '#mongodb',
+    url: '/mongodb/',
+    color: '#ccda46',
+  },
+  {
     name: '#tech talks',
     url: '/tech-talks/',
     color: '#f8a978',

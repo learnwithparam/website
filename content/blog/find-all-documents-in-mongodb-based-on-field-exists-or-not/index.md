@@ -4,7 +4,8 @@ date: '2019-10-29'
 modifiedDate: '2019-10-29'
 published: true
 page: false
-category: 'Tutorial'
+series: 'Mongodb Bootcamp: Beginners to Advanced'
+category: 'Series'
 tags: ['MongoDB']
 description: In NoSQL, you can save different document in a single collection. Now if you want to find documents with specific field, how do you find that? There is an easy way, we will see it in example.
 ---

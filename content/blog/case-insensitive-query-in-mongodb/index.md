@@ -4,7 +4,8 @@ date: '2019-11-15'
 modifiedDate: '2019-11-15'
 published: true
 page: false
-category: 'Tutorial'
+series: 'Mongodb Bootcamp: Beginners to Advanced'
+category: 'Series'
 tags: ['MongoDB']
 description: It's very easy to find a document in mongoDB by value, but do you know how easy is to find a document using case insensitive string
 ---
