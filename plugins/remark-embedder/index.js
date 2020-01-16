@@ -1,10 +1,9 @@
 // eslint-disable-next-line import/no-extraneous-dependencies
 const visit = require('unist-util-visit');
 const getYouTubeHTML = require('./get-youtube-html');
-const getTwitterHTML = require('./get-twitter-html');
 const getCodeSandboxHTML = require('./get-codesandbox-html');
 
-const transformers = [getYouTubeHTML, getTwitterHTML, getCodeSandboxHTML];
+const transformers = [getYouTubeHTML, getCodeSandboxHTML];
 
 module.exports = async ({ markdownAST, cache }) => {
   const transformations = [];

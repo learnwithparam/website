@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from '@emotion/styled';
+import { Box, Flex } from '@chakra-ui/core';
 
 import {
   FacebookShareButton,
@@ -15,9 +16,9 @@ import {
   RedditIcon,
 } from 'react-share';
 
-const ShareContainer = styled.section`
+const ShareContainer = styled(Box)`
   display: inline-block;
-  padding: 0rem 0 1.5rem;
+  padding-right: 0.25rem;
   strong {
     margin-right: 0.5rem;
     @media (max-width: 575.98px) {
@@ -48,29 +49,39 @@ const Share = ({
   children,
 }) => {
   return (
-    <ShareContainer>
-      {children}
-      <TwitterShareButton
-        title={title}
-        via={author}
-        hashtags={hashTags}
-        url={url}
-      >
-        <TwitterIcon size={size} round />
-      </TwitterShareButton>
-      <LinkedinShareButton title={title} description={description} url={url}>
-        <LinkedinIcon size={size} round />
-      </LinkedinShareButton>
-      <FacebookShareButton quote={title} url={url}>
-        <FacebookIcon size={size} round />
-      </FacebookShareButton>
-      <RedditShareButton title={title} url={url}>
-        <RedditIcon size={size} round />
-      </RedditShareButton>
-      <WhatsappShareButton title={title} url={url}>
-        <WhatsappIcon size={size} round />
-      </WhatsappShareButton>
-    </ShareContainer>
+    <Flex alignItems="center" py={3}>
+      <ShareContainer>{children}</ShareContainer>
+      <ShareContainer>
+        <TwitterShareButton
+          title={title}
+          via={author}
+          hashtags={hashTags}
+          url={url}
+        >
+          <TwitterIcon size={size} round />
+        </TwitterShareButton>
+      </ShareContainer>
+      <ShareContainer>
+        <LinkedinShareButton title={title} description={description} url={url}>
+          <LinkedinIcon size={size} round />
+        </LinkedinShareButton>
+      </ShareContainer>
+      <ShareContainer>
+        <FacebookShareButton quote={title} url={url}>
+          <FacebookIcon size={size} round />
+        </FacebookShareButton>
+      </ShareContainer>
+      <ShareContainer>
+        <RedditShareButton title={title} url={url}>
+          <RedditIcon size={size} round />
+        </RedditShareButton>
+      </ShareContainer>
+      <ShareContainer>
+        <WhatsappShareButton title={title} url={url}>
+          <WhatsappIcon size={size} round />
+        </WhatsappShareButton>
+      </ShareContainer>
+    </Flex>
   );
 };
 

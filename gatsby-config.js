@@ -45,6 +45,7 @@ module.exports = {
           `gatsby-remark-copy-linked-files`,
           `gatsby-remark-smartypants`,
           `gatsby-plugin-catch-links`,
+          `@weknow/gatsby-remark-twitter`,
           {
             resolve: 'gatsby-remark-external-links',
             options: {

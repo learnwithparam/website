@@ -36,14 +36,14 @@ const EmailListForm = () => {
   return (
     <Flex
       flexDirection="column"
-      bg="teal.50"
+      bg="purple.100"
       color="#2a2a2a"
       justifyContent="center"
       alignItems="center"
       py={6}
     >
       <Container>
-        <Box py={6} my={6}>
+        <Box py={6}>
           <form onSubmit={handleSubmit}>
             <Heading as="h2" fontSize="3xl" mb={4}>
               Subscribe to my Newsletter
