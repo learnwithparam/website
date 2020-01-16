@@ -192,7 +192,7 @@ class BlogPostTemplate extends React.Component {
             )}
 
             {seriesArray.length ? (
-              <SeriesContainer my={6} p={6} bg="yellow.100">
+              <SeriesContainer my={6} p={6} bg="blue.100">
                 <Text as="p" fontSize="xl">
                   This is part {currentPartIndex + 1} of {seriesArray.length} in
                   my series on "<strong>{series}</strong>"

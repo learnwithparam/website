@@ -1,8 +1,9 @@
 import React from 'react';
+import { Box } from '@chakra-ui/core';
 
 const FollowMe = () => {
   return (
-    <blockquote>
+    <Box as="blockquote" bg="orange.100">
       Follow me on{' '}
       <a
         href="https://twitter.com/learnwithparam"
@@ -13,7 +14,7 @@ const FollowMe = () => {
       </a>
       . I share quick tips, my reading list and also about free workshop and
       webinars around web and mobile development everyday.
-    </blockquote>
+    </Box>
   );
 };
 
