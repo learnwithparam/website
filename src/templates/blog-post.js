@@ -10,6 +10,7 @@ import SEO from '../components/seo';
 import Share from '../components/share';
 import { CarbonAdsWide } from '../components/carbonAds';
 import EmailListForm from '../components/EmailListForm';
+import FollowMe from '../components/followMe';
 
 import { formatReadingTime } from '../utils/helpers';
 
@@ -118,11 +119,7 @@ const BlogContent = styled(Box)`
   }
 `;
 
-const SeriesContainer = styled.blockquote`
-  p {
-    margin-bottom: 1.5rem;
-  }
-`;
+const SeriesContainer = styled(Box)``;
 
 const EditLink = styled.div``;
 
@@ -176,15 +173,6 @@ class BlogPostTemplate extends React.Component {
             </Heading>
             {!post.frontmatter.page && (
               <>
-                <Share
-                  title={title}
-                  description={description}
-                  url={shareUrl}
-                  author={twitter}
-                  hashTags={hashTags}
-                >
-                  <strong>Share: </strong>
-                </Share>
                 <div>
                   <small>
                     {post.frontmatter.modifiedDate || post.frontmatter.date}
@@ -204,12 +192,12 @@ class BlogPostTemplate extends React.Component {
             )}
 
             {seriesArray.length ? (
-              <SeriesContainer>
-                <Text as="p" fontSize="lg">
+              <SeriesContainer my={6} p={6} bg="yellow.100">
+                <Text as="p" fontSize="xl">
                   This is part {currentPartIndex + 1} of {seriesArray.length} in
                   my series on "<strong>{series}</strong>"
                 </Text>
-                <List styleType="disc">
+                <List styleType="disc" mt={6} px={3}>
                   {seriesArray.map((part, index) => {
                     const partNode = part.node;
                     return (
@@ -233,6 +221,8 @@ class BlogPostTemplate extends React.Component {
             ) : null}
 
             {!post.frontmatter.page && <CarbonAdsWide />}
+
+            <FollowMe />
 
             <BlogContent
               fontSize="lg"
