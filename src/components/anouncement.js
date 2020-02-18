@@ -10,15 +10,15 @@ const Announcement = () => {
       p={3}
       bg="yellow.200"
     >
+      My book <strong>API design for beginner</strong> is getting ready.{' '}
       <a
-        href="https://www.eventbrite.com/e/api-design-for-beginners-using-node-js-and-mongodb-english-tickets-89601978931"
+        href="https://leanpub.com/api-design-for-beginners"
         target="_blank"
         rel="noopener noreferrer"
       >
-        Register here
+        Subscribe now
       </a>{' '}
-      for my first free workshop on{' '}
-      <strong>API design for beginner using Node Js and MongoDB</strong>
+      to get your free copies when it get published.
     </Box>
   );
 };

@@ -69,6 +69,7 @@ const LinkBox = styled(Box)`
 
 const Header = () => (
   <>
+    <Announcement />
     <HeaderContainer>
       <Container>
         <TransparentHeader />

@@ -46,11 +46,20 @@ const EmailListForm = () => {
         <Box py={6}>
           <form onSubmit={handleSubmit}>
             <Heading as="h2" fontSize="3xl" mb={4}>
-              Subscribe to my Newsletter
+              Subscribe for my e-book
             </Heading>
             <Text fontSize="lg" mb={3}>
-              I share best news, articles and projects about JavaScript, React,
-              GraphQL and real world development practices
+              Subscribe to get free copies of my book{' '}
+              <Text as="strong">API design for beginners</Text> once it is
+              published. You can see the progress of the book{' '}
+              <a
+                href="https://leanpub.com/api-design-for-beginners"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                here
+              </a>
+              .
             </Text>
             {!success && (
               <Flex py={2} flexDirection={['column', 'row']}>
