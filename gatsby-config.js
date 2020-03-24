@@ -134,7 +134,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
+        name: `Learn with Param`,
         short_name: `starter`,
         start_url: `/`,
         background_color: `#FCF8F3`,
