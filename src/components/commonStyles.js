@@ -1,7 +1,8 @@
 import styled from '@emotion/styled';
 import { Link } from 'gatsby';
+import { Box } from '@chakra-ui/core';
 
-const Container = styled.div`
+const Container = styled(Box)`
   max-width: 860px;
   padding: 0 2rem;
   margin: 0 auto;
@@ -17,7 +18,7 @@ const Container = styled.div`
   }
 `;
 
-const TextCenter = styled.div`
+const TextCenter = styled(Box)`
   text-align: center;
 `;
 
