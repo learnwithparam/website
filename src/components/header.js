@@ -41,7 +41,7 @@ const links = [
     color: '#f8a978',
   },
   {
-    name: '#My articles on Logrocket',
+    name: '#Logrocket Blog',
     url: 'https://blog.logrocket.com/author/paramananthamharrison/',
     color: '#f6e1e1',
     external: true,

@@ -10,7 +10,7 @@ const Announcement = () => {
       p={3}
       bg="yellow.200"
     >
-      My book <strong>API design for beginner</strong> is getting ready.{' '}
+      My book <strong>API design for beginners</strong> is getting ready.{' '}
       <a
         href="https://leanpub.com/api-design-for-beginners"
         target="_blank"
