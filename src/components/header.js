@@ -41,6 +41,11 @@ const links = [
     color: '#f8a978',
   },
   {
+    name: '#codepen',
+    url: '/codepen/',
+    color: '#ffe9c5',
+  },
+  {
     name: '#Logrocket Blog',
     url: 'https://blog.logrocket.com/author/paramananthamharrison/',
     color: '#f6e1e1',
@@ -69,7 +74,7 @@ const LinkBox = styled(Box)`
 
 const Header = () => (
   <>
-    <Announcement />
+    {false && <Announcement />}
     <HeaderContainer>
       <Container>
         <TransparentHeader />

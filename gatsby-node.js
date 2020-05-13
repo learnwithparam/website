@@ -111,6 +111,7 @@ exports.createPages = ({ graphql, actions }) => {
     createBlogListPages(createPage, posts, `blog`);
     createBlogListPages(createPage, posts, `tech-talks`, `Tech Talks`);
     createBlogListPages(createPage, posts, `videos`, `Videos`);
+    createBlogListPages(createPage, posts, `codepen`, `Codepen`);
 
     // Tags Page
     const tags = result.data.tagsGroup.group;
