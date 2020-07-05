@@ -1,5 +1,5 @@
 ---
-title: Codepen a day - Learn flutter basics from simple IMDB UI
+title: Codepen - Learn flutter basics from simple IMDB UI
 date: '2020-05-13'
 modifiedDate: '2019-05-13'
 published: true
