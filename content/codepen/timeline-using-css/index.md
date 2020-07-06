@@ -22,4 +22,4 @@ This codepen timeline is off second type where you have lesser number of activit
 
 ## Vertical timeline
 
-https://codepen.io/dael/pen/GoPRga
+https://codepen.io/itbruno/pen/KwarLp
