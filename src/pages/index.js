@@ -84,8 +84,8 @@ class IndexPage extends React.Component {
               image: gatsbyImage,
             },
             {
-              title: `Django++ for rapid prototyping`,
-              description: `I believe in horses for the courses, if there is a requirement for rapid prototyping for basic rest API or website. I prefer Python / Django over JS based stack. After all, tools are chosen based on what we want to accomplish 😊`,
+              title: `Next Js and Graphile`,
+              description: `My current favourite pets are Next Js and PostGraphile. Still exploring the deep oceans of both marvels 😊`,
               image: djangoImage,
             },
           ]}
