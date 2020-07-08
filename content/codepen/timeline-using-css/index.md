@@ -20,6 +20,14 @@ Example,
 
 This codepen timeline is off second type where you have lesser number of activities in a timeline,
 
-## Vertical timeline
+#### Vertical timeline
 
-https://codepen.io/itbruno/pen/KwarLp
+https://codepen.io/Param-Harrison/pen/mdVLywP
+
+The content is bit old but still relevant to make a dead simple CSS timeline.
+
+#### What I learned from the pen,
+
+- Idea to create vertical timeline using SCSS
+
+Note: The code is not well optimized, learn it only for making the component.

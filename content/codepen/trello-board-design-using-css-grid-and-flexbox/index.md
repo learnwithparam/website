@@ -13,6 +13,13 @@ description: You will learn how to use CSS grid and flexbox to re-create trello 
 
 Trello UI is well known for its uniqueness and user friendliness. Here is a codepen I learned to create trello UI using CSS grid and flexbox.
 
-You will learn how to create real UI screens using CSS by reading this codepen,
+You will learn how to create real UI screen using CSS by reading this codepen,
 
-https://codepen.io/GeorgePark/pen/bLLzJK
+https://codepen.io/Param-Harrison/pen/yLejBNw
+
+#### What I learned from the pen
+
+- Flex box fallback along with grid layout
+- Customizing webkit scrollbars
+- Adding aria-label for visual elements that doesn't have content (i.e., icon buttons)
+- How to use flex-basis
