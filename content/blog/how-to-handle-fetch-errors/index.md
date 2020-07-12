@@ -19,9 +19,9 @@ Example,
 fetch(url).then((response) => {
   // Always gets a response, unless there is network error
   // It never throws an error for 4xx or 5xx response 😟
-}).catch(error) => {
+}).catch((error) => {
   // Only network error comes here
-};
+});
 ```
 
 - It always gets a response, unless there is a network error
@@ -56,10 +56,10 @@ fetch(url)
   })
   .then((jsonResponse) => {
     // do whatever you want with the JSON response
-  }).catch(error) => {
+  }).catch((error) => {
     // Handle the error
     console.log(error);
-  };
+  });
 ```
 
 This will fix the problem, you can even extract out the checking status part as a function which returns a promise or throw error.
@@ -77,8 +77,8 @@ function CheckError(response) {
 fetch(url)
   .then(CheckError)
   .then((jsonResponse) => {
-  }).catch(error) => {
-  };
+  }).catch((error) => {
+  });
 ```
 
 ### How to handle fetch errors using async-await syntax
