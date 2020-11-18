@@ -110,18 +110,10 @@ module.exports = {
     },
     `gatsby-plugin-feed`,
     {
-      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      resolve: `gatsby-plugin-google-fonts`,
       options: {
-        fonts: [
-          {
-            family: `Bitter`,
-            variants: [`700`],
-          },
-          {
-            family: `Rubik`,
-            variants: [`400`],
-          },
-        ],
+        fonts: [`Bitter\:700`, `Rubik\:400`],
+        display: 'swap',
       },
     },
     {

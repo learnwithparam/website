@@ -10,15 +10,14 @@ const Announcement = () => {
       p={3}
       bg="yellow.200"
     >
-      My book <strong>API design for beginners</strong> is getting ready.{' '}
+      Our courses website is live at{' '}
       <a
-        href="https://leanpub.com/api-design-for-beginners"
+        href="https://jsmates.com?utm_source=learnwithparam&amp;utm_medium=announcement&amp;utm_campaign=learnwithparam"
         target="_blank"
         rel="noopener noreferrer"
       >
-        Subscribe now
+        jsmates.com
       </a>{' '}
-      to get your free copies when it get published.
     </Box>
   );
 };
