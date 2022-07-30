@@ -50,7 +50,7 @@ const EmailListForm = () => {
             </Heading>
             <Text fontSize="lg" mb={3}>
               I send out a short email each friday with code snippets, tools,
-              techniques, and interesting stuff from around the web. Join 2,600+
+              techniques, and interesting stuff from around the web. Join 300+
               subscribers.
             </Text>
             {!success && (
