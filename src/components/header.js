@@ -5,7 +5,6 @@ import { Link } from 'gatsby';
 
 import { Container } from './commonStyles';
 import TransparentHeader from './transparentHeader';
-import Announcement from './anouncement';
 
 const HeaderContainer = styled(Box)`
   display: flex;
