@@ -30,7 +30,7 @@ const getCats = async () => {
   );
 };
 
-// Self envoking async function
+// Self invoking async function
 (async () => {
   console.log(getCats()); // Promise { <pending> }
   const cats = await getCats();
@@ -55,7 +55,7 @@ const getCatsJson = async () => {
   ];
 };
 
-// Self envoking async function
+// Self invoking async function
 (async () => {
   console.log(getCatsJson()); // Promise { [ { name: 'tiger' }, { name: 'jimmy' } ] }
   const catsJson = await getCatsJson();
