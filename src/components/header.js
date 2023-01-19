@@ -34,22 +34,6 @@ const links = [
     url: '/mongodb/',
     color: '#ccda46',
   },
-  {
-    name: '#tech talks',
-    url: '/tech-talks/',
-    color: '#f8a978',
-  },
-  {
-    name: '#codepen',
-    url: '/codepen/',
-    color: '#ffe9c5',
-  },
-  {
-    name: '#Logrocket Blog',
-    url: 'https://blog.logrocket.com/author/paramananthamharrison/',
-    color: '#f6e1e1',
-    external: true,
-  },
 ];
 
 const StyledLink = styled(Link)`

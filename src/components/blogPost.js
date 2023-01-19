@@ -50,6 +50,8 @@ const BlogPost = ({
         <Link to={slug}>{title}</Link>
       </Heading>
       <Text>
+        <small>{modifiedDate || date}</small>
+        <span className="sep">{` • `}</span>
         {type && (type === 'Videos' || type === 'Tech Talks') ? (
           <small>{formatReadingTime(duration, type)}</small>
         ) : (
