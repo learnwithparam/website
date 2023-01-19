@@ -50,9 +50,12 @@
     "unist-util-visit": "^2.0.2"
   },
   "keywords": [
-    "gatsby"
+    "gatsby",
+    "learnwithparam"
   ],
-  "license": "MIT",
+  "engines": {
+    "node": "16.x"
+  },
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop -p 6060",
