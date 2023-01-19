@@ -42,8 +42,6 @@ class IndexPage extends React.Component {
         />
         <Header />
         <Hero image={heroImage} />
-        <CarbonAdsWide />
-        <BlogContainer posts={posts} sectionTitle={`Latest posts`} />
         <EmailListForm />
         <TeachSection
           title={`What I teach and Learn`}
@@ -71,7 +69,7 @@ class IndexPage extends React.Component {
             },
             {
               title: `Platform Engineering`,
-              description: `DO you judge me if I say, I love to learn DevOps, GKE, and CI/CD automation? Please don't!`,
+              description: `DO you judge me if I say, I love to learn/teach DevOps, GCP, GKE, serverless functions and CI/CD automation? Please don't, they are fun and hardcore!`,
               image: devOpsImage,
             },
             {
@@ -91,6 +89,7 @@ class IndexPage extends React.Component {
             },
           ]}
         />
+        <CarbonAdsWide />
       </Layout>
     );
   }
