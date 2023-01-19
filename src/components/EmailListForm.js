@@ -46,12 +46,10 @@ const EmailListForm = () => {
         <Box py={6}>
           <form onSubmit={handleSubmit}>
             <Heading as="h2" fontSize="3xl" mb={4}>
-              Get Weekly Developer Tips
+              Wanna become a Pro Engineer!
             </Heading>
             <Text fontSize="lg" mb={3}>
-              I send out a short email each friday with code snippets, tools,
-              techniques, and interesting stuff from around the web. Join 300+
-              subscribers.
+              Weekly, practical advice on how to become a better Engineer. Read by 210+ engineers, managers, and founders.
             </Text>
             {!success && (
               <Flex py={2} flexDirection={['column', 'row']}>

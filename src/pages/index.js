@@ -12,13 +12,13 @@ import EmailListForm from '../components/EmailListForm';
 
 import heroImage from './../../images/programming.svg';
 import htmlCSSImage from '../../images/html-css.svg';
-import cssInJSImage from '../../images/css-in-js.svg';
+import devOpsImage from '../../images/devops.svg';
 import gatsbyImage from '../../images/gatsby.svg';
 import graphQLImage from '../../images/graphql.svg';
 import javascriptImage from '../../images/javascript.svg';
 import nativeImage from '../../images/native.svg';
 import reactImage from '../../images/react.svg';
-import djangoImage from '../../images/django.svg';
+import databaseImage from '../../images/database.svg';
 
 class IndexPage extends React.Component {
   render() {
@@ -36,7 +36,8 @@ class IndexPage extends React.Component {
             `redux and mobx`,
             `learn with param`,
             `graphql`,
-            `django`,
+            `GCP, GKE, DevOps`,
+            `Next Js learning`,
           ]}
         />
         <Header />
@@ -54,7 +55,7 @@ class IndexPage extends React.Component {
               image: htmlCSSImage,
             },
             {
-              title: `JavaScript++`,
+              title: `Node Js and JS++`,
               description: `JavaScript world has grown into an multi-verse. You can create any kind of applications targeting desktop, web and mobile using JS. Lot of people have JS fatigue too due to number of frameworks and libraries in JS 😉`,
               image: javascriptImage,
             },
@@ -69,9 +70,9 @@ class IndexPage extends React.Component {
               image: graphQLImage,
             },
             {
-              title: `CSS-in-JS and CSS++`,
-              description: `What CSS in JS? Are you kidding me? No, I am not. HTML is JS and CSS in JS aren't bad anymore. It solves lot of development problems in recent times and one of the technologies for future along with React and GraphQL`,
-              image: cssInJSImage,
+              title: `Platform Engineering`,
+              description: `DO you judge me if I say, I love to learn DevOps, GKE, and CI/CD automation? Please don't!`,
+              image: devOpsImage,
             },
             {
               title: `Flirting with Native`,
@@ -79,14 +80,14 @@ class IndexPage extends React.Component {
               image: nativeImage,
             },
             {
-              title: `Gatsby Party`,
-              description: `Isn't Gatsby belongs to React ecosystem? Yes it does. But I want to keep a special mention for this awesome framework. Gatsby along with headless CMS will replace a lot of traditional decades old websites very soon. Oh boy, this is just a leaf out of whole Gatsby plant, I can't wait to see when the plants becomes a beautiful garden.`,
+              title: `Next Js Party`,
+              description: `Isn't Next Js belongs to React ecosystem? Yes it does. But I want to keep a special mention for this awesome framework. Oh boy, this is just a leaf out of whole Next Js plant, I can't wait to see when the plants becomes a beautiful garden.`,
               image: gatsbyImage,
             },
             {
-              title: `Next Js and Graphile`,
-              description: `My current favourite pets are Next Js and PostGraphile. Still exploring the deep oceans of both marvels 😊`,
-              image: djangoImage,
+              title: `MongoDB and Beyond`,
+              description: `I love both SQL and NoSQL, I am a strong believer of horses for the courses. Still exploring the deep oceans of both marvels 😊`,
+              image: databaseImage,
             },
           ]}
         />

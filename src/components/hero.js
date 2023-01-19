@@ -42,9 +42,9 @@ const Hero = ({ image }) => (
           <Heading as="h3" mb={6} fontSize="2xl">{`Hi, I'm Param 👋`}</Heading>
           <Text fontSize="lg" mb={3}>
             I help people to learn web and mobile technologies through
-            workshops, webinars and courses.
+            workshops, and courses.
           </Text>
-          <Text fontSize="lg">
+          <Text fontSize="lg" mb={3}>
             I prefer teaching through practical examples and encourage everyone
             to learn by doing.
           </Text>
