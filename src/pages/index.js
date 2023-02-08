@@ -5,7 +5,6 @@ import Layout from '../components/layout';
 import SEO from '../components/seo';
 import Hero from '../components/hero';
 import TeachSection from '../components/teachSection';
-import BlogContainer from '../components/blogContainer';
 import Header from '../components/header';
 import { CarbonAdsWide } from '../components/carbonAds';
 import EmailListForm from '../components/EmailListForm';
@@ -22,9 +21,6 @@ import databaseImage from '../../images/database.svg';
 
 class IndexPage extends React.Component {
   render() {
-    const { data } = this.props;
-    const posts = data.allMarkdownRemark.edges;
-
     return (
       <Layout>
         <SEO
@@ -42,7 +38,7 @@ class IndexPage extends React.Component {
         />
         <Header />
         <Hero image={heroImage} />
-        <EmailListForm />
+        <CarbonAdsWide />
         <TeachSection
           title={`What I teach and Learn`}
           description={`In the large JavaScript Ocean, I am exploring few of the Islands. On my way, I love to guide through those islands for beginners and professionals`}
@@ -89,7 +85,7 @@ class IndexPage extends React.Component {
             },
           ]}
         />
-        <CarbonAdsWide />
+        <EmailListForm />
       </Layout>
     );
   }
